@@ -1,0 +1,45 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "./build.sh",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "watch",
+      "type": "process",
+      "command": "./watch.sh",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": "test",
+      "hide": true
+    },
+    {
+      "label": "serve",
+      "type": "process",
+      "command": "python3",
+      "args": ["-m", "http.server", "1313", "-d", "output"],
+      "dependsOn": ["build"],
+      "isBackground": true,
+      "group": "test",
+      "hide": true
+    },
+    {
+      "label": "serve-and-watch",
+      "dependsOrder": "parallel",
+      "dependsOn": ["serve", "watch"],
+      "isBackground": true,
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}

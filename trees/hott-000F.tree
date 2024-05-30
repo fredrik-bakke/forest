@@ -1,0 +1,8 @@
+\date{2024-05-29}
+\taxon{definition}
+\title{Anodyne maps}
+\import{common}
+
+\p{
+  A map #{j} is said to be #{f}-\concept{anodyne} if every map that is #{f}-orthogonal is also #{j}-orthogonal.
+}

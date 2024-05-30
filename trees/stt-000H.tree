@@ -1,0 +1,17 @@
+\taxon{definition}
+\title{Inner maps and type families}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  More generally, we say a \em{map} #{f : B \to A} is \concept{inner} if it is orthogonal to the inner 2-horn inclusion, and a type family #{B : A \to \universe{U}} is inner if its unstraightening is.
+}
+
+\p{
+  When a type family #{B} is inner over #{A}, we understand #{B} to be Segal \em{relative} to the context #{a : A}. We have unique dependent composites in #{B} over composites in #{A}: given a composition #{h} of #{\alpha} before #{\beta} in #{A}, and a dependent directed edges #{\alpha'} over #{\alpha}, and #{\beta'} over #{\beta} in #{B}, we have a unique lifting of the square
+
+  \tikzcd{
+    \Lambda^2_1 \arrow[d, hook] \arrow[rr, "{\rec_\vee(\alpha',\beta')}"]&& \sigma-type{a:A}{B(a)} \arrow[d] \\
+    \Delta^2 \arrow[urr,dashed] \arrow[rr, "{h}"'] && A\mathrlap{.}
+  }
+}

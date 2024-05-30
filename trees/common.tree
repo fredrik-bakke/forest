@@ -1,0 +1,154 @@
+\title{common import}
+
+\import{latex-preamble}
+
+% ===== Formatting primitives
+\xmlns:html{http://www.w3.org/1999/xhtml}
+\def\mark[body]{\<html:mark>{\body}}
+
+
+\def\abstract[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{abstract}
+      \body
+    }
+  }
+}
+
+\def\proof[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{proof}
+      \body
+    }
+  }
+}
+
+\def\proof-of-equivalence[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{proof of equivalence}
+      \body
+    }
+  }
+}
+
+\def\remark[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{remark}
+      \body
+    }
+  }
+}
+
+\def\note[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{note}
+      \body
+    }
+  }
+}
+
+
+\def\example[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{example}
+      \body
+    }
+  }
+}
+
+% ===== TeX embeddings
+% Since the main styling uses 12pt, we change the font to fit
+% Also we give a little more space to avoid clipping
+\def\tikz[body]{
+  \<html:span>[class]{tikz}{
+    \tex{\latex-preamble/diagrams}{
+      \begin{tikzpicture}\body\end{tikzpicture}
+    }
+  }
+}
+
+\def\tikzcd[body]{
+  \<html:span>[class]{tikz tikzcd}{
+    \tex{\latex-preamble/diagrams}{
+      \begin{tikzcd}\body\end{tikzcd}
+    }
+  }
+}
+
+\def\concept[name]{\strong{\name}}
+
+
+\def\pushout-arrow[direction]{\arrow[\direction, phantom, ""{pushout, very near end}]}
+\def\pullback-arrow[direction]{\arrow[\direction, phantom, ""{pullback, very near end}]}
+
+% ===== Mathematical macros
+\def\id{#{\textrm{id}}}
+\def\Id{#{\textrm{Id}}}
+\def\unit-type{#{\textbf{1}}}
+\def\lim{#{\mathop{\overset{\leftarrow}{\textrm{lim}}}}}
+\def\o{#{\circ}}
+\def\universe[var]{#{\mathcal{\var}}}
+\def\blank{#{{-}}}
+\def\mathcode[content]{#{\texttt{\content}}}
+
+\def\empty-type{#{\emptyset}}
+\def\unit-type{#{\textbf{1}}}
+\def\bool-type{#{\textbf{2}}}
+\def\directed-interval{#{𝟚}}
+\def\sphere-type{#{\mathbb{S}}}
+\def\bN{#{\mathbb{N}}}
+
+\def\jdgeq{#{\equiv}}
+\def\id{#{\operatorname{id}}}
+\def\defeq{#{\mathrel{{:}{\jdgeq}}}}
+\def\pi-type[domain]{#{\prod_{\left(\domain\right)}}}
+\def\sigma-type[domain]{#{\sum_{\left(\domain\right)}}}
+
+\def\pushout[codomain]{#{\mathbin{\amalg_{\codomain}}}}
+
+
+
+\def\pb{{#{⌟}}}
+\def\po{{#{⌜}}}
+
+\def\hom-arrow{#{\mathop{\texttt{hom-arrow}}}}
+\def\ap{#{\mathop{\texttt{ap}}}}
+\def\point{#{\mathop{\texttt{point}}}}
+\def\rec{#{\mathop{\texttt{rec}}}}
+\def\ind{#{\mathop{\texttt{ind}}}}
+\def\ap-hom{#{\mathop{\texttt{ap-hom}}}}
+\def\directed-cylinder{#{\mathop{\texttt{cyl}_{\directed-interval}}}}
+\def\directed-cocone{#{\mathop{\texttt{cocone}_{\directed-interval}}}}
+\def\orthogonal{#{\mathrel{\perp}}}
+\def\refl{#{\mathop{\texttt{refl}}}}
+\def\fiberwise-orthogonal{#{\mathrel{\perp^\mathrm{f}}}}
+
+\def\Hom{#{\textrm{Hom}}}
+\def\simplex-category{#{\mathbf{\Delta}}}
+
+
+\def\fiber[map][point]{#{\texttt{fiber}_{\map}{\left(\point\right)}}}
+
+
+% Arrows
+\def\include{#{\subseteq}}
+\def\embed{#{\hookrightarrow}}
+\def\surject{#{\twoheadrightarrow}}
+\def\iso{#{\cong}}
+\def\equivalence{#{\simeq}}
+
+% Math
+\def\pullback-power{#{\mathbin{\hat{\pitchfork}}}}
+\def\pushout-product{#{\mathbin{\hat{\otimes}}}}

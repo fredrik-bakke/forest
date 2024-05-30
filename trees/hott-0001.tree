@@ -1,0 +1,26 @@
+\title{Orthogonal maps}
+\author{fredrik-bakke}
+\import{common}
+
+\p{We establish the basics of orthogonal maps. This concept forms an effective tool in the study of simplicial types.}
+
+\transclude{hott-0006}
+\transclude{hott-0007}
+
+\remark{
+  The [pushout-product](hott-0007) is dual to the [pullback-power](hott-0006) via the product-hom adjunction.
+}
+\transclude{hott-0008}
+
+\transclude{hott-0002}
+\transclude{hott-000G}
+
+% \remark{
+%   There is an analogous collection of equivalent conditions for other notions of lifting property between maps as well.
+% }
+
+\transclude{hott-0004}
+\transclude{hott-0005}
+
+\transclude{hott-000F}
+\transclude{hott-000H}

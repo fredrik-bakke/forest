@@ -1,0 +1,25 @@
+\date{2024-05-20}
+\taxon{definition}
+\title{Pullback-power}
+\import{common}
+
+\p{
+  Given two maps #{f : A \to B} and #{g : X \to Y}, the \concept{type of morphisms of arrows} between #{f} and #{g},
+
+  ##{\hom-arrow(f,g) \defeq \sigma-type{i : A \to X}\sigma-type{j : B \to Y}\left(g\o i \sim j\o f\right)}
+
+  is the pullback of the cospan
+
+  \tikzcd{
+    (B \to Y)\arrow[r, "\blank\o f"]
+    & (A \to Y) & (A \to X)\mathrlap{.} \arrow[l, "g \o\blank"']
+  }
+
+  The \concept{pullback-power} #{f\pullback-power g} is the gap map from the function type #{B \to X} to morphisms of arrows defined by the exponential square
+
+  \tikzcd{
+    (B \to X) \arrow[dd, "g \o\blank"'] \arrow[dr, dashed, "{f \pullback-power g}" description] \arrow[rr, "\blank\o f"] && (A \to X)\arrow[dd, "g \o\blank"] \\
+    &\hom-arrow(f,g)\arrow[dl] \arrow[ur] \\
+    (B \to Y)\arrow[rr, "\blank\o f"']
+    && (A \to Y)\mathrlap{.}\pullback-arrow{ul}}
+}

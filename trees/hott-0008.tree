@@ -1,0 +1,10 @@
+\date{2024-05-20}
+\taxon{theorem}
+\title{Adjoint relation between pullback-powers and pushout-products}
+\import{common}
+
+\p{
+  Given three maps #{f : A \to A'}, #{g : B \to B'}, and #{h : C \to C'}, there is a natural equivalence of arrows
+  ##{(f \pushout-product g)\pullback-power h \simeq f \pullback-power (g\pullback-power h).}
+
+}

@@ -1,0 +1,23 @@
+\date{2024-05-28}
+\taxon{example}
+\title{Orthogonal maps}
+\import{common}
+
+\p{
+  \ul{
+    \li{
+      Maps that are #{(\empty-type \to \unit-type)}-orthogonal are precisely the equivalences.
+      Observe how the unique lifting condition unfolds:
+
+      \tikzcd{
+        \empty-type \arrow[d] \arrow[r] & X \arrow[d, "g"] \\
+        \unit-type \arrow[r, "y"'] \arrow[ur, dashed] & Y\mathrlap{.}
+      }
+
+      The unique lifting condition asks that there, for every element #{y : Y} exists a unique #{x :  X} such that #{g(x) = y}. In other words, the fibers of #{g} must be contractible.
+    }
+    \li{
+      More generally, a map is #{n}-truncated iff it is #{(\sphere-type^{n+1}\to \unit-type)}-orthogonal.
+    }
+  }
+}

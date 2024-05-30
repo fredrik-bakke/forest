@@ -1,0 +1,62 @@
+\date{2024-05-28}
+\taxon{definition}
+\title{Orthogonal maps}
+\import{common}
+
+\p{
+  Given two maps #{f : A \to B} and #{g : X \to Y}, we say #{g} is
+  \concept{orthogonal} to #{f}, written #{f \orthogonal g}, if any of the following equivalent conditions hold
+
+  \ol{
+    \li{
+      For every commuting square
+
+      \tikzcd{
+        A \arrow[d,"f"'] \arrow[r]& X \arrow[d,"g"] \\
+        B\arrow[r] & Y
+      }
+
+      there is a unique lifting square
+
+      \tikzcd{
+        A \arrow[d,"f"'] \arrow[r]& X \arrow[d,"g"] \\
+        B\arrow[r]\arrow[ur,dashed] & Y
+      }
+      that factorizes the original one.
+    }
+
+
+    \li{
+      The [pullback-power](hott-0006) #{f\pullback-power g} is an equivalence.
+    }
+
+
+    \li{
+      The exponential square
+
+      \tikzcd{
+        (B \to X) \arrow[d, "g \o\blank"'] \arrow[r, "\blank\o f"]
+        & (A \to X)\arrow[d, "g \o\blank"]  \\
+        (B \to Y)\arrow[r, "\blank\o f"']
+        & (A \to Y)
+      }
+      is a pullback.
+    }
+
+    \li{
+      The dependent precomposition map
+      ##{\blank\o f : \left((y : B) \to \fiber{g}{h(y)}\right)\to\left((x : A)\to \fiber{g}{h(f(x))} \right)}
+      is an equivalence for all #{h : B \to Y}.
+    }
+  }
+
+  We extend the concept of orthogonality to types by substituting them for their terminal projections, and to type families by substituting them for their unstraightenings. In particular, the type #{X} is orthogonal to the type #{A} iff it is #{A}-null.
+}
+
+\proof-of-equivalence{
+  For #{1 \Leftrightarrow 2} observe that the data of a lifting square is precisely the fiber of the pullback-power, and a map is an equivalence if and only if its fibers are contractible.
+
+  For #{2 \Leftrightarrow 3}, note that the type #{\hom-arrow(f,g)} is the standard pullback of the cospan, and a cone over a cospan is a pullback if and only if it is equivalent to the standard pullback.
+
+  Condition #{4} is an instance of the vertical fiber condition for pullbacks.
+}

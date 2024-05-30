@@ -1,0 +1,12 @@
+\taxon{section}
+\title{Simplicially discrete types}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  We wish to speak of the types whose simplicial structure is trivial, i.e., the #{\infty}-groupoids in our type theory... TODO
+}
+
+
+\transclude{stt-000M}
+\transclude{stt-000N}

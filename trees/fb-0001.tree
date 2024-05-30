@@ -1,0 +1,15 @@
+\title{Fredrik Bakke}
+\author{fredrik-bakke}
+\meta{author}{false}
+
+\p{
+  I am a PhD student at the Norwegian University of Science and Technology, doing work in higher category theory and univalent type theory. I am also a maintainer of the [agda-unimath](agda-unimath) project.
+}
+\p{
+  This is my personal page where I manage my personal notes as well as miscellaneous exposition related to my work. The web page is written using [Forester](https://www.jonmsterling.com/jms-005P.xml).
+}
+
+\scope{
+\transclude{fb-0002}
+\transclude{fb-0003}
+}

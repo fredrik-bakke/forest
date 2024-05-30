@@ -1,0 +1,11 @@
+\taxon{formalization}
+\author{fredrik-bakke}
+\date{2024-04-17}
+\title{Quasicoherent idempotents split}
+\meta{external}{https://unimath.github.io/agda-unimath/foundation.split-idempotent-maps.html}
+\meta{status}{partially finished}
+
+\p{
+  Formalized Agda proof that quasicoherent idempotents split, and some surrounding facts.
+  [agda-unimath#1105](https://github.com/UniMath/agda-unimath/pull/1105)
+}

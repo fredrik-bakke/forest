@@ -1,0 +1,18 @@
+\taxon{proposition}
+\title{closure properties of Segal types}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  Let #{A} be a Segal type and let every type labelled with a "#{B}" be Segal. Then the following types are also Segal
+  \ol{
+    \li{Retracts of Segal types}
+    \li{#{\sigma-type{a : A}B(a)}}
+    \li{#{\pi-type{i : I}B(i)}}
+    \li{#{I \to B}}
+    \li{#{B_1 \times B_2}}
+    \li{#{B_1 \times_A B_2}}
+    \li{#{\lim_{(n:\bN)} B_n}}
+  }
+}
+\proof{Follows by [[hott-0004]].}

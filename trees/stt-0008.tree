@@ -1,0 +1,38 @@
+\taxon{definition}
+\title{Arrows and homs}
+\author{fredrik-bakke}
+\import{common}
+
+
+\p{
+  An \concept{arrow} in a type #{A} is a function #{\directed-interval \to A}. A \concept{directed edge} from #{x} to #{y} in #{A} is an element of the type
+  ##{\hom_A(x,y) \defeq \sigma-type{\alpha : {\directed-interval \to A}}\left(\alpha(0) = x\right)\times\left(\alpha(1) = y\right)\mathrlap{.}}
+}
+
+\p{
+  Using the language of lifting squares, a directed edge from #{x} to #{y} is a lifting of the square
+
+  \tikzcd{
+    \partial\Delta^1 \arrow[d, hook] \arrow[rr, "{\rec_{\vee}(x,y)}"] && A \arrow[d] \\
+    \Delta^1 \arrow[urr,dashed] \arrow[rr] && \unit-type\mathrlap{.}
+  }
+}
+
+\p{
+  We also speak of higher cells of a type. For instance, given a triangle of directed edges
+
+  \tikzcd{
+    & z \\
+    x \arrow[ur, "\gamma"] \arrow[r, "\alpha"'] &  y \arrow[u, "\beta"']
+  }
+
+  in #{A}, we may ask that there exists a \em{filler} of the triangle
+
+  \tikzcd{
+    \partial\Delta^2 \arrow[d, hook] \arrow[rr, "{\rec_{\vee}(\alpha,\beta,\gamma)}"] && A \arrow[d] \\
+    \Delta^2 \arrow[urr,dashed] \arrow[rr] && \unit-type\mathrlap{.}
+  }
+
+  The type of such datum is denoted #{\hom^2(\alpha,\beta;\gamma)} and we interpret its elements as witnesses that the triangle of edges commutes. In particular, if such data is unique we can understand #{\gamma} to be a composite edge of #{\alpha} before #{\beta} in at most one way.
+
+}

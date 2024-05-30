@@ -1,0 +1,41 @@
+\taxon{subsection}
+\title{Associativity of Segal composition}
+\author{fredrik-bakke}
+\import{common}
+
+\transclude{stt-000I}
+
+\p{
+  In a Segal type, given any compatible pair of arrows we have such a triangle, hence there is also a directed edge #{\hom_{(\directed-interval\to A)}(\alpha,\beta)}. Moreover, by the [closure property of Segal types under exponentials](stt-000G), the arrow type of #{A} is also Segal. Hence, if we have a triple of composable arrows
+  \tikzcd{
+    x \arrow[r, "\alpha"] & y \arrow[r, "\beta"] & z \arrow[r, "\gamma"] & w
+  }
+  we have a pair of composable arrows
+  \tikzcd{
+    \alpha \arrow[rr, "{\operatorname{unfold}(\alpha,\beta)}"] && \beta \arrow[rr, "{\operatorname{unfold}(\beta,\gamma)}"] && \gamma
+  }
+  whose composite is unique.
+
+  This means we have a commuting prism
+
+  \tikzcd{
+    x \arrow[dd, "\alpha"'] \arrow[dr,"\alpha"] \arrow[rr,dashed] && z \arrow[dd, "\gamma"] \\
+    & y \arrow[ur,"\beta"] \arrow[dd, "\beta" near start]\\
+    y \arrow[dr, "\beta"]  \arrow[rr,dashed] && w \\
+    & z\mathrlap{.} \arrow[ur,"\gamma"]
+  }
+
+  By uniqueness of composites in #{A}, the top triangle must be the composition of #{\alpha} before #{\beta}, and the bottom triangle must be the composition of #{\beta} before #{\gamma}. Hence, extracting the back square face of the prism we have a commuting square
+  \tikzcd{
+    x \arrow[d, "\alpha"'] \arrow[r, "\beta\o\alpha"] & z \arrow[d, "\gamma"]\\
+    y \arrow[r, "\gamma\o\beta"'] & w\mathrlap{.}
+  }
+  Restricting along the diagonal of this square we have a directed edge that is witnessed as both the composition #{(\gamma\o\beta)\o\alpha} and the composition
+  #{\gamma\o(\beta\o\alpha)}, so again by uniqueness we have
+
+  ##{(\gamma\o\beta)\o\alpha = \gamma\o(\beta\o\alpha)\mathrlap.}
+}
+
+\p{Thus, we have just shown the following:}
+
+\transclude{stt-000J}

@@ -1,0 +1,31 @@
+\taxon{proposition}
+\title{Equivalent characterizations of simplicially discrete types}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  The following conditions are equivalent
+  \ol{
+    \li{The type #{A} is simplicially discrete.}
+    \li{The type #{A} is #{\directed-interval}-orthogonal.}
+    \li{
+      The type #{A} is orthogonal to the left end-point inclusion #{\point 0 : \unit-type \hookrightarrow \directed-interval}.
+    }
+    \li{
+      The type #{A} is orthogonal to the right end-point inclusion #{\point 1 : \unit-type \hookrightarrow \directed-interval}.
+    }
+  }
+}
+\proof{
+  \p{
+    For #{1 \Leftrightarrow 2}, we have an equivalence of maps
+    \tikzcd{
+      A \arrow[d,"\operatorname{const}"'] \arrow[r, "\sim"] & \sigma-type{x,y:A}(x =_A y) \arrow[d,"\Sigma^2{\texttt{hom-id}}"] \\
+      (2 \to A)\arrow[r, , "\sim"] & \sigma-type{x,y:A}(\hom_A(x,y))
+    }
+    given by torsoriality of the identity types. Therefore, the left vertical map is an equivalence if and only if the right vertical map is. The left vertical map is an equivalence if and only if the type is #{\directed-interval}-orthogonal, and the right vertical map is an equivalence if and only if the fiberwise map is.
+  }
+  \p{
+    For #{1\Leftrightarrow 3 \Leftrightarrow 4}, observe that the lifting conditions unfold to asking precisely that the left- or right-hom-family is torsorial and hence characterizes the identity types.
+  }
+}

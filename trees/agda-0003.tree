@@ -1,0 +1,11 @@
+\taxon{formalization}
+\author{fredrik-bakke}
+\date{2023-10-20}
+\title{Preunivalent categories}
+\meta{external}{https://unimath.github.io/agda-unimath/category-theory.preunivalent-categories.html}
+\meta{status}{in progress}
+
+\p{
+  Preunivalent categories form the common generalization of strict, set-level categories and univalent categories.
+  [agda-unimath#861](https://github.com/UniMath/agda-unimath/pull/861)
+}

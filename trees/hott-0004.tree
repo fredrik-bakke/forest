@@ -1,0 +1,31 @@
+\date{2024-05-19}
+\taxon{theorem}
+\title{Closure properties of right orthogonal maps}
+\import{common}
+
+\p{
+  Assume all maps labeled with a "#{g}" are #{f}-orthogonal. Then we have the following:
+
+  \ol{
+    \li{#{f \orthogonal (g \o h)} iff #{f \orthogonal h}}
+    \li{if #{h} is a retract of #{g}, then #{f \orthogonal h}}
+    \li{#{f \orthogonal (\pi-type{i:I} g_i)}}
+    \li{#{f \orthogonal g^I}}
+    \li{#{f \orthogonal (g_1 \times g_2)}}
+    \li{#{f \orthogonal (h\pullback-power g)}}
+    \li{if #{h} is a base change of #{g}, then #{f \orthogonal h}. In particular, the fibers of #{g} are #{f}-orthogonal.}
+    \li{if #{h} is an #{\omega}-transfinite cocomposition of #{g_i}'s, then #{f \orthogonal h}.}
+  }
+}
+\proof{
+  \ol{
+    \li{Follows from the pasting property of pullback-squares.}
+    \li{The pullback-power is covariantly functorial in the right-hand argument, and equivalences are closed under retracts.}
+    \li{Pullbacks are preserved by swapping arguments.}
+    \li{Is a corollary of closure under dependent products.}
+    \li{Is a corollary of closure under dependent products.}
+    \li{TODO}
+    \li{TODO}
+    \li{TODO [BW23, Proposition 3.1.14]}
+  }
+}

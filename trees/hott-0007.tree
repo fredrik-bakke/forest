@@ -1,0 +1,16 @@
+\date{2024-05-20}
+\taxon{definition}
+\title{Pushout-product}
+\import{common}
+
+\p{
+  Given two maps #{f : A \to B} and #{g : X \to Y}, the \concept{pushout-product} #{f\pushout-product g} is the cogap map into the cartesian product #{B \times Y} as defined by the product square
+
+  \tikzcd{
+    A \times X
+    \pushout-arrow{dr} \arrow[dd, "A \times g"'] \arrow[rr, "f\times X"] && B \times X\arrow[dd, "B \times g"]\arrow[dl] \\
+    &{(A\times Y)}\pushout{B \times Y}{(B \times X)} \arrow[dr, dashed, "{f \pushout-product g}" description] \\
+    A \times Y\arrow[ur]\arrow[rr, "f \times Y"']
+    && B \times Y\mathrlap{.}}
+
+}

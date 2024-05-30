@@ -1,0 +1,15 @@
+\title{Formalizations}
+\author{fredrik-bakke}
+
+\put\transclude/numbered{false}
+\put\transclude/metadata{true}
+\put\transclude/expanded{true}
+
+\p{Here is a list of select formalizations by me.}
+
+\query{
+  \query/and{
+   \query/author{fredrik-bakke}
+   \query/taxon{formalization}
+  }
+ }

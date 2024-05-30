@@ -1,0 +1,10 @@
+\taxon{definition}
+\title{Constant edges}
+\author{fredrik-bakke}
+\import{common}
+
+
+\p{
+Given an element #{a : A}, we can define the \concept{constant arrow} at #{a}
+##{\id_a \defeq [t \mapsto a] : \hom_A(a,a)\mathrlap{.}}
+}

@@ -1,0 +1,17 @@
+\def\latex-preamble/diagrams{
+  \startverb
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, bbold}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{decorations.markings}
+
+  \tikzset{
+    pullback/.style={minimum size=1.2ex,path picture={
+    \draw[opacity=1,black,-,#1] (-0.6ex,-0.3ex) -- (0.0ex,-0.3ex) -- (0.0ex,0.3ex);%
+  }}}
+
+  \tikzset{
+    pushout/.style={minimum size=1.2ex,path picture={
+    \draw[opacity=1,black,-,#1] (-0.0ex,-0.3ex) -- (-0.0ex,0.3ex) -- (0.6ex,0.3ex);%
+  }}}
+ \stopverb
+}

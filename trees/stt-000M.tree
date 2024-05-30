@@ -1,0 +1,10 @@
+\taxon{definition}
+\title{Simplicially discrete types}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  A type #{A} is \concept{simplicially discrete} if the canonical map
+  ##{\texttt{hom-id} : (x =_A y) \to \hom_A(x,y)}
+  is an equivalence for all #{x\ y : A}.
+}

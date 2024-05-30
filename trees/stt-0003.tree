@@ -1,0 +1,30 @@
+\taxon{remark}
+\title{alternate theory of a directed interval}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  There's a second presentation of the theory of a directed interval, given by replacing the directed relation #{\leq}
+by two function symbols #{{\vee}, {\land}:\directed-interval \times \directed-interval \to \directed-interval}
+   satisfying the laws
+
+  \ul{
+    \li{#{t \vee t \jdgeq t}}
+    \li{#{t \vee s \jdgeq s \vee t}}
+    \li{#{t \vee (s \vee u) \jdgeq (t \vee s) \vee u}}
+    \li{#{t \vee 0 \jdgeq t}}
+    \li{#{t \land t \jdgeq t}}
+    \li{#{t \land s \jdgeq s \land t}}
+    \li{#{t \land (s \land u) \jdgeq (t \land s) \land u}}
+    \li{#{t \land 1 \jdgeq t}}
+    \li{#{t \land (t \lor s) \jdgeq t}}
+    \li{#{t \lor (t \land s) \jdgeq t}}
+    \li{#{t \lor (s \land u) \jdgeq (t \land s) \lor (t \land u)}.}
+  }
+
+  This theory admits the theory of the CCHM cubical interval as a subtheory.
+}
+
+\p{
+  When interpreting this theory in Martin–Löf type theory, one must assume as an axiom that #{\directed-interval} forms a set.
+}

@@ -8,6 +8,24 @@
       "type": "process",
       "command": "./build.sh",
       "group": {
+        "kind": "build"
+      },
+      "hide": true
+    },
+    {
+      "label": "clean",
+      "type": "process",
+      "command": "./clean.sh",
+      "group": {
+        "kind": "build"
+      },
+      "hide": true
+    },
+    {
+      "label": "clean-and-build",
+      "dependsOn": ["clean", "build"],
+      "dependsOrder": "sequence",
+      "group": {
         "kind": "build",
         "isDefault": true
       }
@@ -15,6 +33,7 @@
     {
       "label": "watch",
       "type": "process",
+      "dependsOn": "build",
       "command": "./watch.sh",
       "isBackground": true,
       "problemMatcher": [],
@@ -23,12 +42,8 @@
     },
     {
       "label": "serve",
-      "type": "process",
-      "command": "python3",
-      "args": ["-m", "http.server", "1313", "-d", "output"],
-      "dependsOn": ["build"],
-      "isBackground": true,
-      "group": "test",
+      "dependsOn": "build",
+      "command": "${command:livePreview.start}",
       "hide": true
     },
     {

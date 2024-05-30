@@ -1,0 +1,11 @@
+\taxon{Section}
+\title{Basics of simplicial types}
+\author{fredrik-bakke}
+\import{common}
+
+\transclude{stt-0009}
+\transclude{stt-000A}
+\transclude{stt-000B}
+\transclude{stt-0008}
+\transclude{stt-000D}
+\transclude{stt-000C}

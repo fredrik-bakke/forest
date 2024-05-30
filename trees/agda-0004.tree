@@ -1,0 +1,11 @@
+\taxon{formalization}
+\author{fredrik-bakke}
+\date{2024-02-08}
+\title{Computational identity types}
+\meta{external}{https://unimath.github.io/agda-unimath/foundation.computational-identity-types.html}
+\meta{status}{finished}
+
+\p{
+  The computational identity types form an identity system on any type and comes equipped with a strictly involutive inverse operation and a strictly associative and one-sided unital concatenation operation.
+  [agda-unimath#1015](https://github.com/UniMath/agda-unimath/pull/1015)
+}

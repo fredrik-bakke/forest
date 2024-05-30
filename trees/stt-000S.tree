@@ -1,0 +1,35 @@
+\taxon{theorem}
+\date{2024-05-29}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  Given a type #{A}, then the type family
+  ##{\hom(a, \blank) : A \to \universe{U}}
+  is covariant for all #{a : A} if and only if #{A} is Segal.
+}
+
+\proof{
+  Assume given directed edges #{f : \hom_A(x,y)} and #{g : \hom_A(y,z)}. The lifting condition of a covariant type family asks precisely that there is a unique lift
+
+  \pre{\startverb
+      hom(a,b)      hom(a,c)
+     ~~~~~~~~~~~~~~~~~~~~~~~~~
+    │     │             │     │
+    │   f ∙ ··········> │     │  hom(a,-)
+    │     │             ∙     │
+    │     │             │     │
+     ~~~~~~~~~~~~~~~~~~~~~~~~~
+          ↧             ↧
+    ----- ∙ ——————————> ∙ -----      A
+          b      g      c
+  \stopverb}
+  hence, by uncurrying, that we have a unique filler
+
+
+  \tikzcd{
+    a \arrow[d, "f"']\arrow[r, equals] & a \arrow[d, dotted]\\
+    b \arrow[r, "g"'] & c\mathrlap{,}
+  }
+  so the result follows from the universal property of #{\Delta^2} as the directed cone over #{\directed-interval}.
+}

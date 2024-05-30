@@ -1,0 +1,20 @@
+\taxon{construction}
+\title{Unfolding squares}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  Given a commuting triangle of directed edges
+  \tikzcd{
+    & z \\
+    x \arrow[ur, "\gamma"] \arrow[r, "\alpha"'] &  y \arrow[u, "\beta"']
+  }
+  we can, using the [[stt-000B]], construct a commuting square
+
+  \tikzcd{
+    y \arrow[r, "\beta"] & z \\
+    x \arrow[u,"\alpha"] \arrow[ur, "\gamma" description] \arrow[r, "\alpha"'] &  y \arrow[u, "\beta"']
+  }
+  we call the \em{unfolding square} of the triangle.
+  By currying, this unfolding square gives us a directed edge in the arrow type from #{\alpha} to #{\beta}.
+}

@@ -1,0 +1,24 @@
+\date{2024-05-19}
+\taxon{corollary}
+\title{Closure properties of left orthogonal maps}
+\import{common}
+
+\p{
+  Assume #{g} is orthogonal to all maps labeled with an "#{f}". Then we have the following:
+
+  \ol{
+    \li{#{(h \o f) \orthogonal g} iff #{h \orthogonal g}}
+    \li{if #{h} is a retract of #{f}, then #{h \orthogonal g}}
+    \li{#{(\sigma-type{i:I}f_i) \orthogonal g}}
+    \li{#{(I \times f) \orthogonal g}}
+    \li{#{(f_1 + f_2) \orthogonal g}}
+    \li{#{(f\pushout-product h) \orthogonal g}}
+    \li{if #{h} is a cobase change of #{f}, then #{h \orthogonal g}}
+    \li{if #{h} is an #{\omega}-transfinite composition of #{f_i}'s, then #{h \orthogonal g}.}
+  }
+}
+
+\proof{
+  The results follow by dualizing [[hott-0004]].
+  In particular, for property 2 we use that the [pullback-power](hott-0006) is contravariantly functorial in the left-hand argument. For property 6 we use the [adjoint relation between pushout-products and pullback-powers](hott-0008).
+}

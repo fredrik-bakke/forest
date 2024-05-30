@@ -1,0 +1,13 @@
+\taxon{formalization}
+\author{fredrik-bakke}
+\date{2024-03-20}
+\title{Cohesion}
+\meta{external}{https://unimath.github.io/agda-unimath/modal-type-theory.html}
+\meta{status}{to be reviewed}
+\tag{to be reviewed}
+
+\p{
+  A basic library for doing cohesive type theory. A large portion is currently
+  waiting to be merged.
+  [agda-unimath#1078](https://github.com/UniMath/agda-unimath/pull/1078)
+}

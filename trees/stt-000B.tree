@@ -1,0 +1,23 @@
+\taxon{fact}
+\title{Pushout property of the directed square}
+\author{fredrik-bakke}
+\import{common}
+
+
+\p{
+  The totality property of the directed relation #{\leq} on \directed-interval states precisely that the directed square is the gluing of two triangles along their diagonal, i.e., that we have a pushout square
+  \tikzcd{
+    \Delta^1 \pushout-arrow{dr} \arrow[d, "d^1"']\arrow[r, "d^1"] & \Delta^2 \arrow[d] \\
+    \Delta^2 \arrow[r] & \Delta^1 \times \Delta^1
+  }
+}
+
+\p{
+  This is useful as it means we can construct functions in two interval variables by case analysis on the lower and upper triangle.
+}
+
+\remark{
+  As pointed out by Alex, we could broaden the semantics of the type theory by omitting the totality axiom and rather \em{define} simplicial types as those which view the directed relation to be total. I.e., those that are orthogonal to the cogap map
+
+  ##{\Delta^2\amalg_{\Delta^1}\Delta^2 \to \Delta^1\times\Delta^1\mathrlap{.}}
+}

@@ -1,0 +1,65 @@
+\date{2024-05-17}
+\taxon{proposition}
+\title{Equivalent conditions for orthogonal maps}
+\import{common}
+
+\p{
+  The following conditions are equivalent.
+
+  \ol{
+    \li{
+      The exponential square
+
+      \tikzcd{
+        (B \to X) \arrow[d, "g \o\blank"'] \arrow[r, "\blank\o f"]
+        & (A \to X)\arrow[d, "g \o\blank"]  \\
+        (B \to Y)\arrow[r, "\blank\o f"']
+        & (A \to Y)
+      }
+      is a pullback. I.e., #{f} and #{g} are orthogonal.
+    }
+
+    \li{
+      The [pullback-power](hott-0006) #{f\pullback-power g} is an equivalence.
+    }
+
+    \li{
+      For every commuting square
+
+      \tikzcd{
+        A \arrow[d,"f"'] \arrow[r]& X \arrow[d,"g"] \\
+        B\arrow[r] & Y
+      }
+
+      there is a unique lifting square
+
+      \tikzcd{
+        A \arrow[d,"f"'] \arrow[r]& X \arrow[d,"g"] \\
+        B\arrow[r]\arrow[ur,dashed] & Y
+      }
+      that factorizes the original one.
+    }
+
+    \li{
+      The dependent precomposition map
+      ##{\blank\o f : \left((y : B) \to \fiber{g}{h(y)}\right)\to\left((x : A)\to \fiber{g}{h(f(x))} \right)}
+      is an equivalence for all #{h : B \to Y}.
+    }
+  }
+}
+
+\p{
+  The last condition gives us a more convenient formulation when working with type families rather than maps.
+}
+
+\proof{
+    For  #{1 \Leftrightarrow 2}, note that the type #{\hom-arrow(f,g)} is the standard pullback of the cospan, and a cone over a cospan is a pullback if and only if it is equivalent to the standard pullback.
+
+  For  #{2 \Leftrightarrow 3} observe that the data of a lifting square is precisely the fiber of the pullback-power.
+
+  Condition #{4} is an instance of the vertical fiber condition for pullbacks.
+}
+
+\remark{
+  There is a corresponding collection of equivalent conditions for other notions of lifting property between maps as well.
+}

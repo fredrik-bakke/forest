@@ -1,0 +1,20 @@
+\taxon{definition}
+\title{directed mapping cylinder}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  Given a map #{f : A \to B}, the \concept{directed mapping cylinder} is the pushout
+
+  \tikzcd{
+    A \arrow[r, "f"] \arrow[d, "{({\id} , 1)}"'] \pushout-arrow{dr} & B \arrow[d] \\
+    {A \times 2} \arrow[r] & \mathop{\texttt{cyl}_2} f
+  }
+  \p{(The #{2}'s in the diagram are supposed to be blackboard boldface \directed-interval's, but I'm having some typesetting trouble)}
+
+  In particular, when #{f} is a terminal projection we recover the \concept{directed cocone type} under #{A}, #{\directed-cocone A}.
+}
+
+\remark{
+  Notice the similarity to how one makes cofibrant replacements in order to construct homotopy colimits in classical homotopy theory using strict colimits. In our scenario, we bake simplicial structure into the colimit by multiplying by the directed interval – the added structure does not come automatically as with higher homotopy structure in homotopy type theory.
+}

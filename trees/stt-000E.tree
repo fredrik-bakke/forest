@@ -1,0 +1,9 @@
+\taxon{section}
+\title{Segal types}
+\author{fredrik-bakke}
+\import{common}
+
+\transclude{stt-000F}
+\transclude{stt-000G}
+\transclude{stt-000H}
+\transclude{stt-000K}

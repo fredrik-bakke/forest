@@ -1,0 +1,34 @@
+\taxon{definition}
+\title{covariant type families}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  A type family #{B : A \to \universe{U}} is \concept{covariant} if it is orthogonal at the left end-point inclusion of the directed interval.
+}
+\p{
+  This means that for every arrow #{\alpha : \hom_A(x,y)} in the base and every point #{x'} in #{B} lying over #{x} there must be a unique dependent directed edge starting at #{x'}
+
+  \pre{\startverb
+      B(x)          B(y)
+   ~~~~~~~~~~~~~~~~~~~~~~~~~
+  │     │             │     │
+  │  x' ∙ ··········> │     │      B
+  │     │             ∙     │
+  │     │             │     │
+   ~~~~~~~~~~~~~~~~~~~~~~~~~
+        ↧             ↧
+  ----- ∙ ——————————> ∙ -----      A.
+        x      α      y
+  \stopverb}
+
+  Thus, in particular, restricting to the right-end point of the unique lifting we obtain a transport function
+  ##{\texttt{tr-hom-covariant}_B : \hom_A(x,y) \to B(x) \to B(y).}
+  and it is from this transport function the concept gets its name: the fibers of #{B} vary covariantly in #{A}. Also note that by pullback stability the fibers of #{B} are all simplicially discrete.
+}
+
+\p{
+  Had we instead imposed that the type families are orthogonal at the right end-point inclusion of the directed interval, we obtain the notion of a \concept{contravariant} type family. These instead have a transport function of the form
+  ##{\texttt{tr-hom-contravariant}_B : \hom_A(x,y) \to B(y) \to B(x)\mathrlap{.}}
+
+}

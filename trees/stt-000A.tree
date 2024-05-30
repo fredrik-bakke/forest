@@ -1,0 +1,40 @@
+\taxon{definition}
+\title{Some basic shapes}
+\author{fredrik-bakke}
+\import{common}
+
+
+\ul{
+  \li{
+    The standard 1-simplex ##{\Delta^1 \defeq \directed-interval}.
+  }
+  \li{
+    The boundary of the standard 1-simplex
+    ##{\partial\Delta^1\defeq \left\{t : \directed-interval \mid \right (t = 0) \vee (t = 1)\}.}
+  }
+  \li{
+    The standard 2-simplex
+    ##{\Delta^2\defeq \left\{(t,s) : \directed-interval\times\directed-interval \mid s \leq t \right\}.}
+    This shape should be understood as the filled lower triangle of the directed square #{\directed-interval\times\directed-interval}.
+
+    The standard 2-simplex has the universal property of the directed cocone under \directed-interval. In fact, inductively, ##{\Delta^{n+1}\simeq \directed-cocone\Delta^n.}
+  }
+  \li{
+    The boundary of the standard 2-simplex
+    ##{\partial\Delta^2 \defeq \left\{(t,s):\directed-interval \times \directed-interval \mid (t=1)\lor(t = s)\lor(s=0)\right\}.}
+    Pictorially,
+    \tikzcd{
+      & (1,1) \\
+      (0,0) \arrow[ur, "t=s"] \arrow[r, "s=0"']& (1,0) \arrow[u, "t=1"']
+    }
+    without a filled interior.
+    The boundary of #{\Delta^n} too has a couple of defining inductive formulas.
+  }
+  \li{
+    The standard 2-horns #{\Lambda^2_i} can be extracted from the boundary formula of the standard 2-simplex by omitting the #{i}'th clause. E.g. #{\Lambda^2_1}, the \em{inner 2-horn}, is the subshape
+    \tikzcd{
+      & (1,1) \\
+      (0,0)  \arrow[r]& (1,0)\mathrlap{.} \arrow[u]
+    }
+  }
+}

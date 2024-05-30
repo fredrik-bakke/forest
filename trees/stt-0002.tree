@@ -1,0 +1,29 @@
+\taxon{definition}
+\title{The coherent theory of a directed interval}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  The coherent theory of a directed interval consists of
+  \ul{
+    \li{A single sort #{\directed-interval}, the \concept{directed interval}.}
+    \li{Two constants #{0, 1 : \directed-interval}.}
+    \li{A single binary relation symbol #{\leq} on #{\directed-interval}.}
+  }
+  such that
+
+  \ul{
+    \li{
+      The directed interval is nontrivial: #{0 \equiv 1 \vdash \bot}.
+    }
+    \li{
+      The directed relation #{\leq} is a total order on #{\directed-interval} with #{0} as minimum and #{1} as maximum. I.e.,
+
+      \ul{
+        \li{#{\vdash x ≤ x} (Reflexivity)}
+        \li{#{(y ≤ z) , (x ≤ y) \vdash (x ≤ z)} (Transitivity)}
+        \li{#{(x ≤ y) , (y ≤ x) \vdash (x \jdgeq y)} (Antisymmetry)}
+        \li{#{\vdash(x ≤ y) \vee (y ≤ x)} (Totality)}}
+    }
+  }
+}

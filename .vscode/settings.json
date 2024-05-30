@@ -1,4 +1,10 @@
 {
   "editor.formatOnSave": true,
-  "latex-workshop.latex.autoBuild.run": "never"
+  "latex-workshop.latex.autoBuild.run": "never",
+  "livePreview.defaultPreviewPath": "output/index.xml",
+  "livePreview.autoRefreshPreview": "On All Changes in Editor",
+  "livePreview.portNumber": 1313,
+  "livePreview.serverRoot": "output",
+  "livePreview.previewDebounceDelay": 300,
+  "forester.config": "forest.toml"
 }

@@ -1,0 +1,22 @@
+\taxon{construction}
+\title{Functions are functors}
+\author{fredrik-bakke}
+\import{common}
+
+
+\p{
+  Given a map #{f : A \to B} and elemens #{x\ y: A}, we have an \concept{action on directed edges} of type
+  ##{\hom_A(x, y) \to \hom_B(f(x), f(y))\mathrlap{.}}
+  The map is given by postcomposition on the underlying arrow, and #{f}'s action on identifications on the endpoints.
+}
+
+\p{
+  Since constant maps are closed under postcomposition, this action on directed edges preserves constant edges
+  ##{f(\id_a) = \id_{f(a)}\mathrlap{.}}
+}
+
+\p{
+  There is moreover an \concept{action on 2-simplices}
+  ##{\hom^2_A(\alpha, \beta;\gamma) \to \hom^2_B(f(\alpha), f(\beta);f(\gamma))}
+  meaning that #{f} also preserves composites. Hence, every map is already a functor of simplicial types although we have yet to define those types that look like categories.
+}

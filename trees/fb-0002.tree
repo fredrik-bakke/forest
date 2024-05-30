@@ -1,0 +1,9 @@
+\title{Lecture notes}
+\author{fredrik-bakke}
+
+\put\transclude/numbered{false}
+\put\transclude/metadata{true}
+\put\transclude/expanded{false}
+\put\transclude/toc{false}
+
+\transclude{fb-0004}

@@ -1,0 +1,21 @@
+\taxon{definition}
+\title{Segal types/#{\infty}-precategories}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  A \concept{Segal type} is a type #{A} that is orthogonal at the inner 2-horn inclusion #{\Lambda^2_1 \hookrightarrow \Delta^2}. Meaning that a Segal type is a type such that every pair of compatible edges in #{A} can be extended uniquely to a commuting triangle
+
+  \tikzcd{
+    & z \\
+    x \arrow[ur, "\beta\o\alpha", dashed] \arrow[r, "\alpha"'] &  y\mathrlap{.} \arrow[u, "\beta"']
+  }
+
+  In particular, we obtain the \em{Segal composition operation}
+  ##{\blank\o\blank : \hom_A(y,z) \to \hom_A(x,y) \to \hom_A(x,z)}
+  by restricting along the diagonal.
+}
+
+\p{
+  The name "Segal type" comes from the semantics in the motivating model of simplicial spaces, where Segal types correspond to Segal spaces. We can understand these objects as (concrete) #{\infty}-precategories, or flagged #{\infty}-categories, because they are #{\infty}-categories that come equipped with extra structure on their objects. More concretely, they come equipped with two in advance unrelated homotopy structures: one given by the underlying space of objects, and the other given by the space of isomorphisms of objects.
+}

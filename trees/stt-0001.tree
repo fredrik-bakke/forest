@@ -1,0 +1,11 @@
+\title{Simplicial type theory}
+\author{fredrik-bakke}
+\import{common}
+
+\p{In this tree we discuss basics of simplicial type theory.}
+
+\transclude{stt-0006}
+\transclude{stt-0007}
+\transclude{stt-000E}
+\transclude{stt-000L}
+\transclude{stt-000O}

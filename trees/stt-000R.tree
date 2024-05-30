@@ -1,0 +1,9 @@
+\taxon{corollary}
+\date{2024-05-29}
+\author{fredrik-bakke}
+\import{common}
+
+\p{
+  If #{B : A \to \universe{U}} is a covariant type family over a Segal type, then
+  #{\sigma-type{a : A}B(a)} is Segal.
+}

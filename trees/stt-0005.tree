@@ -1,0 +1,8 @@
+\taxon{Fact}
+\author{fredrik-bakke}
+\import{common}
+\ul{
+  \li{The classifying topos of the directed interval is simplicial sets.}
+  \li{The universal model of the directed interval is #{\Delta^1}.}
+  \li{The classifying #{\infty}-topos of the directed interval is simplicial spaces.}
+}

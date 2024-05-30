@@ -1,0 +1,10 @@
+\taxon{lecture note}
+\title{Segal spaces in Homotopy Type Theory}
+\date{2024-05-15}
+\author{fredrik-bakke}
+\import{common}
+\meta{venue}{FMF, University of Ljubljana}
+
+\abstract{Homotopy Type Theory is a language for doing homotopy invariant mathematics. As such one would expect it to be a good setting for doing ∞-category theory. Indeed, by extending the type theory with a directed interval object we get a type theory where every type is automatically equipped with simplicial structure and every construction preserves this structure in the appropriate sense. In this setting we can define and work with ∞-categories synthetically. We will have a look at some of the basic aspects of category theory in this setting.}
+\transclude{hott-0001}
+\transclude{stt-0001}

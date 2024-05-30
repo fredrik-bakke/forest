@@ -1,0 +1,15 @@
+\date{2024-05-28}
+\taxon{example}
+\title{Anodyne maps}
+\import{common}
+
+\p{
+  \ul{
+    \li{
+      Equivalences are orthogonal to every map, so every map is #{(\empty-type \to \unit-type)}-anodyne.
+    }
+    \li{
+      #{(n+1)}-truncated maps are also #{n}-truncated, so the map #{(\sphere-type^n\to \unit-type)} is #{(\sphere-type^{n-1}\to \unit-type)}-anodyne.
+    }
+  }
+}

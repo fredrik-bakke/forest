@@ -2,4 +2,6 @@
 \author{fredrik-bakke}
 \import{common}
 \p{The directed interval forms a set.}
-\proof{Posets are sets.}
+\proof{
+  [formalization@agda-unimath](https://github.com/UniMath/agda-unimath/blob/f0780ab7ab7d9c5dacbe21ea553088e89a525012/src/simplicial-type-theory/directed-relation-directed-interval-type.lagda.md#L193)
+  \p{Posets are sets.}}

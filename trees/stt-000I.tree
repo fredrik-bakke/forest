@@ -15,6 +15,6 @@
     y \arrow[r, "\beta"] & z \\
     x \arrow[u,"\alpha"] \arrow[ur, "\gamma" description] \arrow[r, "\alpha"'] &  y \arrow[u, "\beta"']
   }
-  we call the \em{unfolding square} of the triangle.
-  By currying, this unfolding square gives us a directed edge in the arrow type from #{\alpha} to #{\beta}.
+  called the \em{unfolding square} of the triangle.
+  By currying, this unfolding square gives us a directed edge in the arrow type of #{A} from #{\alpha} to #{\beta}.
 }

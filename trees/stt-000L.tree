@@ -1,10 +1,10 @@
-\taxon{section}
+\taxon{subsection}
 \title{Simplicially discrete types}
 \author{fredrik-bakke}
 \import{common}
 
 \p{
-  We wish to speak of the types whose simplicial structure is trivial, i.e., the #{\infty}-groupoids in our type theory... TODO
+  There is a subuniverse of simplicially trivial types. We call these types simplicially discrete.
 }
 
 

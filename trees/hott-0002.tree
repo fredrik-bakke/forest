@@ -56,7 +56,7 @@
 \proof-of-equivalence{
   For #{1 \Leftrightarrow 2} observe that the data of a lifting square is precisely the fiber of the pullback-power, and a map is an equivalence if and only if its fibers are contractible.
 
-  For #{2 \Leftrightarrow 3}, note that the type #{\hom-arrow(f,g)} is the standard pullback of the cospan, and a cone over a cospan is a pullback if and only if it is equivalent to the standard pullback.
+  For #{2 \Leftrightarrow 3}, note that the type #{\hom-map(f,g)} is the standard pullback of the cospan, and a cone over a cospan is a pullback if and only if it is equivalent to the standard pullback.
 
   Condition #{4} is an instance of the vertical fiber condition for pullbacks.
 }

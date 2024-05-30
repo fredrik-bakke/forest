@@ -1,7 +1,11 @@
-\taxon{Section}
+\taxon{subsection}
 \title{Basics of simplicial types}
 \author{fredrik-bakke}
 \import{common}
+
+\p{
+  We consider some basic constructions we can form in the precense of the directed interval object.
+}
 
 \transclude{stt-0009}
 \transclude{stt-000A}

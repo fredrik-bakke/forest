@@ -11,7 +11,7 @@
 }
 
 \p{
-  Since constant maps are closed under postcomposition, this action on directed edges preserves constant edges
+  Since constant maps are closed under postcomposition this action on directed edges preserves constant edges
   ##{f(\id_a) = \id_{f(a)}\mathrlap{.}}
 }
 

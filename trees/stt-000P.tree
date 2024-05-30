@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  A type family #{B : A \to \universe{U}} is \concept{covariant} if it is orthogonal at the left end-point inclusion of the directed interval.
+  A type family #{B : A \to \universe{U}} is \concept{covariant} if it is orthogonal to the left end-point inclusion of the directed interval.
 }
 \p{
   This means that for every arrow #{\alpha : \hom_A(x,y)} in the base and every point #{x'} in #{B} lying over #{x} there must be a unique dependent directed edge starting at #{x'}
@@ -28,7 +28,7 @@
 }
 
 \p{
-  Had we instead imposed that the type families are orthogonal at the right end-point inclusion of the directed interval, we obtain the notion of a \concept{contravariant} type family. These instead have a transport function of the form
+  Had we instead imposed that the type families are orthogonal to the right end-point inclusion of the directed interval, we obtain the notion of a \concept{contravariant} type family. These instead have a transport function of the form
   ##{\texttt{tr-hom-contravariant}_B : \hom_A(x,y) \to B(y) \to B(x)\mathrlap{.}}
 
 }

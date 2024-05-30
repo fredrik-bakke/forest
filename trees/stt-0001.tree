@@ -2,7 +2,9 @@
 \author{fredrik-bakke}
 \import{common}
 
-\p{In this tree we discuss basics of simplicial type theory.}
+\p{
+  We extend Martin-Löf type theory with a directed interval. The existence of this object endows every type with simplicial structure that every definable map automatically preserves. With this added structure, we can concisely define what will correspond in the semantics to #{\infty}-categories, maps between which will automatically be functors.
+}
 
 \transclude{stt-0006}
 \transclude{stt-0007}

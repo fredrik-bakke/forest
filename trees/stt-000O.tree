@@ -1,11 +1,12 @@
-\taxon{section}
+\taxon{subsection}
 \title{Fibrations}
 \author{fredrik-bakke}
 \import{common}
 
-\p{We have seen multiple equivalent orthogonality conditions for simplicially discrete types. However, when we move to the relative picture these are no longer equivalent.}
+\p{We want a notion that captures families of spaces that vary covariantly or contravariantly over a base Segal space, the prime examples being #{\hom_A(x,\blank)} and #{\hom_A(\blank, x)} respectively.}
 
 \transclude{stt-000P}
 \transclude{stt-000Q}
 \transclude{stt-000R}
 \transclude{stt-000S}
+\transclude{stt-000T}

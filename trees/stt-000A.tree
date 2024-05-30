@@ -31,7 +31,7 @@
     The boundary of #{\Delta^n} too has a couple of defining inductive formulas.
   }
   \li{
-    The standard 2-horns #{\Lambda^2_i} can be extracted from the boundary formula of the standard 2-simplex by omitting the #{i}'th clause. E.g. #{\Lambda^2_1}, the \em{inner 2-horn}, is the subshape
+    The standard 2-horns #{\Lambda^2_i} can be extracted from the boundary formula of the standard 2-simplex by omitting the #{i}'th clause read from left to right. E.g., #{\Lambda^2_1}, the \em{inner 2-horn}, is the subshape
     \tikzcd{
       & (1,1) \\
       (0,0)  \arrow[r]& (1,0)\mathrlap{.} \arrow[u]

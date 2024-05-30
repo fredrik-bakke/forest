@@ -10,7 +10,7 @@
     A \arrow[r, "f"] \arrow[d, "{({\id} , 1)}"'] \pushout-arrow{dr} & B \arrow[d] \\
     {A \times 2} \arrow[r] & \mathop{\texttt{cyl}_2} f
   }
-  \p{(The #{2}'s in the diagram are supposed to be blackboard boldface \directed-interval's, but I'm having some typesetting trouble)}
+  \p{(The #{2}'s in the diagram are supposed to be blackboard boldface \directed-interval's, but I'm having trouble typesetting it)}
 
   In particular, when #{f} is a terminal projection we recover the \concept{directed cocone type} under #{A}, #{\directed-cocone A}.
 }

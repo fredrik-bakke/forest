@@ -17,6 +17,7 @@
   }
 }
 \proof{
+  [formalization@agda-unimath](https://github.com/UniMath/agda-unimath/blob/f0780ab7ab7d9c5dacbe21ea553088e89a525012/src/simplicial-type-theory/simplicially-discrete-types.lagda.md#L111)
   \p{
     For #{1 \Leftrightarrow 2}, we have an equivalence of maps
     \tikzcd{

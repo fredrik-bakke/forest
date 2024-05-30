@@ -123,7 +123,7 @@
 \def\pb{{#{⌟}}}
 \def\po{{#{⌜}}}
 
-\def\hom-arrow{#{\mathop{\texttt{hom-arrow}}}}
+\def\hom-map{#{\mathop{\texttt{hom-map}}}}
 \def\ap{#{\mathop{\texttt{ap}}}}
 \def\point{#{\mathop{\texttt{point}}}}
 \def\rec{#{\mathop{\texttt{rec}}}}

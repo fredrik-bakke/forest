@@ -1,4 +1,4 @@
-\taxon{subsection}
+\taxon{subsubsection}
 \title{Associativity of Segal composition}
 \author{fredrik-bakke}
 \import{common}
@@ -6,7 +6,7 @@
 \transclude{stt-000I}
 
 \p{
-  In a Segal type, given any compatible pair of arrows we have such a triangle, hence there is also a directed edge #{\hom_{(\directed-interval\to A)}(\alpha,\beta)}. Moreover, by the [closure property of Segal types under exponentials](stt-000G), the arrow type of #{A} is also Segal. Hence, if we have a triple of composable arrows
+  In a Segal type, given any composable pair of arrows we have such a triangle, hence there is also a directed edge #{\hom_{(\directed-interval\to A)}(\alpha,\beta)}. Moreover, by the [closure property of Segal types under exponentials](stt-000G), the arrow type of #{A} is also Segal. Hence, if we have a triple of composable arrows
   \tikzcd{
     x \arrow[r, "\alpha"] & y \arrow[r, "\beta"] & z \arrow[r, "\gamma"] & w
   }

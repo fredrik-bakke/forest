@@ -24,8 +24,8 @@
     \li{Pullbacks are preserved by swapping arguments.}
     \li{Is a corollary of closure under dependent products.}
     \li{Is a corollary of closure under dependent products.}
-    \li{TODO}
-    \li{TODO}
-    \li{TODO [BW23, Proposition 3.1.14]}
+    \li{See BW23.}
+    \li{See BW23 or the accompanying formalization.}
+    \li{See BW23, Proposition 3.1.14.}
   }
 }

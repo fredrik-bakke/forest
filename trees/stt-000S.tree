@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  Given a type #{A}, then the type family
+  Given a type #{A} the type family
   ##{\hom(a, \blank) : A \to \universe{U}}
   is covariant for all #{a : A} if and only if #{A} is Segal.
 }

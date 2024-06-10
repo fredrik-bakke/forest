@@ -9,7 +9,7 @@
       Equivalences are orthogonal to every map, so every map is #{(\empty-type \to \unit-type)}-anodyne.
     }
     \li{
-      #{(n+1)}-truncated maps are also #{n}-truncated, so the map #{(\sphere-type^n\to \unit-type)} is #{(\sphere-type^{n-1}\to \unit-type)}-anodyne.
+      #{(n+1)}-truncated maps are also #{n}-truncated, so the map #{(\sphere^n\to \unit-type)} is #{(\sphere^{n-1}\to \unit-type)}-anodyne.
     }
   }
 }

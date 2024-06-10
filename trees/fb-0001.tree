@@ -9,6 +9,11 @@
   This is my personal page where I manage my personal notes as well as miscellaneous exposition related to my work. The web page is written using [Forester](https://www.jonmsterling.com/jms-005P.xml).
 }
 
+\p{
+   Please keep in mind that this web page is in early development and is thus largely incomplete and may be subject to big changes in the future.
+}
+
+
 \scope{
 \transclude{fb-0002}
 \transclude{fb-0003}

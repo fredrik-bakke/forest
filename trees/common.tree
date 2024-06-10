@@ -17,6 +17,16 @@
   }
 }
 
+\def\question[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{question}
+      \body
+    }
+  }
+}
+
 \def\proof[body]{
   \scope{
     \put\transclude/toc{false}
@@ -107,7 +117,8 @@
 \def\unit-type{#{\textbf{1}}}
 \def\bool-type{#{\textbf{2}}}
 \def\directed-interval{#{𝟚}}
-\def\sphere-type{#{\mathbb{S}}}
+\def\sphere{#{\mathbb{S}}}
+\def\directed-sphere{#{{\vec{\sphere}}}}
 \def\bN{#{\mathbb{N}}}
 
 \def\jdgeq{#{\equiv}}
@@ -124,7 +135,10 @@
 \def\po{{#{⌜}}}
 
 \def\hom-map{#{\mathop{\texttt{hom-map}}}}
+\def\spine[dimension]{#{\mathop{\texttt{spine}}{\dimension}}}
 \def\ap{#{\mathop{\texttt{ap}}}}
+\def\pr{#{\mathop{\texttt{pr}}}}
+\def\directed-suspension{#{\mathop{\vec{\Sigma}}}}
 \def\point{#{\mathop{\texttt{point}}}}
 \def\rec{#{\mathop{\texttt{rec}}}}
 \def\ind{#{\mathop{\texttt{ind}}}}
@@ -136,6 +150,10 @@
 \def\fiberwise-orthogonal{#{\mathrel{\perp^\mathrm{f}}}}
 
 \def\Hom{#{\textrm{Hom}}}
+\def\Set{#{\textrm{Set}}}
+\def\Prop{#{\textrm{Prop}}}
+\def\Space{#{\textrm{S}}}
+\def\op[x]{#{{\x}^{\textrm{op}}}}
 \def\simplex-category{#{\mathbf{\Delta}}}
 
 

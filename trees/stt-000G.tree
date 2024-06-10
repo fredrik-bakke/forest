@@ -6,13 +6,14 @@
 \p{
   Let #{A} be a Segal type and let every type labelled with a "#{B}" be Segal. Then the following types are also Segal
   \ol{
-    \li{Retracts of Segal types}
-    \li{#{\sigma-type{a : A}B(a)}}
+    \li{Retracts of #{A}}
     \li{#{\pi-type{i : I}B(i)}}
     \li{#{I \to B}}
     \li{#{B_1 \times B_2}}
     \li{#{B_1 \times_A B_2}}
-    \li{#{\lim_{(n:\bN)} B_n}}
+    \li{#{\lim_{(n:\bN)} B_n}}.
   }
+
+  Moreover, if #{B} is an inner family over #{A}, then #{\sigma-type{x:A}B(x)} is Segal.
 }
 \proof{Follows by [[hott-0004]].}

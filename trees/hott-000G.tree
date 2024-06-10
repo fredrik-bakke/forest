@@ -17,7 +17,7 @@
       The unique lifting condition asks that there, for every element #{y : Y} exists a unique #{x :  X} such that #{g(x) = y}. In other words, the fibers of #{g} must be contractible.
     }
     \li{
-      More generally, a map is #{n}-truncated iff it is #{(\sphere-type^{n+1}\to \unit-type)}-orthogonal.
+      More generally, a map is #{n}-truncated iff it is #{(\sphere^{n+1}\to \unit-type)}-orthogonal.
     }
   }
 }

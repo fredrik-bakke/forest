@@ -1,11 +1,11 @@
 \taxon{formalization}
 \author{fredrik-bakke}
-\title{Wild #{(\infty,\infty)}-categories}
+\title{Wild higher categories}
 \meta{external}{https://unimath.github.io/agda-unimath/wild-category-theory.html}
 \meta{status}{on the shelf}
 
 \p{
-  We can utilize parts of #{(\infty,\infty)}-category theory in univalent type theory using a globular model.
+  We can utilize parts of higher category theory in univalent type theory using a globular model.
   [agda-unimath#1099](https://github.com/UniMath/agda-unimath/pull/1099)
   This is a collaborative effort together with [[vojtech-stepancik]].
 }

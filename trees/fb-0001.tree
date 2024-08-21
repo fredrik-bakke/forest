@@ -16,5 +16,6 @@
 
 \scope{
 \transclude{fb-0002}
+\transclude{fb-0005}
 \transclude{fb-0003}
 }

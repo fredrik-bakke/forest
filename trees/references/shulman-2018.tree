@@ -1,0 +1,23 @@
+\title{Brouwer's Fixed-Point Theorem in Real-Cohesive Homotopy Type Theory}
+\date{2018}
+\taxon{reference}
+\author{Michael Shulman}
+\meta{doi}{10.1017/S0960129517000147}
+\meta{venue}{[[mscs]]}
+
+\meta{bibtex}\verb<<<|
+@article{shulman-2018,
+  title = {Brouwer's Fixed-Point Theorem in Real-Cohesive Homotopy Type Theory},
+  author = {Shulman, Michael},
+  date = {2018-06},
+  journaltitle = {Mathematical Structures in Computer Science},
+  volume = {28},
+  number = {6},
+  pages = {856--941},
+  issn = {0960-1295, 1469-8072},
+  doi = {10.1017/S0960129517000147},
+  abstract = {We combine homotopy type theory with axiomatic cohesion, expressing the latter internally with a version of ‘adjoint logic’ in which the discretization and codiscretization modalities are characterized using a judgemental formalism of ‘crisp variables.’ This yields type theories that we call ‘spatial’ and ‘cohesive,’ in which the types can be viewed as having independent topological and homotopical structure. These type theories can then be used to study formally the process by which topology gives rise to homotopy theory (the ‘fundamental ∞-groupoid’ or ‘shape’), disentangling the ‘identifications’ of homotopy type theory from the ‘continuous paths’ of topology. In a further refinement called ‘real-cohesion,’ the shape is determined by continuous maps from the real numbers, as in classical algebraic topology. This enables us to reproduce formally some of the classical applications of homotopy theory to topology. As an example, we prove Brouwer's fixed-point theorem.},
+  langid = {english}
+}<<<
+
+\p{We combine homotopy type theory with axiomatic cohesion, expressing the latter internally with a version of ‘adjoint logic’ in which the discretization and codiscretization modalities are characterized using a judgemental formalism of ‘crisp variables.’ This yields type theories that we call ‘spatial’ and ‘cohesive,’ in which the types can be viewed as having independent topological and homotopical structure. These type theories can then be used to study formally the process by which topology gives rise to homotopy theory (the ‘fundamental #{∞}-groupoid’ or ‘shape’), disentangling the ‘identifications’ of homotopy type theory from the ‘continuous paths’ of topology. In a further refinement called ‘real-cohesion,’ the shape is determined by continuous maps from the real numbers, as in classical algebraic topology. This enables us to reproduce formally some of the classical applications of homotopy theory to topology. As an example, we prove Brouwer's fixed-point theorem.}

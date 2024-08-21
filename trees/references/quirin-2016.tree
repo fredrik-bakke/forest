@@ -1,0 +1,36 @@
+\title{Lawvere–Tierney sheafification in Homotopy Type Theory}
+\author{Kevin Quirin}
+\tag{hott}
+\meta{venue}{École des Mines de Nantes}
+\taxon{reference}
+\date{2016-12-13}
+
+\meta{bibtex}\verb<<<|
+@phdthesis{quirin-2016,
+  author = {Quirin, Kevin},
+  title = {Lawvere–Tierney sheafification in Homotopy Type Theory},
+  url = {https://kevinquirin.github.io/thesis/main.pdf},
+  year = {2016},
+  month = dec,
+  number = {2016EMNA0298},
+  school = {École des Mines de Nantes}
+}<<<
+
+\p{
+  The main goal of this thesis is to define an extension of Gödel not-not translation to all
+  truncated types, in the setting of homotopy type theory. This goal will use some existing theories, like Lawvere–Tierney sheaves theory in toposes, we will adapt in the setting of homotopy
+  type theory. In particular, we will define a Lawvere–Tierney sheafification functor, which is
+  the main theorem presented in this thesis.
+}
+
+\p{
+  To define it, we will need some concepts, either already defined in type theory, either not
+  existing yet. In particular, we will define a theory of colimits over graphs as well as their
+  truncated version, and the notion of truncated modalities, based on the existing definition of
+  modalities.
+}
+
+\p{
+  Almost all the result presented in this thesis are formalized with the proof assistant Coq
+  together with the library [HoTT/Coq].
+}

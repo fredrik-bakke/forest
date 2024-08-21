@@ -1,0 +1,21 @@
+\title{Oracle modalities}
+\author{Andrew Swan}
+\tag{hott}
+% \meta{doi}{}
+% \meta{venue}{}
+\tag{preprint}
+\taxon{reference}
+\date{2020-02-11}
+
+\meta{bibtex}\verb<<<|
+@misc{swan-2024,
+  title = {Oracle modalities},
+  author = {Andrew W Swan},
+  year = {2024},
+  eprint = {2406.05818},
+  archivePrefix = {arXiv},
+  primaryClass = {math.LO},
+  url={https://arxiv.org/abs/2406.05818},
+}<<<
+
+\p{We give a new formulation of Turing reducibility in terms of higher modalities, inspired by an embedding of the Turing degrees in the lattice of subtoposes of the effective topos discovered by Hyland. In this definition, higher modalities play a similar role to I/O monads or dialogue trees in allowing a function to receive input from an external oracle. However, in homotopy type theory they have better logical properties than monads: they are compatible with higher types, and each modality corresponds to a reflective subuniverse that under suitable conditions is itself a model of homotopy type theory. We give synthetic proofs of some basic results about Turing reducibility in cubical type theory making use of two axioms of Markov induction and computable choice. Both axioms are variants of axioms already studied in the effective topos. We show they hold in certain reflective subuniverses of cubical assemblies, demonstrate their use in some simple proofs in synthetic computability theory using modalities, and show they are downwards absolute for oracle modalities. These results have been formalised using cubical mode of the Agda proof assistant. We explore some first connections between Turing reducibility and homotopy theory. This includes a synthetic proof that two Turing degrees are equal as soon as they induce isomorphic permutation groups on the natural numbers, making essential use of both Markov induction and the formulation of groups in HoTT as pointed, connected, 1-truncated types. We also give some simple non-topological examples of modalities in cubical assemblies based on these ideas, to illustrate what we expect higher dimensional analogues of the Turing degrees to look like.}

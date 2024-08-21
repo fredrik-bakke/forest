@@ -1,0 +1,25 @@
+\title{Good fibrations through the modal prism}
+\author{David Jaz Myers}
+\tag{hott}
+\meta{doi}{10.21136/HS.2022.04}
+\meta{venue}{[[Higher Structures]]}
+\taxon{reference}
+\date{2022-07-15}
+
+\meta{bibtex}\verb<<<|
+@article{myers-2022,
+  title={Good Fibrations through the Modal Prism},
+  author={David Jaz Myers},
+  journal = {Higher Structures},
+  year = {2022},
+  month = jul,
+  doi = {10.21136/HS.2022.04},
+  pages = {212--255},
+  volume = 6,
+  issue = 1,
+  eprint = {1908.08034},
+  archivePrefix = {arXiv},
+  primaryClass = {math.CT},
+}<<<
+
+\p{Homotopy type theory is a formal language for doing abstract homotopy theory — the study of identifications. But in unmodified homotopy type theory, there is no way to say that these identifications come from identifying the path-connected points of a space. In other words, we can do abstract homotopy theory, but not algebraic topology. Shulman’s \em{Real Cohesive HoTT} remedies this issue by introducing a system of modalities that relate the spatial structure of types to their homotopical structure. In this paper, we develop a theory of \em{modal fibrations} for a general modality, and apply it in particular to the shape modality of real cohesion. We then give examples of modal fibrations in Real Cohesive HoTT, and develop the theory of covering spaces.}

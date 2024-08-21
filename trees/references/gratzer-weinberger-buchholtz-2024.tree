@@ -1,0 +1,21 @@
+\title{Directed univalence in simplicial homotopy type theory}
+\author{Daniel Gratzer}
+\author{Jonathan Weinberger}
+\author{Ulrik Buchholtz}
+\tag{stt}
+\taxon{reference}
+\date{2024-07-12}
+
+\meta{bibtex}\verb<<<|
+@misc{gratzer-weinberger-buchholtz-2024,
+  title={Directed univalence in simplicial homotopy type theory},
+  author={Daniel Gratzer and Jonathan Weinberger and Ulrik Buchholtz},
+  year={2024},
+  eprint={2407.09146},
+  archivePrefix={arXiv},
+  primaryClass={cs.LO},
+}<<<
+
+\p{Shulman's spatial type theory internalizes the modalities of Lawvere's axiomatic cohesion in a homotopy type theory, enabling many of the constructions from Schreiber's modal approach to differential cohomology to be carried out synthetically. In spatial type theory, every type carries a spatial cohesion among its points and every function is continuous with respect to this. But in mathematical practice, objects may be spatial in more than one way at the same time; for example, a simplicial space has both topological and simplicial structures.}
+\p{
+In this paper, we put forward a type theory with "commuting focuses" which allows for types to carry multiple kinds of spatial structure. The theory is a relatively painless extension of spatial type theory, and enables us to give a synthetic account of simplicial, differential, equivariant, and other cohesions carried by the same types. We demonstrate the theory by showing that the homotopy type of any differential stack may be computed from a discrete simplicial set derived from the Čech nerve of any good cover. We also give other examples of commuting cohesions, such as differential equivariant types and supergeometric types, laying the groundwork for a synthetic account of Schreiber and Sati's proper orbifold cohomology.}

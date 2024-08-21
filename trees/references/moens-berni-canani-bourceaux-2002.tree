@@ -1,0 +1,33 @@
+\title{On regular presheaves and regular semi-categories}
+\author{Marie-Anne Moens}
+\author{U. Berni-Canani}
+\author{Francis Borceux}
+\meta{venue}{Cahiers de Topologie et Géométrie Différentielle Catégoriques}
+\date{2002}
+
+\meta{bibtex}\verb<<<|
+@article{moens-berni-canini-borceux-2002,
+  author = {Moens, M.-A. and Berni-Canani, U. and Borceux, F.},
+  title = {On regular presheaves and regular semi-categories},
+  journal = {Cahiers de Topologie et G\'eom\'etrie Diff\'erentielle Cat\'egoriques},
+  pages = {163--190},
+  publisher = {Dunod \'editeur, publi\'e avec le concours du CNRS},
+  volume = {43},
+  number = {3},
+  year = {2002},
+  mrnumber = {1928230},
+  zbl = {1038.18006},
+  language = {en},
+  url = {http://www.numdam.org/item/CTGDC_2002__43_3_163_0/}
+}<<<
+
+\p{Nous généralisons la théorie des modules réguliers sur un anneau sans unité au cas des préfaisceaux sur une
+"catégorie sans unité" que nous appelons une semi-catégorie.
+Nous travaillons dans le contexte de la théorie des catégories
+enrichies. L’axiome de régularité sur un préfaisceau revient
+à être canoniquement une colimite de préfaisceaux représentables et la semi-catégorie elle-même est régulière quand son
+foncteur #{\operatorname{Hom}} vérifie cette condition. Nous montrons la relation avec le lemme de Yoneda et obtenons un exemple de ce
+que F.W. Lawvere appelle "l’unité des opposés". Nous concluons avec un théorème de Morita pour les semi-catégories
+régulières. Nous donnons différents exemples provenant de
+la théorie des matrices, des opérateurs de Hilbert–Schmidt
+et des #{\Omega}-ensembles.}

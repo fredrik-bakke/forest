@@ -1,0 +1,26 @@
+\title{synthetic fibered #{(∞,1)}-category theory}
+\author{Jonathan Weinberger}
+\author{Ulrik Buchholtz}
+\tag{hott}
+\tag{refereed}
+\meta{doi}{10.21136/HS.2023.04}
+\meta{arxiv}{2105.01724}
+\meta{venue}{[[Higher Structures]]}
+\taxon{reference}
+\date{2023-05-21}
+
+\meta{bibtex}\verb<<<|
+@article{buchholtz-weinberger-2023,
+  title = {Synthetic Fibered $(∞,1)$-Category Theory},
+  author = {Weinberger, Jonathan and Buchholtz, Ulrik},
+  date = {2023-05-21},
+  journal = {Higher Structures},
+  volume = {7},
+  pages = {74--165},
+  doi = {10.21136/HS.2023.04},
+  eprint = {2105.01724},
+  archivePrefix={arXiv},
+  primaryClass={math.CT},
+}<<<
+
+\p{We study cocartesian fibrations in the setting of the synthetic #{(∞,1)}-category theory developed in simplicial type theory introduced by Riehl and Shulman. Our development culminates in a Yoneda Lemma for cocartesian fibrations.}

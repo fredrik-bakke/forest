@@ -1,0 +1,22 @@
+\title{Univalent Material Set Theory}
+\author{Håkon Robbestad Gylterud}
+\author{Elisabeth Stenholm}
+\tag{hott}
+\taxon{reference}
+\date{2023-12-20}
+
+\meta{bibtex}\verb<<<|
+@article{gylterud-stenholm-2023,
+  title={Univalent Material Set Theory},
+  author={Håkon Robbestad Gylterud and Elisabeth Stenholm},
+  year={2023},
+  eprint={2312.13024},
+  archivePrefix={arXiv},
+  primaryClass={math.LO},
+  url={https://arxiv.org/abs/2312.13024},
+}<<<
+
+\p{Homotopy type theory (HoTT) can be seen as a generalisation of structural set theory, in the sense that 0-types represent structural sets within the more general notion of types. For material set theory, we also have concrete models as 0-types in HoTT, but this does not currently have any generalisation to higher types. The aim of this paper is to give such a generalisation of material set theory to higher type levels within homotopy type theory. This is achieved by generalising the construction of the type of iterative sets. At level 1, this gives a connection between groupoids and multisets.
+More specifically, we define the notion of an #{∈}-structure as a type with an extensional binary type family and generalise the axioms of constructive set theory to higher type levels. Once an #{∈}-structure is given, its elements can be seen as representing types in the ambient type theory.
+The theory has an alternative, coalgebraic formulation, in terms of coalgebras for a certain hierarchy of functors, #{P^n}, which generalises the powerset functor from sub-types to covering spaces and #{n}-connected maps in general. The coalgebras which furthermore are fixed-points of their respective functors in the hierarchy are shown to model the axioms given in the first part.
+As concrete examples of models for the theory developed we construct the initial algebras of the #{P^n} functors. In addition to being an example of initial algebras of non-polynomial functors, this construction allows one to start with a univalent universe and get a hierarchy of #{∈}-structures which gives a stratified #{∈}-structure representation of that universe. These types are moreover #{n}-type universes of #{n}-types which contain all the usual types an type formers.}

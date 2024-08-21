@@ -1,15 +1,14 @@
 \title{formalizations}
 \author{Fredrik Bakke}
 
+
 \put\transclude/numbered{false}
-\put\transclude/metadata{true}
+\put\transclude/metadata{false}
 \put\transclude/expanded{true}
+\put\transclude/toc{true}
 
 \p{Here is a list of select formalizations by me.}
 
 \query{
-  \query/and{
-   \query/author{fredrik-bakke}
-   \query/taxon{formalization}
-  }
- }
+  \query/isect{\query/author{Fredrik Bakke}}{\query/taxon{formalization}}
+}

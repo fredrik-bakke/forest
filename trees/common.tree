@@ -209,19 +209,19 @@
 }
 
 \def\tikzcd[body]{
+  \<html:center>{ % For some reason tikzcd are placed inline with the new theme
   \<html:span>[class]{tikz tikzcd}{
     \tex{\latex-preamble/diagrams}{
       \begin{tikzcd}\body\end{tikzcd}
     }
-  }
+  }}
 }
 
-% \def\inference-rule[hypotheses][conclusion]{
-%   \<html:span>[class]{inference-rule}{
-%     ##{\hypotheses}
-%     % \tex{\latex-preamble/inference-rule}{
-%     %   \begin{equation*}\inferrule{b}{a}\end{equation*}
-%     % }
+% \def\inference[hypotheses][conclusion]{
+%   \<html:span>[class]{inference}{
+%     \tex{\latex-preamble/inference}{
+%       ##{\inferrule{\hypotheses}{\conclusion}}
+%     }
 %   }
 % }
 
@@ -246,7 +246,8 @@
 \def\empty-type{#{\emptyset}}
 \def\unit-type{#{\textbf{1}}}
 \def\bool-type{#{\textbf{2}}}
-\def\directed-interval{#{\mathbb{2}}}
+\def\directed-interval{#{{\Delta^1}}}
+% \def\directed-interval{𝟚}
 \def\sphere{#{\mathbb{S}}}
 \def\directed-sphere{#{{\vec{\sphere}}}}
 \def\bN{#{\mathbb{N}}}
@@ -269,7 +270,7 @@
 \def\pb{{#{⌟}}}
 \def\po{{#{⌜}}}
 
-\def\hom-map{#{\operatorname{\mathtt{hom-map}}}}
+\def\hom-map{#{\operatorname{\texttt{hom{-}map}}}}
 \def\spine[dimension]{#{\operatorname{\mathtt{spine}}{\dimension}}}
 \def\ap{#{\operatorname{\mathtt{ap}}}}
 \def\pr{#{\operatorname{\mathtt{pr}}}}

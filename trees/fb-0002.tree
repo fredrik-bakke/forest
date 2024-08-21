@@ -2,8 +2,8 @@
 \author{Fredrik Bakke}
 
 \put\transclude/numbered{false}
-\put\transclude/metadata{true}
+\put\transclude/metadata{false}
 \put\transclude/expanded{false}
-\put\transclude/toc{false}
-
-\transclude{fb-0004}
+\query{
+  \query/isect{\query/author{Fredrik Bakke}}{\query/taxon{lecture note}}
+}

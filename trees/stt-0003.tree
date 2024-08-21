@@ -5,7 +5,7 @@
 
 \p{
   There's a second presentation of the theory of a directed interval, given by replacing the directed relation #{\leq}
-by two function symbols #{{\vee}, {\land}:\directed-interval \times \directed-interval \to \directed-interval}
+by two function symbols #{{\vee}, {\land} : \directed-interval \times \directed-interval \to \directed-interval}
    satisfying the laws
 
   \ul{

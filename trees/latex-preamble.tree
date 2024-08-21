@@ -13,11 +13,11 @@
     pushout/.style={minimum size=1.2ex,path picture={
     \draw[opacity=1,black,-,#1] (-0.0ex,-0.3ex) -- (-0.0ex,0.3ex) -- (0.6ex,0.3ex);%
   }}}
- \stopverb
+  \stopverb
 }
 
-\def\latex-preamble/inference-rule{
+\def\latex-preamble/inference{
   \startverb
   \usepackage{mathtools, amssymb, stmaryrd, bbold, mathpartir, proof}
- \stopverb
+  \stopverb
 }

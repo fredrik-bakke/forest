@@ -1,5 +1,11 @@
 name: Deploy to GitHub pages
 
+env:
+  FORESTER_VERSION: "4.2.0"
+  OCAML_VERSION: "5.1"
+  PYTHON_VERSION: "3.11"
+  TEXLIVE_PACKAGES: "scheme-full"
+
 on:
   push:
     paths-ignore:
@@ -25,7 +31,6 @@ permissions:
   id-token: write
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -37,7 +42,7 @@ jobs:
       - name: Setup TeX Live
         uses: teatimeguest/setup-texlive-action@v3
         with:
-          packages: scheme-full
+          packages: ${{ env.TEXLIVE_PACKAGES }}
       - name: Check `latex`
         run: |
           echo $GITHUB_PATH
@@ -46,18 +51,18 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Set-up OCaml 5.1
+      - name: Set-up OCaml
         uses: ocaml/setup-ocaml@v2
         with:
-          ocaml-compiler: "5.1"
+          ocaml-compiler: ${{ env.OCAML_VERSION }}
       - name: Install forester
         run: |
           sudo apt-get install libev-dev dvisvgm
-          opam install forester --yes
+          opam install forester.${{ env.FORESTER_VERSION }} --yes
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ env.PYTHON_VERSION }}
       - name: Install Homebrew
         run: |
           bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

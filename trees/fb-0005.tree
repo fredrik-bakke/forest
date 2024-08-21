@@ -7,6 +7,7 @@
 \put\transclude/toc{false}
 
 % \transclude{stt-0011}
+\transclude{stt-0020}
 % \transclude{fb-0010}
-\transclude{fb-0036}
+% \transclude{fb-0036}
 % \transclude{fb-004N}

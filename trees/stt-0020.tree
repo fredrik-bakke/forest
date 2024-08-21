@@ -1,0 +1,64 @@
+\date{2024-07-17}
+\author{Fredrik Bakke}
+\taxon{Note}
+\import{common}
+\title{2-Segal types}
+
+\definition{
+  \p{
+  The \concept{2-Segal horn} #{\Lambda^n_{i,j}} is the union of all face maps aside from #{d_i} and #{d_j}, where #{i < j - 1} and if #{i = 0} then #{j \neq n}. In other words, #{i} and #{j} are not adjacent mod #{n+1}.}
+
+  \p{Here are #{\Lambda^3_{0,2}} and #{\Lambda^3_{1,3}} respectively as subshapes of #{\Delta^3}
+
+  \tikzcd{
+    & 1 && 3 \arrow[from=dlll] && 1 \arrow[rr] && 3 \arrow[from=dlll] \\
+    0 \arrow[ur] \arrow[rr] &&  2 \arrow[ur] \arrow[from=ul, crossing over] && 0 \arrow[ur] && 2\mathrlap{.} \arrow[ur] \arrow[from=ul, crossing over]
+  }}
+
+  \p{Viewed differently,
+
+  \tikzcd{
+    3 & 2 \arrow[l] & 3 & 2 \arrow[l] \\
+    0 \arrow[r] \arrow[u] \arrow[ur] & 1 \arrow[u] & 0 \arrow[u] \arrow[r] & 1\mathrlap{,} \arrow[u] \arrow[ul]
+  }}
+  \p{
+    and yet differently again, as chains of morphisms in the coslice and slice
+
+    \tikzcd{
+    & 0 \arrow[dl] \arrow[d] \arrow[dr] && 0 \arrow[dr] \arrow[r] & 1 \arrow[d] \arrow[r] & 2 \arrow[dl] \\
+    1 \arrow[r] & 2 \arrow[r] & 3 && 3\mathrlap{.}
+  }
+  }
+}
+
+\definition{
+  A type is \concept{2-Segal} if it is [local](hott-000N) at the 2-Segal horn inclusions #{\Lambda^3_{0,2} \subseteq \Delta^3} and #{\Lambda^3_{1,3} \subseteq \Delta^3}.
+}
+
+\theorem{
+  A type #{A} is 2-Segal if and only if its left- and right-based hom-spaces
+  ##{\sigma-type{x:A}\hom_A{(a,x)} \quad\text{and}\quad\sigma-type{x:A}\hom_A{(x,a)}}
+  are [Segal](stt-000F) for all #{a : A}.
+}
+
+\p{This is Theorem 6.3.2 in [[dyckerhoff-kapranov-2019]].}
+
+\proof{
+  \p{
+  Let us unfold what it means for the left-based hom-spaces #{\sigma-type{x:A}\hom_A{(a,x)}} to be Segal.
+
+  A pair of "composable" arrows #{(x,f) \overset{\alpha}{\to} (y, g) \overset{\beta}{\to} (z, h)} in  #{{\sigma-type{x:A}\hom_A{(a,x)}}} corresponds to the coherent data
+
+  \tikzcd{
+    & a \arrow[dl, "f"'] \arrow[d, "g"] \arrow[dr, "h"]\\
+    x \arrow[r, "\alpha'"'] & y \arrow[r, "\beta'"'] & z
+  }
+
+  in #{A}, where #{\alpha} corresponds to an extension of the span #{x \overset{f}{\leftarrow} a \overset{g}{\rightarrow} y} along the inclusion #{{\Lambda^2_0 \subseteq \Delta^2}} and likewise #{\beta} corresponds to an extension of the span #{y \overset{g}{\leftarrow} a \overset{h}{\rightarrow} z}. This correspondence can be written out more explicitly via, for instance, a similar argument to what is made for Proposition 8.13 of [[riehl-shulman-2017]]. Under this correspondence, a composite of #{\alpha} before #{\beta} corresponds to an extension of the above diagram along the inclusion #{\Lambda^3_{0,2}\subseteq \Delta^3}, so, evidently, asking that the left-based hom-spaces of #{A} are Segal corresponds to asking that #{A} is #{{(\Lambda^3_{0,2}\subseteq \Delta^3)}}-local.}
+
+  \p{Dually, the right-based hom-spaces of #{A} are Segal precisely if #{A} is #{{(\Lambda^3_{1,3}\subseteq \Delta^3)}}-local.}
+}
+
+\corollary{Segal types are 2-Segal.}
+
+\proof{By the [[stt-000S]] the left- and right-based hom-spaces of a Segal type are contractible, and contractible types are local with respect to all maps.}

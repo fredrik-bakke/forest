@@ -1,12 +1,12 @@
 \taxon{definition}
-\title{Arrows and homs}
-\author{fredrik-bakke}
+\title{arrows and homs}
+\author{Fredrik Bakke}
 \import{common}
 
 
 \p{
   An \concept{arrow} in a type #{A} is a function #{\directed-interval \to A}. A \concept{directed edge} from #{x} to #{y} in #{A} is an element of the type
-  ##{\hom_A(x,y) \defeq \sigma-type{\alpha : {\directed-interval \to A}}\left(\alpha(0) = x\right)\times\left(\alpha(1) = y\right)\mathrlap{.}}
+  ##{\hom_A(x,y) \defeq \sigma-type{\alpha : {\directed-interval \to A}}{\left(\alpha(0) = x\right)\times\left(\alpha(1) = y\right)}\mathrlap{.}}
 }
 
 \p{

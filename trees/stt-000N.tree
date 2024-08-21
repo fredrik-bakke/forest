@@ -1,6 +1,6 @@
 \taxon{proposition}
-\title{Equivalent characterizations of simplicially discrete types}
-\author{fredrik-bakke}
+\title{equivalent characterizations of simplicially discrete types}
+\author{Fredrik Bakke}
 \import{common}
 
 \p{
@@ -21,8 +21,8 @@
   \p{
     For #{1 \Leftrightarrow 2}, we have an equivalence of maps
     \tikzcd{
-      A \arrow[d,"\operatorname{const}"'] \arrow[r, "\sim"] & \sigma-type{x,y:A}(x =_A y) \arrow[d,"\Sigma^2{\texttt{hom-id}}"] \\
-      (2 \to A)\arrow[r, , "\sim"] & \sigma-type{x,y:A}(\hom_A(x,y))
+      A \arrow[d,"\operatorname{const}"'] \arrow[r, "\sim"] & \sigma-type{x,y:A}{(x =_A y)} \arrow[d,"\Sigma^2{\texttt{hom-id}}"] \\
+      (\directed-interval \to A)\arrow[r, , "\sim"] & \sigma-type{x,y:A}{(\hom_A(x,y))}
     }
     given by torsoriality of the identity types. Therefore, the left vertical map is an equivalence if and only if the right vertical map is. The left vertical map is an equivalence if and only if the type is #{\directed-interval}-orthogonal, and the right vertical map is an equivalence if and only if the fiberwise map is.
   }

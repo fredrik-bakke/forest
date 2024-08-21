@@ -1,5 +1,5 @@
 \taxon{Fact}
-\author{fredrik-bakke}
+\author{Fredrik Bakke}
 \import{common}
 \ul{
   \li{The classifying topos of the directed interval is simplicial sets.}

@@ -1,5 +1,5 @@
-\title{Orthogonal maps}
-\author{fredrik-bakke}
+\title{orthogonal maps}
+\author{Fredrik Bakke}
 \import{common}
 
 \p{We establish the basics of orthogonal maps. This concept forms an effective tool in the study of categories using simplicial types just as it does in the study of spaces using homotopy types. We assume function extensionality, but will not have need for univalence. Most of this has been formalized [here@agda-unimath](https://unimath.github.io/agda-unimath/orthogonal-factorization-systems.orthogonal-maps.html).}

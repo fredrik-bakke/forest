@@ -1,6 +1,6 @@
 \taxon{subsection}
-\title{Fibrations}
-\author{fredrik-bakke}
+\title{fibrations}
+\author{Fredrik Bakke}
 \import{common}
 
 \p{We want a notion that captures families of spaces that vary covariantly or contravariantly over a base Segal space, the prime examples being #{\hom_A(x,\blank)} and #{\hom_A(\blank, x)} respectively.}

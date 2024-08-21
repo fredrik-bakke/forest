@@ -1,6 +1,6 @@
 \taxon{subsubsection}
-\title{Associativity of Segal composition}
-\author{fredrik-bakke}
+\title{associativity of Segal composition}
+\author{Fredrik Bakke}
 \import{common}
 
 \transclude{stt-000I}

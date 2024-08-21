@@ -1,7 +1,7 @@
 \taxon{formalization}
-\author{fredrik-bakke}
+\author{Fredrik Bakke}
 \date{2024-02-08}
-\title{Computational identity types}
+\title{computational identity types}
 \meta{external}{https://unimath.github.io/agda-unimath/foundation.computational-identity-types.html}
 \meta{status}{finished}
 

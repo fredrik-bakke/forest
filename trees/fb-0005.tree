@@ -1,4 +1,4 @@
-\title{lecture notes}
+\title{other notes}
 \author{Fredrik Bakke}
 
 \put\transclude/numbered{false}
@@ -6,4 +6,7 @@
 \put\transclude/expanded{false}
 \put\transclude/toc{false}
 
-\transclude{fb-0004}
+% \transclude{stt-0011}
+% \transclude{fb-0010}
+\transclude{fb-0036}
+% \transclude{fb-004N}

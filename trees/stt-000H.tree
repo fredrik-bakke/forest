@@ -1,10 +1,10 @@
 \taxon{definition}
-\title{Inner maps and type families}
-\author{fredrik-bakke}
+\title{inner maps and type families}
+\author{Fredrik Bakke}
 \import{common}
 
 \p{
-  More generally, we say a \em{map} #{f : B \to A} is \concept{inner} if it is orthogonal to the inner 2-horn inclusion, and a type family #{B : A \to \universe{U}} is inner if its unstraightening is.
+  More generally, we say a \em{map} #{f : B \to A} is \concept{inner} if it is orthogonal to the inner 2-horn inclusion, and a type family #{B : A \to \universe{U}} is inner if its total space projection is.
 }
 
 \p{

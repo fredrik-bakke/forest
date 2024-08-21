@@ -1,7 +1,8 @@
 \taxon{theorem}
 \date{2024-05-29}
-\author{fredrik-bakke}
+\author{Fredrik Bakke}
 \import{common}
+\title{hom-type conditions for Segal types}
 
 \p{
   Given a type #{A} the type family

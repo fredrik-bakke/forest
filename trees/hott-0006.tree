@@ -1,12 +1,12 @@
 \date{2024-05-20}
 \taxon{definition}
-\title{Pullback-power}
+\title{pullback-power}
 \import{common}
 
 \p{
   Given two maps #{f : A \to B} and #{g : X \to Y}, the \concept{type of morphisms of maps} between #{f} and #{g},
 
-  ##{\hom-map(f,g) \defeq \sigma-type{i : A \to X}\sigma-type{j : B \to Y}\left(g\o i \sim j\o f\right)}
+  ##{\hom-map(f,g) \defeq \sigma-type{i : A \to X}{\sigma-type{j : B \to Y}{\left(g\o i \sim j\o f\right)}}}
 
   is the pullback of the cospan
 

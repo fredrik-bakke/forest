@@ -15,3 +15,9 @@
   }}}
  \stopverb
 }
+
+\def\latex-preamble/inference-rule{
+  \startverb
+  \usepackage{mathtools, amssymb, stmaryrd, bbold, mathpartir, proof}
+ \stopverb
+}

@@ -27,6 +27,20 @@
   }
 }
 
+\def\conjecture[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{conjecture}
+      \body
+    }
+  }
+}
+
+\def\agda-unimath-source[module]{
+  [agda-unimath/\module](https://unimath.github.io/agda-unimath/\module.html)
+}
+
 \def\proof[body]{
   \scope{
     \put\transclude/toc{false}
@@ -47,6 +61,26 @@
   }
 }
 
+\def\heuristic-argument[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{heuristic argument}
+      \body
+    }
+  }
+}
+
+\def\observation[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{observation}
+      \body
+    }
+  }
+}
+
 \def\remark[body]{
   \scope{
     \put\transclude/toc{false}
@@ -56,6 +90,17 @@
     }
   }
 }
+
+\def\comment[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{comment}
+      \body
+    }
+  }
+}
+
 
 \def\note[body]{
   \scope{
@@ -67,6 +112,80 @@
   }
 }
 
+
+\def\definition[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{definition}
+      \body
+    }
+  }
+}
+
+
+\def\lemma[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{lemma}
+      \body
+    }
+  }
+}
+
+
+\def\proposition[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{proposition}
+      \body
+    }
+  }
+}
+
+\def\corollary[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{corollary}
+      \body
+    }
+  }
+}
+
+\def\theorem[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{theorem}
+      \body
+    }
+  }
+}
+
+
+
+\def\claim[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{claim}
+      \body
+    }
+  }
+}
+
+\def\warning[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{warning}
+      \body
+    }
+  }
+}
 
 \def\example[body]{
   \scope{
@@ -97,6 +216,15 @@
   }
 }
 
+% \def\inference-rule[hypotheses][conclusion]{
+%   \<html:span>[class]{inference-rule}{
+%     ##{\hypotheses}
+%     % \tex{\latex-preamble/inference-rule}{
+%     %   \begin{equation*}\inferrule{b}{a}\end{equation*}
+%     % }
+%   }
+% }
+
 \def\concept[name]{\strong{\name}}
 
 
@@ -107,16 +235,18 @@
 \def\id{#{\textrm{id}}}
 \def\Id{#{\textrm{Id}}}
 \def\unit-type{#{\textbf{1}}}
-\def\lim{#{\mathop{\overset{\leftarrow}{\textrm{lim}}}}}
+\def\lim{#{\operatorname{\overset{\leftarrow}{\textrm{lim}}}}}
 \def\o{#{\circ}}
 \def\universe[var]{#{\mathcal{\var}}}
+\def\category[var]{#{\mathcal{\var}}}
+\def\topos[var]{#{\mathcal{\var}}}
 \def\blank{#{{-}}}
-\def\mathcode[content]{#{\texttt{\content}}}
+\def\mathcode[content]{#{\mathtt{\content}}}
 
 \def\empty-type{#{\emptyset}}
 \def\unit-type{#{\textbf{1}}}
 \def\bool-type{#{\textbf{2}}}
-\def\directed-interval{#{𝟚}}
+\def\directed-interval{#{\mathbb{2}}}
 \def\sphere{#{\mathbb{S}}}
 \def\directed-sphere{#{{\vec{\sphere}}}}
 \def\bN{#{\mathbb{N}}}
@@ -125,7 +255,12 @@
 \def\id{#{\operatorname{id}}}
 \def\defeq{#{\mathrel{{:}{\jdgeq}}}}
 \def\pi-type[domain]{#{\prod_{\left(\domain\right)}}}
-\def\sigma-type[domain]{#{\sum_{\left(\domain\right)}}}
+
+\def\W-type[domain]{#{\operatorname{\mathtt{W}}_{\left(\domain\right)}}}
+% \def\W-type[domain]{#{{𝕎}_{\left(\domain\right)}}}
+
+\def\sigma-type[domain]{#{{\left({\domain}\right)}\times}}
+% \def\sigma-type[domain]{#{\sum_{\left(\domain\right)}}}
 
 \def\pushout[codomain]{#{\mathbin{\amalg_{\codomain}}}}
 
@@ -134,39 +269,82 @@
 \def\pb{{#{⌟}}}
 \def\po{{#{⌜}}}
 
-\def\hom-map{#{\mathop{\texttt{hom-map}}}}
-\def\spine[dimension]{#{\mathop{\texttt{spine}}{\dimension}}}
-\def\ap{#{\mathop{\texttt{ap}}}}
-\def\pr{#{\mathop{\texttt{pr}}}}
-\def\directed-suspension{#{\mathop{\vec{\Sigma}}}}
-\def\point{#{\mathop{\texttt{point}}}}
-\def\rec{#{\mathop{\texttt{rec}}}}
-\def\ind{#{\mathop{\texttt{ind}}}}
-\def\ap-hom{#{\mathop{\texttt{ap-hom}}}}
-\def\directed-cylinder{#{\mathop{\texttt{cyl}_{\directed-interval}}}}
-\def\directed-cocone{#{\mathop{\texttt{cocone}_{\directed-interval}}}}
+\def\hom-map{#{\operatorname{\mathtt{hom-map}}}}
+\def\spine[dimension]{#{\operatorname{\mathtt{spine}}{\dimension}}}
+\def\ap{#{\operatorname{\mathtt{ap}}}}
+\def\pr{#{\operatorname{\mathtt{pr}}}}
+\def\presheaf{#{\operatorname{Psh}}}
+\def\suspension{#{\operatorname{\mathtt{\Sigma}}}}
+\def\pole{#{\operatorname{\mathtt{pole}}}}
+
+\def\directed-suspension{#{\operatorname{\vec{\suspension}}}}
+\def\point{#{\operatorname{\mathtt{point}}}}
+\def\rec{#{\operatorname{\mathtt{rec}}}}
+\def\ind{#{\operatorname{\mathtt{ind}}}}
+\def\ap-hom{#{\operatorname{\mathtt{ap-hom}}}}
+\def\directed-cylinder{#{\operatorname{\mathtt{cyl}_{\directed-interval}}}}
+\def\directed-cocone{#{\operatorname{\mathtt{cocone}_{\directed-interval}}}}
 \def\orthogonal{#{\mathrel{\perp}}}
-\def\refl{#{\mathop{\texttt{refl}}}}
+\def\refl{#{\operatorname{\mathtt{refl}}}}
 \def\fiberwise-orthogonal{#{\mathrel{\perp^\mathrm{f}}}}
 
-\def\Hom{#{\textrm{Hom}}}
-\def\Set{#{\textrm{Set}}}
+\def\Hom{#{\operatorname{\textrm{Hom}}}}
+\def\Iso{#{\operatorname{\textrm{Iso}}}}
+\def\Ob{#{\operatorname{\textrm{Ob}}}}
+\def\Fun{#{\operatorname{\textrm{Fun}}}}
+\def\Map{#{\operatorname{\textrm{Map}}}}
+\def\Free{#{\operatorname{Free}}}
+\def\Fib{#{\operatorname{Fib}}}
+\def\Type{#{\textrm{Type}}}
+\def\Contr{#{\textrm{Contr}}}
+\def\Empty{#{\textrm{Empty}}}
 \def\Prop{#{\textrm{Prop}}}
-\def\Space{#{\textrm{S}}}
+\def\Set{#{\textrm{Set}}}
+\def\Space{#{\mathcal{S}}}
 \def\op[x]{#{{\x}^{\textrm{op}}}}
 \def\simplex-category{#{\mathbf{\Delta}}}
 
+\def\nondep-extension[index][type-family][restriction-map][subformula]{
+  #{\left\langle{{\index}\to{\type-family}}\mid^{\restriction-map}_{\subformula}\right\rangle}
+}
 
-\def\fiber[map][point]{#{\texttt{fiber}_{\map}{\left(\point\right)}}}
+
+
+\def\sup{#{\operatorname{sup}}}
+\def\trunc[x]{{#{\left\lVert{\x}\right\rVert}}}
+\def\desup{#{\operatorname{desup}}}
+\def\is-ittype[L]{#{\mathop{\textrm{is{-}iterative{-}}{\left(\suspension \L\right)}\textrm{{-}type}}}}
+\def\is-connected[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}connected}}}}
+\def\is-local[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}local}}}}
+\def\is-orthogonal[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}orthogonal}}}}
+\def\is-equivalence[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}equivalence}}}}
+
+\def\fiber[map][point]{#{{\operatorname{\mathtt{fib}}_{\map}{\left(\point\right)}}}}
 
 
 % Arrows
 \def\include{#{\subseteq}}
+\def\from{#{\leftarrow}}
 \def\embed{#{\hookrightarrow}}
+\def\simto{#{\mathrel{\overset{\sim}{\to}}}}
 \def\surject{#{\twoheadrightarrow}}
 \def\iso{#{\cong}}
 \def\equivalence{#{\simeq}}
 
+\def\skeleton{#{\operatorname{\mathtt{sk}}}}
+\def\coskeleton{#{\operatorname{\mathtt{cosk}}}}
+
+\def\Cat{#{\operatorname{\mathscr{C}\mathrm{at}}}}
+\def\Gpd{#{\operatorname{Gpd}}}
+\def\Sh{#{\operatorname{Sh}}}
+\def\Psh{#{\operatorname{Psh}}}
+
+
+\def\simpliciallify{#{\operatorname{⧄}}}
+
 % Math
 \def\pullback-power{#{\mathbin{\hat{\pitchfork}}}}
+\def\oriented-pullback{#{\mathbin{\vec{\times}}}}
+\def\oriented-pushout{#{\mathbin{\vec{\amalg}}}}
 \def\pushout-product{#{\mathbin{\hat{\otimes}}}}
+\def\simplicial-join{#{\mathbin{\vec{\star}}}}

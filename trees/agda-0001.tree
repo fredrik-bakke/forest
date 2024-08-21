@@ -1,7 +1,7 @@
 \taxon{formalization}
-\author{fredrik-bakke}
+\author{Fredrik Bakke}
 \date{2024-03-20}
-\title{Cohesion}
+\title{cohesion}
 \meta{external}{https://unimath.github.io/agda-unimath/modal-type-theory.html}
 \meta{status}{to be reviewed}
 \tag{to be reviewed}

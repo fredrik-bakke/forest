@@ -1,6 +1,6 @@
 \taxon{remark}
 \title{alternate theory of a directed interval}
-\author{fredrik-bakke}
+\author{Fredrik Bakke}
 \import{common}
 
 \p{
@@ -19,7 +19,7 @@ by two function symbols #{{\vee}, {\land}:\directed-interval \times \directed-in
     \li{#{t \land 1 \jdgeq t}}
     \li{#{t \land (t \lor s) \jdgeq t}}
     \li{#{t \lor (t \land s) \jdgeq t}}
-    \li{#{t \lor (s \land u) \jdgeq (t \land s) \lor (t \land u)}.}
+    \li{#{t \land (s \lor u) \jdgeq (t \land s) \lor (t \land u)}.}
   }
 
   This theory admits the theory of the CCHM cubical interval as a subtheory.

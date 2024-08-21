@@ -1,6 +1,6 @@
 \date{2024-05-28}
 \taxon{definition}
-\title{Orthogonal maps}
+\title{orthogonal maps}
 \import{common}
 
 \p{
@@ -50,7 +50,7 @@
     }
   }
 
-  We extend the concept of orthogonality to types by substituting them for their terminal projections, and to type families by substituting them for their unstraightenings. In particular, the type #{X} is orthogonal to the type #{A} iff it is #{A}-null.
+  We extend the concept of orthogonality to types by substituting them for their terminal projections, and to type families by substituting them for their total space projections. In particular, the type #{X} is orthogonal to the type #{A} iff it is #{A}-null.
 }
 
 \proof-of-equivalence{

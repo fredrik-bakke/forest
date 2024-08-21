@@ -1,6 +1,6 @@
 \taxon{proposition}
-\title{closure properties of Segal types}
-\author{fredrik-bakke}
+\title{closure properties of [[stt-000F]]}
+\author{Fredrik Bakke}
 \import{common}
 
 \p{
@@ -14,6 +14,6 @@
     \li{#{\lim_{(n:\bN)} B_n}}.
   }
 
-  Moreover, if #{B} is an inner family over #{A}, then #{\sigma-type{x:A}B(x)} is Segal.
+  Moreover, if #{B} is an inner family over #{A}, then #{\sigma-type{x:A}{B(x)}} is Segal.
 }
 \proof{Follows by [[hott-0004]].}

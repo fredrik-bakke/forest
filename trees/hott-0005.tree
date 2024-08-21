@@ -1,6 +1,6 @@
 \date{2024-05-19}
 \taxon{corollary}
-\title{Closure properties of left orthogonal maps}
+\title{closure properties of left orthogonal maps}
 \import{common}
 
 \p{
@@ -9,7 +9,7 @@
   \ol{
     \li{#{(h \o f) \orthogonal g} iff #{h \orthogonal g}}
     \li{if #{h} is a retract of #{f}, then #{h \orthogonal g}}
-    \li{#{(\sigma-type{i:I}f_i) \orthogonal g}}
+    \li{#{(\sigma-type{i:I}{f_i}) \orthogonal g}}
     \li{#{(I \times f) \orthogonal g}}
     \li{#{(f_1 + f_2) \orthogonal g}}
     \li{#{(f\pushout-product h) \orthogonal g}}

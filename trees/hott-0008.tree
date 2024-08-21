@@ -1,10 +1,14 @@
 \date{2024-05-20}
 \taxon{fact}
-\title{Adjoint relation between pullback-powers and pushout-products}
+\title{adjoint relation between pullback-powers and pushout-products}
 \import{common}
 
 \p{
   Given three maps #{f : A \to A'}, #{g : B \to B'}, and #{h : C \to C'}, there is a natural equivalence of maps
-  ##{\left(\left(f \pushout-product g\right)\pullback-power h\right) \simeq \left(f \pullback-power \left(g\pullback-power h\right)\right).}
+  ##{\left(f \pushout-product g\right)\pullback-power h \simeq f \pullback-power \left(g\pullback-power h\right)\mathrlap{.}}
+
+  \tikzcd{
+    (A' \times B' \to C) \arrow[d, "{(f \pushout-product g)\pullback-power h}"'] \arrow[r, "\sim"] & (A' \to B' \to C) \arrow[d, "{f \pullback-power (g\pullback-power h)}"] \\
+    (f \pushout-product g) \Rightarrow h \arrow[r, "\sim"] & f \Rightarrow(g\pullback-power h) }
 
 }

@@ -4,6 +4,8 @@
 \import{common}
 \title{2-Segal types}
 
+\p{We consider the notion of a 2-Segal space after [Dyckerhoff-Kapranov](dyckerhoff-kapranov-2019) (and others) in [simplicial type theory](riehl-shulman-2017) using a characterization given in [[feller-2023]].}
+
 \definition{
   \p{
   The \concept{2-Segal horn} #{\Lambda^n_{i,j}} is the union of all face maps aside from #{d_i} and #{d_j}, where #{i < j - 1} and if #{i = 0} then #{j \neq n}. In other words, #{i} and #{j} are not adjacent mod #{n+1}.}

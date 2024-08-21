@@ -1,0 +1,9 @@
+\date{2024-08-08}
+\taxon{definition}
+\import{common}
+\title{semicategory}
+\author{Fredrik Bakke}
+
+\p{
+  A \concept{semicategory}, or \concept{nonunital category}, #{\category{C}} is the structure of a coherently associative composition operation in a binary family of types #{\hom_\category{C}(\blank,\blank)} called the \em{morphisms} over a type #{\Ob_\category{C}} of \em{objects}.
+}

@@ -1,0 +1,7 @@
+\date{2024-08-12}
+\taxon{definition}
+\import{common}
+\title{isomorphism in a [[fb-0034]]}
+\author{Fredrik Bakke}
+
+\p{A morphism #{f : \hom_{\category{C}}(x,y)} in a semicategory \category{C} is an \concept{isomorphism} if it induces equivalences on hom-types by pre- and postcomposition. We denote the type of isomorphisms from #{x} to #{y} by #{x \cong_{\category{C}} y}.}

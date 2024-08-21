@@ -1,0 +1,9 @@
+\date{2024-07-03}
+\taxon{theorem}
+\author{Fredrik Bakke}
+\import{common}
+\meta{source}{[[christensen-2024]]}
+
+\p{
+  That every [[hott-000I]] is [accessible](hott-000L) is independent of the axiom of choice and law of excluded middle.
+}

@@ -1,0 +1,14 @@
+\date{2024-06-28}
+\taxon{definition}
+\title{localization}
+\author{Fredrik Bakke}
+\import{common}
+
+\p{
+  A \concept{localization} #{L}, or \concept{reflective subuniverse}, is a [[hott-000K]] #{\tilde{\universe{L}}} of \universe{U} together with a \em{localization operator}
+  #{L : \universe{U} \to \tilde{\universe{L}}}
+  and \em{unit maps}
+  #{\eta^L_X : X \to L X} such that types in #{\tilde{\universe{L}}} are precisely the types #{A} which are local with respect to the unit maps, meaning that we have a family of equivalences
+  ##{\blank\o\eta^L_{(\blank)} : \pi-type{X : \universe{U}}{(L X \to A)\simto (X \to A)}}
+  if and only if #{A} is in #{\tilde{\universe{L}}}. If so, we say #{A} is \concept{#{L}-local}.
+}

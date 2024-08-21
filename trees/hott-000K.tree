@@ -1,0 +1,9 @@
+\date{2024-07-03}
+\taxon{definition}
+\title{subuniverse}
+\author{Fredrik Bakke}
+\import{common}
+
+\p{
+  A \concept{subuniverse} \universe{R} of a universe \universe{U} is a predicate on \universe{U}. We say a \universe{U}-small type #{A} \em{is in} \universe{R} if #{A} satisfies the predicate of \universe{R}.
+}

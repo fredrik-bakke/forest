@@ -1,0 +1,30 @@
+\date{2024-06-15}
+\taxon{definition}
+\title{extension types}
+\author{Fredrik Bakke}
+\import{common}
+
+\p{
+  Given maps #{f : X \to A}  and #{\delta : X \to Y} we may form the \concept{type of extensions of #{f} along #{\delta}}
+  ##{\nondep-extension{Y}{A}{\delta}{f}\defeq \sigma-type{g : Y \to A}{g \circ \delta \sim f}\mathrlap{.}}
+
+  We call such types \concept{extension types of #{A}}.
+}
+
+\p{Extension types along certain subtype inclusions appear as primitive constructs in [[riehl-shulman-2017]] and cubical type theory.}
+
+\note{
+  The extension type \nondep-extension{Y}{A}{\delta}{f} is the [[hott-0006]] of #{\delta} along #{!_A}.
+}
+
+\lemma{If #{A} is #{L}-local then so is every extension type of #{A}.}
+
+\proof{
+  For arbitrary extension types of #{A} we have a pullback square
+
+  \tikzcd{
+    {\nondep-extension{Y}{A}{\delta}{f}} \arrow[r] \arrow[d] & \unit-type \arrow[d, "\point f"]\\
+    A^Y \arrow[r, "A^\delta"] & A^X \mathrlap{.}\pullback-arrow{ul}
+  }
+  The map #{A^\delta} must be #{L}-local since it is a map between #{L}-local types, and the class of #{L}-local maps is pullback-stable.
+}

@@ -1,0 +1,10 @@
+\date{2024-06-28}
+\taxon{construction}
+\title{suspension localization}
+\author{Fredrik Bakke}
+\import{common}
+\meta{source}{Theorem 2.25 in [[christensen-opie-rijke-scoccola-2020]]}
+
+\p{
+  Given a [[hott-000I]] #{L} there is a \concept{suspension localization} #{\suspension L} such that a type #{A} is #{\suspension L}-local if and only if its identity types are #{L}-local. If #{L} is [accessible](hott-000L) presented by #{\{f_i\}_{(i : I)}}, then #{\suspension L} is accessible presented by #{\{\suspension f_i\}_{(i : I)}}.
+}

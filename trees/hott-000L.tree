@@ -1,0 +1,11 @@
+\date{2024-07-03}
+\taxon{definition}
+\title{accessible localization}
+\author{Fredrik Bakke}
+\import{common}
+
+\p{
+  A [[hott-000I]] #{L} is \concept{accessible} if there exists a family of maps
+  ##{f : \pi-type{i:I}{A_i \to B_i}}
+  such that #{A} is #{L}-local if and only if it is #{f_i}-local for all #{i : I}.
+}

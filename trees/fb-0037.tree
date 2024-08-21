@@ -1,0 +1,10 @@
+\date{2024-08-11}
+\taxon{definition}
+\title{preunivalent category}
+\author{Fredrik Bakke}
+\import{common}
+
+\p{
+A \concept{preunivalent category} is a precategory \category{C} whose comparison maps ##{\operatorname{iso-eq} : (x =_{\category{C}} y) \to (x \cong_{\category{C}} y)}
+are embeddings.
+}

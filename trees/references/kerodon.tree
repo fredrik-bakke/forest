@@ -1,0 +1,12 @@
+\title{Kerodon}
+\author{Jacob Lurie}
+\taxon{reference}
+
+\meta{bibtex}\verb<<<|
+@online{kerodon,
+  author    = {Jacob Lurie},
+  title     = {Kerodon},
+  url       = {https://kerodon.net},
+  year      = {2024},
+  shorthand = {Kerodon}
+}<<<

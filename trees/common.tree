@@ -217,13 +217,13 @@
   }}
 }
 
-% \def\inference[hypotheses][conclusion]{
-%   \<html:span>[class]{inference}{
-%     \tex{\latex-preamble/inference}{
-%       ##{\inferrule{\hypotheses}{\conclusion}}
-%     }
-%   }
-% }
+\def\inference[hypotheses][conclusion]{
+  \<html:span>[class]{inference}{
+    \tex{\latex-preamble/inference}{
+      ##{\inferrule{\hypotheses}{\conclusion}}
+    }
+  }
+}
 
 \def\concept[name]{\strong{\name}}
 
@@ -255,7 +255,7 @@
 \def\jdgeq{#{\equiv}}
 \def\id{#{\operatorname{id}}}
 \def\defeq{#{\mathrel{{:}{\jdgeq}}}}
-\def\pi-type[domain]{#{\prod_{\left(\domain\right)}}}
+\def\pi-type[domain]{{\left(\domain\right)}\to}
 
 \def\W-type[domain]{#{\operatorname{\mathtt{W}}_{\left(\domain\right)}}}
 % \def\W-type[domain]{#{{𝕎}_{\left(\domain\right)}}}
@@ -277,6 +277,7 @@
 \def\presheaf{#{\operatorname{Psh}}}
 \def\suspension{#{\operatorname{\mathtt{\Sigma}}}}
 \def\pole{#{\operatorname{\mathtt{pole}}}}
+\def\meridean{#{\operatorname{\mathtt{merid}}}}
 
 \def\directed-suspension{#{\operatorname{\vec{\suspension}}}}
 \def\point{#{\operatorname{\mathtt{point}}}}
@@ -334,8 +335,10 @@
 
 \def\skeleton{#{\operatorname{\mathtt{sk}}}}
 \def\coskeleton{#{\operatorname{\mathtt{cosk}}}}
+\def\realization{#{\operatorname{ʃ}}}
+\def\double-negation-sheaf{#{\operatorname{\nabla^{\neg\neg}}}}
 
-\def\Cat{#{\operatorname{\mathscr{C}\mathrm{at}}}}
+\def\Cat{#{\operatorname{Cat}}}
 \def\Gpd{#{\operatorname{Gpd}}}
 \def\Sh{#{\operatorname{Sh}}}
 \def\Psh{#{\operatorname{Psh}}}

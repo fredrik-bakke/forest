@@ -1,0 +1,19 @@
+\title{Formalization of higher categories}
+\author{Denis-Charles Cisinski}
+\author{Bastiaan Cnossen}
+\author{Kim Nguyen}
+\author{Tashi Walde}
+\taxon{reference}
+\date{2024-08-10}
+
+\meta{bibtex}\verb<<<|
+@unpublished{cisinski-cnossen-nguyen-walde-2024,
+  title = {Formalization of higher categories},
+  author = {Denis-Charles Cisinski, Bastiaan Cnossen, Kim Nguyen and Tashi Walde},
+  date = {2024-08-10},
+  year = {2024},
+  month = {08},
+  url = {https://drive.google.com/file/d/1lKaq7watGGl3xvjqw9qHjm6SDPFJ2-0o/view},
+  note = {},
+  annote = {}
+}<<<

@@ -1,6 +1,6 @@
 \def\latex-preamble/diagrams{
   \startverb
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, bbold}
+  \usepackage{tikz, tikz-cd, mathtools, amsmath, amssymb, stmaryrd, bbold}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{decorations.markings}
 

@@ -38,17 +38,27 @@
       "isBackground": true,
       "problemMatcher": [],
       "group": "test",
-      "hide": true
+      "hide": true,
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "close": false
+      }
     },
     {
       "label": "serve",
       "dependsOn": "build",
       "command": "${command:livePreview.start}",
-      "hide": true
+      "hide": true,
+      "presentation": {
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "close": true
+      }
     },
     {
       "label": "serve-and-watch",
-      "dependsOrder": "parallel",
+      "dependsOrder": "sequence",
       "dependsOn": ["serve", "watch"],
       "isBackground": true,
       "group": {

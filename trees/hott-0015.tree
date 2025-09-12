@@ -6,7 +6,7 @@
 
 \p{
   Given maps #{f : X \to A}  and #{\delta : X \to Y} we may form the \concept{type of extensions of #{f} along #{\delta}}
-  ##{\nondep-extension{Y}{A}{\delta}{f}\defeq \sigma-type{g : Y \to A}{g \circ \delta \sim f}\mathrlap{.}}
+  ##{\nondep-extension{Y}{A}{\delta}{f}\defeq \sigma-type{g : Y \to A}{(g \circ \delta \sim f)}\mathrlap{.}}
 
   We call such types \concept{extension types of #{A}}.
 }

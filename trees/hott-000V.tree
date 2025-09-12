@@ -7,5 +7,7 @@
 
 
 \p{
-  Given a type-family #{B : A \to \universe{U}} on a pointed type #{a : A} and a [[hott-000K]] \universe{P}, if the total type #{{\sigma-type{x:A}{B(x)}}} is in #{\suspension\universe{P}} then every family of maps #{f : \pi-type{x : A}{\left((a = x) \to B(x)\right)}} has fibers in \universe{P}. If moreover #{A} is connected this is a biimplication.
+  Given a type-family #{B : A \to \universe{U}} on a pointed type #{a : A} and a [[hott-000K]] \universe{P}, if the total type #{{\sigma-type{x:A}{B(x)}}} is [\universe{P}-separated](hott-000W) then every family of maps
+  ##{f : \pi-type{x : A}{(a = x) \to B(x)}}
+  has fibers in \universe{P}. If, moreover, #{A} is connected this is a biimplication.
 }

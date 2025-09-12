@@ -1,0 +1,11 @@
+\date{2024-08-12}
+\taxon{definition}
+\title{\universe{P}-semiextensional semicategory}
+\author{Fredrik Bakke}
+\import{common}
+
+\p{
+Given a [[hott-000K]] \universe{P}, a \universe{P}-\concept{semiextensional semicategory} is a [[fb-0034]] \category{C} such that the total types
+##{\sigma-type{x:\category{C}}{(a \cong_\category{C} x)} \quad\text{and}\quad \sigma-type{x:\category{C}}{(x \cong_\category{C} a)}}
+are in #{\universe{P}} for all objects #{a} in \category{C}.
+}

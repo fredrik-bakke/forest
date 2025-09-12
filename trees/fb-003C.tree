@@ -1,0 +1,12 @@
+\date{2024-08-12}
+\taxon{lemma}
+\author{Fredrik Bakke}
+\import{common}
+
+\p{
+Given a [[hott-000I]] #{L} and a precategory \category{C} whose isomorphism-types are #{L}-local, then if \category{C} is #{L}-extensional its type of objects is #{\suspension L}-local.
+}
+
+\proof{
+  The codomain of the map #{(x =_{\category{C}} y) \to (x \cong_{\category{C}} y)} is #{L}-local by assumption, hence by one of the [closure properties of orthogonal maps](hott-0005) the domain is #{L}-local if and only if the map is. TODO: THIS IS WRONG!!
+}

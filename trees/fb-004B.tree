@@ -1,0 +1,10 @@
+\date{2024-07-26}
+\taxon{axiom}
+\author{Fredrik Bakke}
+\title{cubes separate}
+\meta{source}{Axiom 8 in [[gratzer-weinberger-buchholtz-2024]]}
+\import{common}
+
+\p{A map #{f :_{\flat} A \to B} is an [[hott-000U]] if and only if the map
+##{\flat(f \o \blank) : \flat((\directed-interval)^n \to A) \to \flat((\directed-interval)^n \to B)}
+is an equivalence for all #{n :_{\flat} \bN}, where \directed-interval is the directed interval.}

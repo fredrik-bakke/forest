@@ -1,0 +1,49 @@
+\date{2024-07-26}
+\taxon{definition}
+\author{Fredrik Bakke}
+\title{#{♭}-orthogonal maps}
+\meta{source}{[[myers-riley-2023]]}
+\import{common}
+
+\p{
+  Given two crisp maps #{f :_\flat A \to B} and #{g :_\flat X \to Y}, we say #{g} is
+  \concept{#{\flat}-orthogonal} to #{f}, written #{f \orthogonal_\flat g}, if any of the following equivalent conditions hold
+
+  \ol{
+    \li{
+      Every crisp square
+
+      \tikzcd{
+        A \arrow[d,"f"'] \arrow[r]& X \arrow[d,"g"] \\
+        B\arrow[r] & Y
+      }
+
+      factorizes uniquely through a crisp map #{B \to X}.
+    }
+
+    \li{
+      The #{\flat}-[pullback-power](hott-0006) ##{f\pullback-power_\flat g : \flat(B \to X) \to \flat(B \to Y)\times_{\flat(A \to Y)}\flat(A \to X)} is an [[hott-000U]].
+    }
+
+    \li{
+      The flat exponential square
+
+      \tikzcd{
+        \flat(B \to X) \arrow[d, "\flat(g \o\blank)"'] \arrow[r, "\flat(\blank\o f)"]
+        & \flat(A \to X)\arrow[d, "\flat(g \o\blank)"]  \\
+        \flat(B \to Y)\arrow[r, "\flat(\blank\o f)"']
+        & \flat(A \to Y)
+      }
+      is a pullback.
+    }
+
+    \li{
+      The dependent precomposition map
+      ##{\flat(\blank\o f) : \flat\left((y : B) \to \fiber{g}{h(y)}\right)\to\flat\left((x : A)\to \fiber{g}{h(f(x))} \right)}
+
+      is an [[hott-000U]] for all #{h :_\flat B \to Y}.
+    }
+  }
+
+  We extend the concept of #{\flat}-orthogonality to crisp types by substituting them for their terminal projections, and to crisp type families by substituting them for their total space projections.
+}

@@ -1,0 +1,8 @@
+\date{2024-07-26}
+\taxon{axiom}
+\author{Fredrik Bakke}
+\title{detecting simplicial continuity}
+\meta{source}{[[myers-riley-2023]]}
+\import{common}
+
+\p{The type family #{\Delta^{(\blank)} : \bN \to \Type} [detects continuity](fb-0046) for #{\skeleton_0 \dashv \coskeleton_0}.}

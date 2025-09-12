@@ -1,0 +1,9 @@
+\date{2024-07-26}
+\taxon{theorem}
+\author{Fredrik Bakke}
+\meta{source}{Theorem 3.1.6 of [[myers-riley-2023]]}
+\import{common}
+
+\p{Suppose the crisp type family #{{G :_\flat I \to \Type}} [detects continuity](fb-0046) for #{{\flat \dashv \sharp}} and assume given a crisp map #{{f :_\flat X \to Y}}. Then #{f} is an [[hott-000U]] if (and only if) #{{\flat f : \flat X \to \flat Y}} is an equivalence and for all #{{i :_\flat I}}, the map
+##{\flat(f \o \blank) : \flat(G_i \to X) \to \flat(G_i \to Y)}
+is an equivalence.}

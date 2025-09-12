@@ -1,0 +1,29 @@
+\date{2024-08-01}
+\taxon{definition}
+\import{common}
+\tag{groupoidal}
+\title{diagrammatic adjunctions}
+\author{Fredrik Bakke}
+
+\p{
+  Given a functor #{R : \Fun(A,B)}, a (diagrammatic) \concept{left adjoint} to #{R} is a functor #{L : \Fun(A,B)} equipped with an element
+  ##{
+    \begin{aligned}
+      \operatorname{\texttt{is-diagrammatic-left-adjoint}}(R,L)\defeq \\ \sigma-type{\eta : \id \Rightarrow R \o L}
+   & \left(\sigma-type{\varepsilon : L \o R \Rightarrow \id}{\left(\varepsilon L \o L \eta = \id\right)}\right)
+    \times \\
+   & \left(\sigma-type{\varepsilon' : L \o R \Rightarrow \id}{\left(R\varepsilon' \o \eta R = \id\right)}\right)\mathrlap{,}
+  \end{aligned}}
+
+  or [equivalently](hott-000U),
+
+    ##{
+    \begin{aligned}
+      \operatorname{\texttt{is-diagrammatic-left-adjoint}}'(R,L)\defeq \\ \sigma-type{\varepsilon : L \o R \Rightarrow \id}
+   & \left(\sigma-type{\eta : \id \Rightarrow R \o L}{\left(\varepsilon L \o L \eta = \id\right)}\right)
+    \times \\
+   & \left(\sigma-type{\eta' : \id \Rightarrow R \o L}{\left(R\varepsilon \o \eta' R = \id\right)}\right)\mathrlap{.}
+  \end{aligned}}
+}
+
+\p{We must ask for two a priori unrelated counits or units for reasons of homotopy coherence. The statements above can be shown to be propositions, while the corresponding types with a single unit–counit pair would not be.}

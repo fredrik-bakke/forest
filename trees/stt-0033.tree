@@ -1,0 +1,15 @@
+\date{2024-09-12}
+\author{Fredrik Bakke}
+\import{common}
+\title{adjunctions between simplicial types}
+
+\p{}
+\transclude{stt-0032}
+
+\p{Equivalently [[[riehl-shulman-2017]]], we can ask for the data consisting of units and counits satisfying certain identities:}
+
+\transclude{fb-004R}
+
+\p{Of course, adjunctions between simplicial types cannot be expected to behave particularly well without further conditions on the underlying types. Still, we are able to what would be the correct notion given that we were in fact operating on #{\infty}-categories.}
+
+\transclude{stt-0034}

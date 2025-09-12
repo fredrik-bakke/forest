@@ -1,0 +1,33 @@
+\date{2024-09-12}
+\author{Fredrik Bakke}
+\taxon{proposition}
+\import{common}
+\title{closure properties of transposing adjunctions between simplicial types}
+
+\p{
+  \ol{
+    \li{Equivalences are transposing adjunctions.}
+    \li{Transposing adjunctions compose.}
+    \li{Transposing adjunctions are closed under retracts of maps.}
+  }
+}
+
+\proof{
+
+  (See agda-unimath formalization)
+  \ol{
+    \li{TODO}
+    \li{
+
+      Given two composable transposing adjunctions #{e : L \dashv R} and #{e' : L' \dashv R'},
+      \tikzcd{
+        X \arrow[r, bend right, "L"'] & Y \arrow[r, bend right, "L'"'] \arrow[l, bend right, "R"'] & Z \arrow[l, bend right, "R'"']
+      }
+
+      we have a transposing family of equivalences witnessing that #{L' \o L \dashv R \o R'}:
+
+      ##{\hom_Z(L'(L(x)),z) \overset{e'(L(x),z)}{\simeq} \hom_X(L(x),R'(z)) \overset{e(x,R'(z))}{\simeq} \hom_X(x,R(R'(z)))\mathrlap{.}}
+    }
+    \li{TODO}
+  }
+}

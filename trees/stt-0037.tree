@@ -1,0 +1,29 @@
+\date{2024-09-16}
+\author{Fredrik Bakke}
+\taxon{proposition}
+\import{common}
+\title{closure properties right adjoint left inverses}
+
+\p{
+  \ol{
+    \li{Equivalences are one-sided inverse transposing adjunctions.}
+    \li{One-sided inverse transposing adjunctions compose.}
+    \li{One-sided inverse transposing adjunctions are closed under retracts of maps.}
+    \li{One-sided inverse transposing adjunctions are closed under base change. In fact, one needs only the homotopy #{R \o L \o j \sim j} and not #{R \o L \sim \id}.}
+  }
+}
+
+\proof{\ol{
+  \li{Follows by the corresponding [closure property of transposing adjunctions](stt-0034).}
+  \li{Transposing adjunctions and one-sided inverses compose.}
+  \li{Transposing adjunctions and one-sided inverses are closed under retracts of maps.}
+  \li{
+    Given the homotopy #{H : R \o L \o j \sim j} we have a cone defining the unique gap map #{L'}
+    \tikzcd{
+      B' \arrow[ddr,equals, bend right] \arrow[drr, "L\o j", bend left] \arrow[dr, dashed, "L'"] \\
+      & A' \arrow[d, "R'"'] \arrow[r, "j'"] & A \arrow[d, "R"]\\
+      & B' \arrow[r, "j"] & B \pullback-arrow{ul}
+    }
+    such that #{R' \o L' \sim \id} as desired. Now we need to verify #{L'} is left adjoint to #{R'}:
+    ##{\hom(L'(x),y) = \hom(L(j(x)),y) \simeq \hom(j(x), R(y))}
+  }}}

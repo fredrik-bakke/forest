@@ -1,4 +1,4 @@
-\taxon{definition}
+\taxon{proposition}
 \date{2024-05-29}
 \title{covariant type families are inner}
 \author{Fredrik Bakke}
@@ -10,11 +10,7 @@
 \p{
   In other words, the inner horn inclusion is anodyne at the left end-point inclusion of the directed interval.
 }
+
 \proof{
-  We have a retract of maps
-  \tikzcd{
-    \unit-type \arrow[d, hook] \arrow[r, "{(0,0)}"] & \Lambda^2_1 \arrow[d, hook] \arrow[r] & \unit-type \arrow[d, hook] \\
-    \Delta^1 \arrow[r, "{(\id,0)}"] & \Delta^2 \arrow[r, "\texttt{pr1}"] & \Delta^1
-  }
-  so the result follows by [retract stability of left orthogonal maps](hott-0005).
+  See Proposition 6.1.1 [[buchholtz-weinberger-2023]]. Thanks to Sam Toth for putting it to my attention that the proof that was previously here was incorrect.
 }

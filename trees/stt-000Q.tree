@@ -1,16 +1,25 @@
 \taxon{proposition}
 \date{2024-05-29}
-\title{covariant type families are inner}
 \author{Fredrik Bakke}
 \import{common}
 
 \p{
-  Covariant type families are inner.
+  Co- and contravariant type families are inner.
 }
 \p{
-  In other words, the inner horn inclusion is anodyne at the left end-point inclusion of the directed interval.
+  In other words, the inner horn inclusion is anodyne at the left and right end-point inclusions of the directed interval.
 }
 
+
 \proof{
-  See Proposition 6.1.1 [[buchholtz-weinberger-2023]]. Thanks to Sam Toth for putting it to my attention that the proof that was previously here was incorrect.
+  We have a retract of maps
+  \tikzcd{
+    \Lambda^2_1\arrow[d, hook] \arrow[r, equals] & {\Delta^1 \times \{0\}} \bigcup {\{1\} \times \Delta^1} \arrow[d, hook] \arrow[r, equals] &  \Lambda^2_1 \arrow[d, hook] \\
+    \Delta^2 \arrow[r, "{(x\geq y)\mapsto(x, y)}"] & \Delta^1  \times \Delta^1  \arrow[r, "{(x, y) \mapsto (x \geq x \land y)}"] & \Delta^2
+  }
+  so the result follows by [pushout-product and retract stability of left orthogonal maps](hott-0005).
+}
+
+\p{
+  Thanks to Sam Toth pointing out that a previous proof was incorrect. 
 }

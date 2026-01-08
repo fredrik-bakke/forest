@@ -40,7 +40,7 @@ jobs:
           ref: main
           submodules: recursive
       - name: Setup TeX Live
-        uses: teatimeguest/setup-texlive-action@v3
+        uses: TeX-Live/setup-texlive-action@v3
         with:
           packages: ${{ env.TEXLIVE_PACKAGES }}
       - name: Check `latex`

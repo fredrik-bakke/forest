@@ -11,5 +11,5 @@
 
 \query\datalog{
   ?X -: {\rel/has-author ?X @{fredrikbakke}}
-        {\rel/has-taxon ?X '{formalization}}
+        {\rel/has-taxon ?X '{Formalization}}
 }

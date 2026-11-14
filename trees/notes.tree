@@ -7,7 +7,7 @@
 \put\transclude/expanded{false}
 \query\datalog{
   ?X -: {\rel/has-author ?X @{fredrikbakke}}
-        {\rel/has-taxon ?X '{lecture note}}
+        {\rel/has-taxon ?X '{Lecture note}}
 }
 % \transclude{stt-0011}
 \transclude{stt-0020}

@@ -5,7 +5,9 @@ ap
 blacklist
 cancell
 cancelr
+cas
 distrib
+focusin
 fst
 funext
 hom

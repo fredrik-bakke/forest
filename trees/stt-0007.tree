@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  We consider some basic constructions we can form in the precense of the directed interval object.
+We consider some basic constructions we can form in the presence of the directed interval object.
 }
 
 \transclude{stt-0009}

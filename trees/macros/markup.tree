@@ -12,6 +12,9 @@
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \def\mark[body]{\<html:mark>{\body}}
 
+% Margin-note macro from Zhixuan Yang's forest: https://yangzhixuan.github.io/
+\def\marginnote[text]{\<html:span>[class]{margin-note}[role]{note}{\text}}
+
 
 \def\anon-subtree[tax][~body]{
   \scope{

@@ -50,3 +50,103 @@ section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxo
 section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter > :is(section, pre, ul, ol, figure, blockquote, center, .katex-display) {
   clear: left;
 }
+
+/*
+ * Left-hand contents and margin notes adapted from Zhixuan Yang's forest.
+ * https://github.com/yangzhixuan/yangzhixuan.github.io/blob/master/style.css
+ * Source license: CC0-1.0; see LICENSES/CC0-1.0.txt.
+ * The source credits Koos Looijesteijn's CSS-only sidenote technique:
+ * https://www.kooslooijesteijn.net/blog/sidenotes-without-js
+ */
+
+#grid-wrapper > nav#toc {
+  margin-left: 0;
+  overflow-wrap: anywhere;
+}
+
+#grid-wrapper > nav#toc > .block > ul {
+  padding-left: 0;
+}
+
+.margin-note {
+  display: block;
+  margin-block: .75rem;
+  padding-left: .75rem;
+  color: #555;
+  font-size: .9rem;
+  font-style: italic;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+@media only screen and (max-width: 999px) {
+  html body {
+    margin: 1rem auto;
+    max-width: 90ex;
+    padding-inline: .75rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  html body {
+    margin: 2rem auto;
+    max-width: calc(90ex + 18rem);
+    padding-inline: 1.5rem;
+  }
+
+  #main-wrapper > header {
+    margin-left: 18rem;
+  }
+
+  #main-wrapper > #grid-wrapper {
+    grid-template-columns: 16rem minmax(0, 90ex);
+    gap: 2rem;
+  }
+
+  #main-wrapper > #grid-wrapper > article {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: none;
+    min-width: 0;
+    margin-right: 0;
+  }
+
+  #grid-wrapper > nav#toc {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    position: sticky;
+    top: 2em;
+    align-self: start;
+    max-height: calc(100vh - 4em);
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html body {
+    max-width: calc(90ex + 36rem);
+  }
+
+  #main-wrapper > #grid-wrapper {
+    grid-template-columns: 16rem minmax(0, 90ex) 16rem;
+  }
+
+  #grid-wrapper > article section:has(.margin-note) {
+    overflow: visible;
+    padding-right: 0;
+  }
+
+  /* Keep floated proof headings below notes from preceding sections. */
+  #grid-wrapper > article section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) {
+    clear: right;
+  }
+
+  #grid-wrapper > article .margin-note:not(.link-preview *) {
+    float: right;
+    clear: right;
+    box-sizing: border-box;
+    width: 16rem;
+    margin: 0 -18rem 1rem 0;
+  }
+}

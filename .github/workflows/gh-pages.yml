@@ -46,7 +46,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends dvisvgm
-      - name: Set up compiler
+      - name: Set up OCaml
         uses: ocaml/setup-ocaml@v3
         with:
           ocaml-compiler: ${{ env.OCAML_VERSION }}

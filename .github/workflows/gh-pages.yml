@@ -16,7 +16,6 @@ on:
       - ".vscode/**"
       - "clean.sh"
       - "watch.sh"
-      - "theme/**"
 
 concurrency:
   group: "pages"

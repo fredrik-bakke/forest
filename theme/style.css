@@ -70,6 +70,14 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Latin Modern Math';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Latin Modern Math'), local('LatinModernMath-Regular'), url('fonts/latinmodern-math.woff2') format('woff2');
+}
+
 :root {
   --content-gap: 15px;
   --radius: 5px;
@@ -134,6 +142,7 @@ body {
 }
 
 math {
+ font-family: 'Latin Modern Math', math;
  font-size: 1.12em;
 }
 
@@ -155,19 +164,23 @@ mrow:hover {
   color: #aaa;
 }
 
-.block.hide-metadata>details>summary>header>.metadata {
+#home-link.hidden {
   display: none;
 }
 
-article>section>details>summary>header>h1>.taxon {
+.block.hide-metadata>header>.metadata {
+  display: none;
+}
+
+article>section>header>h1>.taxon {
   display: block;
   font-size: .9em;
   color: #888;
   padding-bottom: 5pt;
 }
 
-section section[data-taxon="Reference"]>details>summary>header>h1>.taxon,
-section section[data-taxon="Person"]>details>summary>header>h1>.taxon {
+section section[data-taxon="Reference"]>header>h1>.taxon,
+section section[data-taxon="Person"]>header>h1>.taxon {
   display: none;
 }
 
@@ -210,7 +223,7 @@ footer h2 {
   }
 }
 
-body>header {
+#main-wrapper>header {
   margin-bottom: 0.5em;
 }
 
@@ -224,20 +237,20 @@ body>header {
   grid-column: 2;
 }
 
-details>summary>header {
-  display: inline;
+section>header {
+  cursor: pointer;
 }
 
 a.heading-link {
   box-shadow: none;
 }
 
-details h1 {
+header h1 {
   font-size: 13pt;
   display: inline;
 }
 
-section .block[data-taxon] details>summary>header>h1 {
+section .block[data-taxon]>header>h1 {
   font-size: 12pt;
 }
 
@@ -246,47 +259,65 @@ span.taxon {
   font-weight: bolder;
 }
 
+.mainmatter,
+ul.block {
+  counter-reset: section-num;
+}
 
-.link-list>section>details>summary>header h1 {
+.numbered {
+  counter-increment: section-num;
+}
+
+.section-number::before {
+  content: counters(section-num, ".") ". ";
+}
+
+.link-preview,
+.link-preview .mainmatter {
+  counter-reset: preview-section-num;
+}
+
+.link-preview .numbered {
+  counter-increment: preview-section-num;
+}
+
+.link-preview .section-number::before {
+  content: counters(preview-section-num, ".") ". ";
+}
+
+.link-list > section > header h1 {
   font-size: 12pt;
 }
 
-
-article>section>details>summary>header>h1 {
+article>section>header>h1 {
   font-size: 1.5em;
 }
 
-details>summary {
-  list-style-type: none;
-}
-
-details>summary::marker,
-details>summary::-webkit-details-marker {
-  display: none;
-}
-
-article>section>details>summary>header {
+article>section>header {
   display: block;
   margin-bottom: .5em;
 }
 
-section.block>details {
+.mainmatter.collapsed {
+  display: none;
+}
+
+section.block>.mainmatter {
   margin-bottom: 0.4em;
 }
 
 
-section.block>details[open] {
+section.block>.mainmatter:not(.collapsed) {
   margin-bottom: 1em;
 }
 
 
-.link-list>section.block>details {
+.link-list>section.block>.mainmatter {
   margin-bottom: .25em;
 }
 
 nav#toc {
   margin-left: 1em;
-  max-width: 600px;
 }
 
 nav#toc h1 {
@@ -377,6 +408,7 @@ nav#toc li {
 
 a.link.local,
 .link.local a,
+a.docs-button.link.local,
 a.slug {
   box-shadow: none;
   text-decoration-line: underline;
@@ -491,6 +523,37 @@ td.macro-doc {
 
 .tooltiptext a {
   color: white
+}
+
+.link-preview {
+  display: none;
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  position: fixed;
+  width: 400px;
+  max-height: 200px;
+  overflow: hidden;
+  font-size: 12pt;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: none;
+  color: initial;
+}
+
+.link-preview.visible::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48px;
 }
 
 .macro-doc {
@@ -622,4 +685,21 @@ ol li ol li ol {
 .info {
  background-color: #bbb;
  color: white;
+}
+
+nav.nav {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+a.docs-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 100, 255, 0.04);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
 }

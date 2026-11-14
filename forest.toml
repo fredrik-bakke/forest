@@ -1,6 +1,7 @@
 [forest]
 trees = ["trees"]
 assets = ["assets"]
+theme = "theme"
 home = "index"
 url = "https://fredrik-bakke.github.io/forest/"
 lang = "en"

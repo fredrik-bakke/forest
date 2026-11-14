@@ -1,4 +1,7 @@
 {
+  "files.associations": {
+    ".codespellrc": "toml"
+  },
   "editor.formatOnSave": true,
   "latex-workshop.latex.autoBuild.run": "never",
   "livePreview.defaultPreviewPath": "output/forest/index.html",

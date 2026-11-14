@@ -1,22 +1,22 @@
 name: Deploy to GitHub Pages
 
 env:
-  FORESTER_VERSION: "6.0"
-  OCAML_VERSION: "5.4.0"
+  FORESTER_VERSION: '6.0'
+  OCAML_VERSION: '5.4.0'
 
 on:
   push:
     branches: [main]
     paths-ignore:
-      - "LICENSE"
-      - "LICENSES/**"
-      - "README.md"
-      - "CITATION.cff"
-      - "**/.gitignore"
-      - ".vscode/**"
+      - 'LICENSE'
+      - 'LICENSES/**'
+      - 'README.md'
+      - 'CITATION.cff'
+      - '**/.gitignore'
+      - '.vscode/**'
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 permissions:
@@ -71,9 +71,14 @@ jobs:
         uses: actions/cache/restore@v6
         with:
           path: _opam
-          key: forester-${{ runner.os }}-${{ steps.toolchain.outputs.os }}-${{ runner.arch }}-ocaml-${{ env.OCAML_VERSION }}-${{ env.FORESTER_VERSION }}
+          key:
+            forester-${{ runner.os }}-${{ steps.toolchain.outputs.os }}-${{
+            runner.arch }}-ocaml-${{ env.OCAML_VERSION }}-${{ env.FORESTER_VERSION }}
           # Reuse the installation already saved by the previous workflow.
-          restore-keys: forester-${{ runner.os }}-${{ steps.toolchain.outputs.os }}-${{ runner.arch }}-opam-2.6.1-ocaml-${{ env.OCAML_VERSION }}-${{ env.FORESTER_VERSION }}
+          restore-keys:
+            forester-${{ runner.os }}-${{ steps.toolchain.outputs.os }}-${{
+            runner.arch }}-opam-2.6.1-ocaml-${{ env.OCAML_VERSION }}-${{
+            env.FORESTER_VERSION }}
       - name: Set up OCaml
         if: steps.forester-cache.outputs.cache-matched-key == ''
         uses: ocaml/setup-ocaml@v3

@@ -43,6 +43,7 @@ jobs:
           # `packages` must list all LaTeX packages in latex-preamble.tree
           packages: |
             scheme-basic
+            dvisvgm
             standalone
             pgf
             tikz-cd
@@ -61,7 +62,7 @@ jobs:
       - name: Install system tools
         run: |
           sudo apt-get update
-          sudo apt-get install --yes --no-install-recommends dvisvgm xsltproc
+          sudo apt-get install --yes --no-install-recommends ghostscript xsltproc
       - name: Identify runner
         id: toolchain
         run: echo "os=$(lsb_release -rs)" >> "$GITHUB_OUTPUT"

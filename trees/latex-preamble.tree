@@ -1,3 +1,4 @@
+% Be sure to register all LaTeX packages in gh-pages.yml
 \def\latex-preamble/diagrams{
 \startverb
 \usepackage{tikz, tikz-cd, mathtools, amsmath, amssymb, stmaryrd, bbold}

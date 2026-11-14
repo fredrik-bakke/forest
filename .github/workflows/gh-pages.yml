@@ -42,6 +42,7 @@ jobs:
         with:
           # Avoid restoring the old full distribution through a fallback cache key.
           texdir: ${{ runner.temp }}/texlive-minimal
+          # `packages` must list all LaTeX packages in latex-preamble.tree
           packages: |
             scheme-basic
             standalone

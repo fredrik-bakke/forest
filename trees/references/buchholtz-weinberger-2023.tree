@@ -1,12 +1,12 @@
 \title{synthetic fibered #{(∞,1)}-category theory}
-\author{Jonathan Weinberger}
-\author{Ulrik Buchholtz}
+\author{jonathanweinberger}
+\author{ulrikbuchholtz}
 \tag{hott}
 \tag{refereed}
 \meta{doi}{10.21136/HS.2023.04}
 \meta{arxiv}{2105.01724}
 \meta{venue}{[[Higher Structures]]}
-\taxon{reference}
+\taxon{Reference}
 \date{2023-05-21}
 
 \meta{bibtex}\verb<<<|

@@ -1,9 +1,9 @@
 \title{The Univalence Principle}
-\author{Benedikt Ahrens}
-\author{Paige Randall North}
-\author{Michael Shulman}
-\author{Tsementzis Dimitris}
-\taxon{reference}
+\author/literal{Benedikt Ahrens}
+\author/literal{Paige Randall North}
+\author{michaelshulman}
+\author/literal{Tsementzis Dimitris}
+\taxon{Reference}
 \tag{hott}
 \date{2021-02-11}
 \meta{venue}{[[mscs]]}

@@ -1,5 +1,5 @@
 \taxon{Proposition}
-\author{Fredrik Bakke}
+\author{fredrikbakke}
 \import{common}
 \p{The directed interval \directed-interval forms a set.}
 \proof{

@@ -1,6 +1,6 @@
 \date{2024-07-26}
-\taxon{theorem}
-\author{Fredrik Bakke}
+\taxon{Theorem}
+\author{fredrikbakke}
 \meta{source}{Theorem 3.1.6 of [[myers-riley-2023]]}
 \import{common}
 

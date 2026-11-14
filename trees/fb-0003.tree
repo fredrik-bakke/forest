@@ -1,5 +1,5 @@
 \title{formalizations}
-\author{Fredrik Bakke}
+\author{fredrikbakke}
 
 
 \put\transclude/numbered{false}
@@ -9,6 +9,7 @@
 
 \p{Here is a list of select formalizations by me.}
 
-\query{
-  \query/isect{\query/author{Fredrik Bakke}}{\query/taxon{formalization}}
+\query\datalog{
+  ?X -: {\rel/has-author ?X @{fredrikbakke}}
+        {\rel/has-taxon ?X '{formalization}}
 }

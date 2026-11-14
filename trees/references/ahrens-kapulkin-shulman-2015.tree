@@ -1,8 +1,8 @@
 \title{univalent categories and the Rezk completion}
-\author{Benedikt Ahrens}
-\author{Chris Kapulkin}
-\author{Michael Shulman}
-\taxon{reference}
+\author/literal{Benedikt Ahrens}
+\author/literal{Chris Kapulkin}
+\author{michaelshulman}
+\taxon{Reference}
 \date{2015}
 \meta{venue}{[[mscs]]}
 \meta{doi}{10.1017/S0960129514000486}

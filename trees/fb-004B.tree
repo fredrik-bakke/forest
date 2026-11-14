@@ -1,6 +1,6 @@
 \date{2024-07-26}
-\taxon{axiom}
-\author{Fredrik Bakke}
+\taxon{Axiom}
+\author{fredrikbakke}
 \title{cubes separate}
 \meta{source}{Axiom 8 in [[gratzer-weinberger-buchholtz-2024]]}
 \import{common}

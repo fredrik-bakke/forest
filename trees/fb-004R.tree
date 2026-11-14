@@ -1,9 +1,9 @@
 \date{2024-08-01}
-\taxon{definition}
+\taxon{Definition}
 \import{common}
 \tag{groupoidal}
 \title{diagrammatic adjunctions}
-\author{Fredrik Bakke}
+\author{fredrikbakke}
 
 \p{
   Given a functor #{R : \Fun(A,B)}, a (diagrammatic) \concept{left adjoint} to #{R} is a functor #{L : \Fun(A,B)} equipped with an element

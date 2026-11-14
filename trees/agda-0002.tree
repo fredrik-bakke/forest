@@ -1,5 +1,5 @@
-\taxon{formalization}
-\author{Fredrik Bakke}
+\taxon{Formalization}
+\author{fredrikbakke}
 \date{2024-04-17}
 \title{quasicoherent idempotents split}
 \meta{external}{https://unimath.github.io/agda-unimath/foundation.split-idempotent-maps.html}

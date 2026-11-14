@@ -1,6 +1,6 @@
 \parent{stt-0001}
 \title{the theory of a directed interval}
-\author{Fredrik Bakke}
+\author{fredrikbakke}
 \import{common}
 
 \transclude{stt-0002}

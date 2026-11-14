@@ -1,12 +1,12 @@
 \title{A generalized Blakers–Massey theorem}
-\author{Mathieu Anel}
-\author{Georg Biedermann}
-\author{Eric Finster}
-\author{André Joyal}
+\author/literal{Mathieu Anel}
+\author/literal{Georg Biedermann}
+\author/literal{Eric Finster}
+\author/literal{André Joyal}
 \tag{hott}
 \meta{doi}{10.1112/topo.12163}
 \meta{venue}{Journal of Topology}
-\taxon{reference}
+\taxon{Reference}
 \date{2020-09-07}
 
 \meta{bibtex}\verb<<<|

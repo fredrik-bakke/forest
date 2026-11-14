@@ -1,13 +1,13 @@
 \title{Localization in homotopy type theory}
-\author{Dan Christensen}
-\author{Morgan Opie}
-\author{Egbert Rijke}
-\author{Luis Scoccola}
+\author{danchristensen}
+\author/literal{Morgan Opie}
+\author{egbertrijke}
+\author/literal{Luis Scoccola}
 \tag{hott}
 \tag{refereed}
 \meta{doi}{10.21136/HS.2020.01}
 \meta{venue}{[[Higher Structures]]}
-\taxon{reference}
+\taxon{Reference}
 \date{2020-02-11}
 
 \meta{bibtex}\verb<<<|

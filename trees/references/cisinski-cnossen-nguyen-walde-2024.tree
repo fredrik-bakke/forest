@@ -1,9 +1,9 @@
 \title{Formalization of higher categories}
-\author{Denis-Charles Cisinski}
-\author{Bastiaan Cnossen}
-\author{Kim Nguyen}
-\author{Tashi Walde}
-\taxon{reference}
+\author/literal{Denis-Charles Cisinski}
+\author/literal{Bastiaan Cnossen}
+\author/literal{Kim Nguyen}
+\author/literal{Tashi Walde}
+\taxon{Reference}
 \date{2024-08-10}
 
 \meta{bibtex}\verb<<<|

@@ -1,6 +1,6 @@
 \title{Kerodon}
-\author{Jacob Lurie}
-\taxon{reference}
+\author/literal{Jacob Lurie}
+\taxon{Reference}
 
 \meta{bibtex}\verb<<<|
 @online{kerodon,

@@ -1,7 +1,7 @@
 \date{2024-07-03}
-\taxon{definition}
+\taxon{Definition}
 \title{local type}
-\author{Fredrik Bakke}
+\author{fredrikbakke}
 \import{common}
 \meta{source}{\agda-unimath-source{orthogonal-factorization-systems.local-types}}
 

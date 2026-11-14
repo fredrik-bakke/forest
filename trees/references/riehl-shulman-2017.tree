@@ -1,9 +1,9 @@
 \title{A type theory for synthetic ∞-categories}
-\author{Emily Riehl}
-\author{Michael Shulman}
+\author{emilyriehl}
+\author{michaelshulman}
 \tag{hott}
 \tag{refereed}
-\taxon{reference}
+\taxon{Reference}
 \meta{venue}{[[Higher Structures]]}
 \meta{doi}{10.21136/HS.2017.06}
 \date{2017-05-21}

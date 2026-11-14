@@ -1,7 +1,7 @@
 \date{2024-06-28}
-\taxon{construction}
+\taxon{Construction}
 \title{suspension localization}
-\author{Fredrik Bakke}
+\author{fredrikbakke}
 \import{common}
 \meta{source}{Theorem 2.25 in [[christensen-opie-rijke-scoccola-2020]]}
 

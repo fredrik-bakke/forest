@@ -1,9 +1,9 @@
 \title{Multimodal Dependent Type Theory}
-\author{Daniel Gratzer}
-\author{Alex Kavvos}
-\author{Andreas Nuyts}
-\author{Lars Birkedal}
-\taxon{reference}
+\author{danielgratzer}
+\author/literal{Alex Kavvos}
+\author/literal{Andreas Nuyts}
+\author{larsbirkedal}
+\taxon{Reference}
 \date{2021-07-28}
 \meta{venue}{[[lmcs]]}
 \meta{doi}{10.46298/lmcs-17(3:11)2021}

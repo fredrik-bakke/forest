@@ -11,7 +11,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{abstract}
+      \taxon{Abstract}
       \body
     }
   }
@@ -21,7 +21,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{question}
+      \taxon{Question}
       \body
     }
   }
@@ -31,7 +31,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{conjecture}
+      \taxon{Conjecture}
       \body
     }
   }
@@ -45,7 +45,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{proof}
+      \taxon{Proof}
       \body
     }
   }
@@ -55,7 +55,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{proof of equivalence}
+      \taxon{Proof of equivalence}
       \body
     }
   }
@@ -65,7 +65,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{heuristic argument}
+      \taxon{Heuristic argument}
       \body
     }
   }
@@ -75,7 +75,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{observation}
+      \taxon{Observation}
       \body
     }
   }
@@ -85,7 +85,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{remark}
+      \taxon{Remark}
       \body
     }
   }
@@ -95,7 +95,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{comment}
+      \taxon{Comment}
       \body
     }
   }
@@ -106,7 +106,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{note}
+      \taxon{Note}
       \body
     }
   }
@@ -117,7 +117,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{definition}
+      \taxon{Definition}
       \body
     }
   }
@@ -128,7 +128,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{lemma}
+      \taxon{Lemma}
       \body
     }
   }
@@ -139,7 +139,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{proposition}
+      \taxon{Proposition}
       \body
     }
   }
@@ -149,7 +149,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{corollary}
+      \taxon{Corollary}
       \body
     }
   }
@@ -159,7 +159,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{theorem}
+      \taxon{Theorem}
       \body
     }
   }
@@ -171,7 +171,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{claim}
+      \taxon{Claim}
       \body
     }
   }
@@ -181,7 +181,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{warning}
+      \taxon{Warning}
       \body
     }
   }
@@ -191,7 +191,7 @@
   \scope{
     \put\transclude/toc{false}
     \subtree{
-      \taxon{example}
+      \taxon{Example}
       \body
     }
   }
@@ -200,27 +200,27 @@
 % ===== TeX embeddings
 % Since the main styling uses 12pt, we change the font to fit
 % Also we give a little more space to avoid clipping
-\def\tikz[body]{
+\def\tikz[~body]{
   \<html:span>[class]{tikz}{
     \tex{\latex-preamble/diagrams}{
-      \begin{tikzpicture}\body\end{tikzpicture}
+      \begin{tikzpicture}\body{}\end{tikzpicture}
     }
   }
 }
 
-\def\tikzcd[body]{
+\def\tikzcd[~body]{
   \<html:center>{ % For some reason tikzcd are placed inline with the new theme
   \<html:span>[class]{tikz tikzcd}{
     \tex{\latex-preamble/diagrams}{
-      \begin{tikzcd}\body\end{tikzcd}
+      \begin{tikzcd}\body{}\end{tikzcd}
     }
   }}
 }
 
-\def\inference[hypotheses][conclusion]{
+\def\inference[~hypotheses][~conclusion]{
   \<html:span>[class]{inference}{
     \tex{\latex-preamble/inference}{
-      ##{\inferrule{\hypotheses}{\conclusion}}
+      ##{\inferrule{\hypotheses{}}{\conclusion{}}}
     }
   }
 }

@@ -1,8 +1,8 @@
 name: Deploy to GitHub pages
 
 env:
-  FORESTER_VERSION: "4.2.0"
-  OCAML_VERSION: "5.1"
+  FORESTER_VERSION: "6.0"
+  OCAML_VERSION: "5.4.0"
   PYTHON_VERSION: "3.11"
   TEXLIVE_PACKAGES: "scheme-full"
 
@@ -59,7 +59,7 @@ jobs:
       - name: Install forester
         run: |
           sudo apt-get install -y libev-dev dvisvgm
-          opam install forester.${{ env.FORESTER_VERSION }} --yes
+          opam pin add forester "git+https://tangled.org/jonmsterling.com/ocaml-forester#${{ env.FORESTER_VERSION }}" --yes
       - name: Install Python
         uses: actions/setup-python@v5
         with:
@@ -85,7 +85,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./output
+          path: ./output/forest
 
   # Deploy job
   deploy:

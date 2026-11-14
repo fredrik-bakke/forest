@@ -1,7 +1,7 @@
 {
   "editor.formatOnSave": true,
   "latex-workshop.latex.autoBuild.run": "never",
-  "livePreview.defaultPreviewPath": "output/index.xml",
+  "livePreview.defaultPreviewPath": "output/forest/index.html",
   "livePreview.autoRefreshPreview": "On All Changes in Editor",
   "livePreview.portNumber": 1313,
   "livePreview.serverRoot": "output",

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-opam exec -- forester build forest.toml
+opam exec --switch=. -- forester build forest.toml

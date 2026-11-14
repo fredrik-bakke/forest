@@ -5,6 +5,16 @@ XSLTPROC ?= xsltproc
 FOREST_CONFIG ?= forest.toml
 WATCH_PATHS ?= trees theme assets Makefile $(FOREST_CONFIG)
 
+BIBLIOGRAPHY_FILTER = \
+	s{<pre>\s*\@[^<]*</pre>}{ \
+		my $$block = $$&; \
+		my $$pid = open2(my $$out, my $$in, $$ENV{XSLTPROC}, "--nonet", "--novalid", "theme/static.xsl", "-"); \
+		print {$$in} $$block; close $$in or die "Cannot send bibliography to XSLT: $$!"; \
+		my $$result = do { local $$/; <$$out> }; close $$out; \
+		waitpid($$pid, 0); die "Bibliography XSLT failed\n" if $$?; \
+		$$result =~ s/\n\z//; $$result; \
+	}gse;
+
 .PHONY: help build build-forest watch watch-forest clean clean-forester
 
 help:
@@ -23,16 +33,7 @@ build-forest:
 	@"$(FORESTER)" build "$(FOREST_CONFIG)"
 	@set -e; export XSLTPROC="$(XSLTPROC)"; \
 	while IFS= read -r -d '' page; do \
-		if ! perl -MIPC::Open2 -0777 -pe ' \
-			s{<pre>\s*\@[^<]*</pre>}{ \
-				my $$block = $$&; \
-				my $$pid = open2(my $$out, my $$in, $$ENV{XSLTPROC}, "--nonet", "--novalid", "theme/static.xsl", "-"); \
-				print {$$in} $$block; close $$in or die "Cannot send bibliography to XSLT: $$!"; \
-				my $$result = do { local $$/; <$$out> }; close $$out; \
-				waitpid($$pid, 0); die "Bibliography XSLT failed\n" if $$?; \
-				$$result =~ s/\n\z//; $$result; \
-			}gse; \
-		' "$$page" > "$$page.tmp"; then \
+		if ! perl -MIPC::Open2 -0777 -pe '$(BIBLIOGRAPHY_FILTER)' "$$page" > "$$page.tmp"; then \
 			rm -f "$$page.tmp"; \
 			exit 1; \
 		fi; \

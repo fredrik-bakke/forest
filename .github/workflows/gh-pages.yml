@@ -14,8 +14,6 @@ on:
       - "CITATION.cff"
       - "**/.gitignore"
       - ".vscode/**"
-      - "clean.sh"
-      - "watch.sh"
 
 concurrency:
   group: "pages"
@@ -91,7 +89,7 @@ jobs:
 
       - name: Build site
         run: |
-          _opam/bin/forester build forest.toml
+          make build
           chmod -R a+rX output/forest
 
       - name: Upload site

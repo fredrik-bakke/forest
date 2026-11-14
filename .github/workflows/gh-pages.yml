@@ -33,45 +33,60 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/configure-pages@v6
-      - uses: TeX-Live/setup-texlive-action@v4
+      - name: Check out sources
+        uses: actions/checkout@v7
+      - name: Configure hosting
+        uses: actions/configure-pages@v6
+      - name: Set up LaTeX
+        uses: TeX-Live/setup-texlive-action@v4
         with:
           packages: scheme-full
 
-      - name: Install dependencies
+      - name: Install system tools
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends dvisvgm
-      - uses: ocaml/setup-ocaml@v3
+      - name: Set up compiler
+        uses: ocaml/setup-ocaml@v3
         with:
           ocaml-compiler: ${{ env.OCAML_VERSION }}
 
-      - name: Identify Forester toolchain
+      - name: Identify toolchain
         id: toolchain
         run: |
           echo "os=$(lsb_release -rs)" >> "$GITHUB_OUTPUT"
           echo "opam=$(opam --version)" >> "$GITHUB_OUTPUT"
       # setup-ocaml caches the compiler, but not packages installed afterwards.
-      - name: Cache Forester
+      - name: Restore Forester cache
         id: forester-cache
-        uses: actions/cache@v6
+        uses: actions/cache/restore@v6
         with:
           path: _opam
-          key: forester-${{ runner.os }}-${{ steps.toolchain.outputs.os }}-${{ runner.arch }}-opam-${{ steps.toolchain.outputs.opam }}-ocaml-${{ env.OCAML_VERSION }}-${{ env.FORESTER_VERSION }}-${{ hashFiles('.github/workflows/gh-pages.yml') }}
+          key: forester-${{ runner.os }}-${{ steps.toolchain.outputs.os }}-${{ runner.arch }}-opam-${{ steps.toolchain.outputs.opam }}-ocaml-${{ env.OCAML_VERSION }}-${{ env.FORESTER_VERSION }}
       - name: Install Forester
         if: steps.forester-cache.outputs.cache-hit != 'true'
-        run: opam pin add forester "git+https://tangled.org/jonmsterling.com/ocaml-forester#${{ env.FORESTER_VERSION }}" --yes
+        run: |
+          opam pin add --switch=. forester "git+https://tangled.org/jonmsterling.com/ocaml-forester#${{ env.FORESTER_VERSION }}" --yes
+          opam exec --switch=. -- forester --version
+      # Preserve a successful install even when the later site build fails.
+      - name: Save Forester cache
+        if: steps.forester-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: _opam
+          key: ${{ steps.forester-cache.outputs.cache-primary-key }}
 
-      - name: Build
+      - name: Build site
         run: |
           # A restored switch still needs its system libraries on a fresh runner.
           opam install --switch=. --depext-only forester --yes
           ./build.sh
           chmod -R a+rX output/forest
 
-      - uses: actions/upload-pages-artifact@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./output/forest
-      - id: deployment
+      - name: Deploy site
+        id: deployment
         uses: actions/deploy-pages@v5

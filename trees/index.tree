@@ -13,7 +13,10 @@ This is my personal page where I manage my personal notes as well as
 miscellaneous exposition related to my work. The web page is written using Jon
 Sterling's [Forester](https://www.jonmsterling.com/jms-005P.xml).
 }
-
+\p{
+This forest is hosted in a public repository on GitHub:
+[fredrik-bakke/forest](https://github.com/fredrik-bakke/forest).
+}
 \p{
 \scope{
   \put\transclude/metadata{false}

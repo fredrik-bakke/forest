@@ -17,6 +17,10 @@ Sterling's [Forester](https://www.forester-notes.org/005P/).
 This forest is hosted in a public repository on GitHub:
 [fredrik-bakke/forest](https://github.com/fredrik-bakke/forest).
 }
+
+\p{
+You can search the forest by pressing \code{Ctrl}+\code{K}.
+}
 \p{
 \scope{
   \put\transclude/metadata{false}

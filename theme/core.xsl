@@ -63,6 +63,20 @@
     </pre>
   </xsl:template>
 
+  <!-- From agda-synthetic-categories: preserve intentional leading blank lines. -->
+  <xsl:template name="preformatted-content">
+    <xsl:comment>This is a guard for intentional leading blank lines.</xsl:comment>
+    <xsl:choose>
+      <xsl:when test="node()[1][self::text()[starts-with(., '&#10;')]]">
+        <xsl:value-of select="substring(node()[1], 2)" />
+        <xsl:apply-templates select="node()[position() > 1]" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template match="f:em">
     <em>
       <xsl:apply-templates />

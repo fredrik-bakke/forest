@@ -1,0 +1,25 @@
+\title{Basic macros}
+\author{fredrikbakke}
+\contributor{samueltoth}
+\tag{macro}
+
+
+\def\nsp[p]{\mathrlap{\text{\p}}}
+
+
+\def\citek[refid]{\let\escape[x]{\x}\<html:span>[class]{link-reference}{[\escape{[\refid]}](\refid)}}
+
+\def\citet[tid][refid]{
+\let\escape[x]{\x}\<html:span>[class]{link-reference}[tid]{\tid}[refid]{\refid}{[\escape{[\refid, \tid]}](\refid)}
+}
+
+\def\PR[x]{[PR\startverb#\stopverb\x](https://github.com/fredrik-bakke/forest/pull/\x)}
+
+\def\Issue[x]{[Issue\startverb#\stopverb\x](https://github.com/fredrik-bakke/forest/issues/\x)}
+
+\def\agda-unimath-source[module]{
+  [agda-unimath/\module](https://unimath.github.io/agda-unimath/\module.html)
+}
+\def\agda-synthetic-categories-source[module]{
+  [agda-synthetic-categories/\module](https://samtoth.github.io/agda-synthetic-categories/\module)
+}

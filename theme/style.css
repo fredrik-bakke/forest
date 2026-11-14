@@ -1,5 +1,7 @@
 /* SPDX-License-Identifier: CC0-1.0 */
 
+@import url("custom.css");
+
 .katex {
  font-size: 1.15em !important;
 }

@@ -1,9 +1,10 @@
 % Be sure to register all LaTeX packages in gh-pages.yml
 \def\latex-preamble/diagrams{
 \startverb
-\usepackage{tikz, tikz-cd, mathtools, amsmath, amssymb, stmaryrd, bbold}
+\usepackage{tikz, tikz-cd, quiver, babel, mathtools, amsmath, amssymb, stmaryrd, bbold}
 \usetikzlibrary{matrix,arrows}
 \usetikzlibrary{decorations.markings}
+\usetikzlibrary{babel}
 
 \tikzset{
   pullback/.style={minimum size=1.2ex,path picture={

@@ -46,6 +46,10 @@ jobs:
             standalone
             pgf
             tikz-cd
+            quiver
+            spath3
+            tikz-nfold
+            babel
             mathtools
             amsfonts
             stmaryrd
@@ -57,7 +61,7 @@ jobs:
       - name: Install system tools
         run: |
           sudo apt-get update
-          sudo apt-get install --yes --no-install-recommends dvisvgm
+          sudo apt-get install --yes --no-install-recommends dvisvgm xsltproc
       - name: Identify runner
         id: toolchain
         run: echo "os=$(lsb_release -rs)" >> "$GITHUB_OUTPUT"

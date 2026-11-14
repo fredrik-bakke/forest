@@ -1,0 +1,256 @@
+\title{Symbol macros}
+\author{fredrikbakke}
+\contributor{samueltoth}
+\tag{macro}
+
+% Includes macros from agda-synthetic-categories by Samuel Toth and Fredrik Bakke.
+% https://github.com/samtoth/agda-synthetic-categories/tree/main/trees/macros
+
+\def\Id{#{\textrm{Id}}}
+
+\def\lim{#{\operatorname{\overset{\leftarrow}{\textrm{lim}}}}}
+\def\o{#{\circ}}
+\def\universe[var]{#{\mathcal{\var}}}
+\def\category[var]{#{\mathcal{\var}}}
+\def\topos[var]{#{\mathcal{\var}}}
+\def\blank{#{{-}}}
+
+\def\empty-type{#{\emptyset}}
+\def\unit-type{#{\textbf{1}}}
+\def\bool-type{#{\textbf{2}}}
+\def\directed-interval{#{{\Delta^1}}}
+% \def\directed-interval{𝟚}
+\def\sphere{#{\mathbb{S}}}
+\def\directed-sphere{#{{\vec{\sphere}}}}
+\def\bN{#{\mathbb{N}}}
+
+\def\jdgeq{#{\equiv}}
+\def\id{#{\operatorname{id}}}
+\def\defeq{#{\mathrel{{:}{\jdgeq}}}}
+\def\pi-type[domain]{{\left(\domain\right)}\to}
+
+\def\W-type[domain]{#{\operatorname{\mathtt{W}}_{\left(\domain\right)}}}
+% \def\W-type[domain]{#{{𝕎}_{\left(\domain\right)}}}
+
+\def\sigma-type[domain]{#{{\left({\domain}\right)}\times}}
+% \def\sigma-type[domain]{#{\sum_{\left(\domain\right)}}}
+
+\def\pushout[codomain]{#{\mathbin{\amalg_{\codomain}}}}
+
+\def\pb{{#{⌟}}}
+\def\po{{#{⌜}}}
+
+\def\hom-map{#{\operatorname{\texttt{hom{-}map}}}}
+\def\spine[dimension]{#{\operatorname{\mathtt{spine}}{\dimension}}}
+\def\ap{#{\operatorname{\mathtt{ap}}}}
+\def\pr{#{\operatorname{\mathtt{pr}}}}
+\def\presheaf{#{\operatorname{Psh}}}
+\def\suspension{#{\operatorname{\mathtt{\Sigma}}}}
+\def\pole{#{\operatorname{\mathtt{pole}}}}
+\def\meridean{#{\operatorname{\mathtt{merid}}}}
+
+\def\directed-suspension{#{\operatorname{\vec{\suspension}}}}
+\def\point{#{\operatorname{\mathtt{point}}}}
+\def\rec{#{\operatorname{\mathtt{rec}}}}
+\def\ind{#{\operatorname{\mathtt{ind}}}}
+\def\ap-hom{#{\operatorname{\mathtt{ap-hom}}}}
+\def\directed-cylinder{#{\operatorname{\mathtt{cyl}_{\directed-interval}}}}
+\def\directed-cocone{#{\operatorname{\mathtt{cocone}_{\directed-interval}}}}
+\def\orthogonal{#{\mathrel{\perp}}}
+\def\refl{#{\operatorname{\mathtt{refl}}}}
+\def\fiberwise-orthogonal{#{\mathrel{\perp^\mathrm{f}}}}
+
+\def\Hom{#{\operatorname{\textrm{Hom}}}}
+\def\Iso{#{\operatorname{\textrm{Iso}}}}
+\def\Ob{#{\operatorname{\textrm{Ob}}}}
+\def\Fun{#{\operatorname{\textrm{Fun}}}}
+\def\Map{#{\operatorname{\textrm{Map}}}}
+\def\Free{#{\operatorname{Free}}}
+\def\Fib{#{\operatorname{Fib}}}
+\def\Type{#{\textrm{Type}}}
+\def\Contr{#{\textrm{Contr}}}
+\def\Empty{#{\textrm{Empty}}}
+\def\Prop{#{\textrm{Prop}}}
+\def\Set{#{\textrm{Set}}}
+\def\Space{#{\mathcal{S}}}
+\def\op[x]{#{{\x}^{\textrm{op}}}}
+\def\simplex-category{#{\mathbf{\Delta}}}
+
+\def\nondep-extension[index][type-family][restriction-map][subformula]{
+  #{\left\langle{{\index}\to{\type-family}}\mid^{\restriction-map}_{\subformula}\right\rangle}
+}
+
+\def\sup{#{\operatorname{sup}}}
+\def\trunc[x]{{#{\left\lVert{\x}\right\rVert}}}
+\def\desup{#{\operatorname{desup}}}
+\def\is-ittype[L]{#{\mathop{\textrm{is{-}iterative{-}}{\left(\suspension \L\right)}\textrm{{-}type}}}}
+\def\is-connected[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}connected}}}}
+\def\is-local[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}local}}}}
+\def\is-orthogonal[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}orthogonal}}}}
+\def\is-equivalence[L]{#{\mathop{\textrm{is{-}}{\L}\textrm{{-}equivalence}}}}
+
+\def\fiber[map][point]{#{{\operatorname{\mathtt{fib}}_{\map}{\left(\point\right)}}}}
+
+% Arrows
+\def\include{#{\subseteq}}
+\def\from{#{\leftarrow}}
+\def\embed{#{\hookrightarrow}}
+\def\simto{#{\mathrel{\overset{\sim}{\to}}}}
+\def\surject{#{\twoheadrightarrow}}
+\def\iso{#{\cong}}
+\def\equivalence{#{\simeq}}
+
+\def\skeleton{#{\operatorname{\mathtt{sk}}}}
+\def\coskeleton{#{\operatorname{\mathtt{cosk}}}}
+\def\realization{#{\operatorname{ʃ}}}
+\def\double-negation-sheaf{#{\operatorname{\nabla^{\neg\neg}}}}
+
+\def\Cat{#{\operatorname{Cat}}}
+\def\Gpd{#{\operatorname{Gpd}}}
+\def\Sh{#{\operatorname{Sh}}}
+\def\Psh{#{\operatorname{Psh}}}
+
+\def\simpliciallify{#{\operatorname{⧄}}}
+
+% Math
+\def\pullback-power{#{\mathbin{\hat{\pitchfork}}}}
+\def\oriented-pullback{#{\mathbin{\vec{\times}}}}
+\def\oriented-pushout{#{\mathbin{\vec{\amalg}}}}
+\def\pushout-product{#{\mathbin{\hat{\otimes}}}}
+\def\simplicial-join{#{\mathbin{\vec{\star}}}}
+
+% Font
+\def\rm[x]{\textrm{\x}}
+
+% Sigma types
+\def\Sigma1[x][y]{({\x})\times{\y}}
+\def\Sigma2[x][y][z]{({\x})\,({\y})\times{\z}}
+\def\Sigma3[x][y][z][w]{({\x})\,({\y})\,({\z})\times{\w}}
+\def\Sigma4[x][y][z][w][v]{({\x})\,({\y})\,({\z})\,({\w})\times{\v}}
+\def\Sigma5[x][y][z][w][v][u]{({\x})\,({\y})\,({\z})\,({\w})\,({\v})\times{\u}}
+
+% Pi types
+\def\Pi1[x][y]{({\x})\to{\y}}
+\def\Pi2[x][y][z]{({\x})\,({\y})\to{\z}}
+\def\Pi3[x][y][z][w]{({\x})\,({\y})\,({\z})\to{\w}}
+\def\Pi4[x][y][z][w][v]{({\x})\,({\y})\,({\z})\,({\w})\to{\v}}
+\def\Pi5[x][y][z][w][v][u]{({\x})\,({\y})\,({\z})\,({\w})\,({\v})\to{\u}}
+
+% Identity types
+
+\def\depid[p]{=_{\p}}
+\def\nullhtpy{\operatorname{\textrm{null{-}htpy}}}
+% Concatenation
+\def\concat{\mathbin{\boldsymbol{\cdot}}}
+\def\hconcat{\mathbin{\vcenter{\hbox{$\scriptscriptstyle\blacksquare$}}}}
+\def\vconcat{\mathbin{\vcenter{\hbox{$\scriptscriptstyle\square$}}}}
+% Whiskering wrt. concatenation. Use script-sized symbols supported by KaTeX.
+\def\lwhisk{\mathbin{\vcenter{\hbox{$\scriptscriptstyle\blacktriangleleft$}}}}
+\def\rwhisk{\mathbin{\vcenter{\hbox{$\scriptscriptstyle\blacktriangleright$}}}}
+% Whiskering wrt. composition
+\def\rwhiskcomp{\mathbin{\vcenter{\hbox{$\scriptstyle\triangleright$}}}}
+\def\lwhiskcomp{\mathbin{\vcenter{\hbox{$\scriptstyle\triangleleft$}}}}
+% Pasting
+\def\vpaste{\mathbin{\scriptstyle\boxminus}}
+\def\hpaste{\mathbin{\scriptstyle ◫}} % ! WARNING: cannot be used in tikzcd
+
+% Standard functions
+
+\def\tot[x]{{\startverb \~\stopverb{\x}}}
+
+\def\fst{\operatorname{fst}}
+\def\snd{\operatorname{snd}}
+\def\glue{\operatorname{glue}}
+
+\def\Im{\operatorname{Im}}
+\def\suc{\operatorname{suc}}
+\def\const{\operatorname{const}}
+\def\ev{\operatorname{ev}}
+
+% Relations
+ % :=
+\def\toeq{\xrightarrow{\sim}}
+\def\to-s{\to^{\mathrm{s}}}
+
+% Blackboard bold glyphs
+\def\b1{#{\mathbb{1}}}
+\def\b2{#{\mathbb{2}}}
+\def\bR{#{\mathbb{R}}}
+\def\bQ{#{\mathbb{Q}}}
+\def\bZ{#{\mathbb{Z}}}
+
+% Empty type
+\def\empty{#{\mathbb{0}}}
+
+% Booleans
+\def\Bool{#{\mathrm{Bool}}}
+\def\true{#{\mathrm{true}}}
+\def\false{#{\mathrm{false}}}
+
+% Standard finite types
+\def\Fin{\operatorname{Fin}}
+
+% Truncations
+
+\def\proptrunc[x]{\trunc{\x}_{-1}}
+\def\settrunc[x]{\trunc{\x}_0}
+
+% Fibres
+\def\fibre-noarg{\operatorname{\mathrm{fib}}}
+\def\fibre-fam[f]{\fibre-noarg_{\f}}
+\def\fibre[f][a]{\fibre-fam{\f}(\a)}
+
+% Extensions
+\def\Ext-noarg{\operatorname{\mathrm{Ext}}}
+\def\Ext-fam[f]{\Ext-noarg_{\f}}
+\def\Ext[f][a]{\Ext-fam{\f}(\a)}
+
+% Cofibres
+\def\cofibre-noarg{\operatorname{\mathrm{cofib}}}
+\def\cofibre[f]{\cofibre-noarg_{\f}}
+
+% Colimits
+
+\def\dirsuspension{
+  \mathop{\overset{\scriptscriptstyle\rightharpoonup}{
+    \smash[t]{\suspension}\vphantom{t}}}\nolimits
+}
+\def\reducedsuspension{\mathop{\kern0pt \mathsf{\Sigma}}\nolimits}
+\def\loops{\mathop{\kern0pt \mathsf{\Omega}}\nolimits}
+
+\def\bjoin{\mathbin{\diamond}}
+
+% Pullback power & pushout product
+\def\pulldpow{\operatorname{\hat{\mathsf{\Pi}}}}
+\def\pullpow[f][g]{{\left\langle{\f},{\g}\right\rangle}}
+\def\pushsum{\operatorname{\hat{\mathsf{\Sigma}}}}
+\def\pushprod{\mathbin{\square}}
+\def\ttt{#{\mathbin{\mathrlap{\square}{/}}}}
+
+% Algebra
+\def\II{\mathbb{I}}
+\def\Spec{\operatorname{Spec}}
+\def\Alg{\mathrm{Alg}}
+\def\Obs{\operatorname{\mathcal{O}}}
+
+% Synthetic
+
+\def\Hom2{\Hom^2}
+\def\Arr{\operatorname{Arr}}
+\def\Gl{\operatorname{Gl}}
+
+\def\lhtpy{\sim_{\Delta}}
+\def\LHtpy{{{}_\sim\Delta}}
+\def\rhtpy{\mathrel{{}_{\Delta}{\sim}}}
+\def\RHtpy{{\Delta_\sim}}
+
+\def\FreeCov{\operatorname{L^{\rm{l}}}}
+
+% Modal type theory
+% Preserve \colon spacing with superscript
+\def\colon-flat{\nobreak\mskip2mu\mathpunct{}\mathchoice{\mkern-3mu}{\mkern-3mu}{}{}{:}^{\flat}\mskip6mu\relax}
+\def\colon-sharp{\nobreak\mskip2mu\mathpunct{}\mathchoice{\mkern-3mu}{\mkern-3mu}{}{}{:}^{\sharp}\mskip6mu\relax}
+
+\def\modflat[x]{\langle \flat | {\x} \rangle}
+\def\modsharp[x]{\langle \sharp | {\x} \rangle}
+\def\mod{\textsf{mod}}

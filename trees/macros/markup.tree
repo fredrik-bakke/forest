@@ -1,0 +1,144 @@
+\title{Markup macros}
+\author{fredrikbakke}
+\contributor{samueltoth}
+\tag{macro}
+
+% Includes macros from agda-synthetic-categories by Samuel Toth and Fredrik Bakke.
+% https://github.com/samtoth/agda-synthetic-categories/tree/main/trees/macros
+
+\export{latex-preamble}
+
+% ===== Formatting primitives
+\xmlns:html{http://www.w3.org/1999/xhtml}
+\def\mark[body]{\<html:mark>{\body}}
+
+
+\def\anon-subtree[tax][~body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{\tax}
+      \body{}
+    }
+  }
+}
+
+\def\abstract[body]{\anon-subtree{Abstract}{\body}}
+\def\question[body]{\anon-subtree{Question}{\body}}
+\def\conjecture[body]{\anon-subtree{Conjecture}{\body}}
+
+\def\qed{\<html:span>[class]{qed}{□}}
+
+\def\proof[body]{\anon-subtree{Proof}{\body\qed}}
+\def\proof-of-equivalence[body]{\anon-subtree{Proof of equivalence}{\body\qed}}
+\def\heuristic-argument[body]{\anon-subtree{Heuristic argument}{\body\qed}}
+
+\def\observation[body]{\anon-subtree{Observation}{\body}}
+\def\remark[body]{\anon-subtree{Remark}{\body}}
+\def\comment[body]{\anon-subtree{Comment}{\body}}
+\def\note[body]{\anon-subtree{Note}{\body}}
+\def\definition[body]{\anon-subtree{Definition}{\body}}
+\def\lemma[body]{\anon-subtree{Lemma}{\body}}
+\def\proposition[body]{\anon-subtree{Proposition}{\body}}
+\def\corollary[body]{\anon-subtree{Corollary}{\body}}
+\def\theorem[body]{\anon-subtree{Theorem}{\body}}
+\def\claim[body]{\anon-subtree{Claim}{\body}}
+\def\warning[body]{\anon-subtree{Warning}{\body}}
+\def\example[body]{\anon-subtree{Example}{\body}}
+
+% ===== TeX embeddings
+% Since the main styling uses 12pt, we change the font to fit
+% Also we give a little more space to avoid clipping
+\def\tikz[~body]{
+  \<html:span>[class]{tikz}{
+    \tex{\latex-preamble/diagrams}{
+      \begin{tikzpicture}\body{}\end{tikzpicture}
+    }
+  }
+}
+
+\def\tikzcd[~body]{
+  \<html:center>{ % For some reason tikzcd are placed inline with the new theme
+  \<html:span>[class]{tikz tikzcd}{
+    \tex{\latex-preamble/diagrams}{
+      \begin{tikzcd}\body{}\end{tikzcd}
+    }
+  }}
+}
+
+\def\inference[~hypotheses][~conclusion]{
+  \<html:span>[class]{inference}{
+    \tex{\latex-preamble/inference}{
+      ##{\inferrule{\hypotheses{}}{\conclusion{}}}
+    }
+  }
+}
+
+\def\concept[name]{\strong{\name}}
+
+
+\def\pushout-arrow[direction]{\arrow[\direction, phantom, ""{pushout, very near end}]}
+\def\pullback-arrow[direction]{\arrow[\direction, phantom, ""{pullback, very near end}]}
+
+% Additional formatting helpers from agda-synthetic-categories.
+
+\def\closedScope[~body]{
+\scope{
+\put\transclude/toc{false}
+\put\transclude/expanded{false}
+\body{}
+}}
+
+\def\todo[x]{
+\scope{
+\put\transclude/toc{false}
+\subtree{
+\taxon{Todo}
+\<html:p>[style]{color: red;}{\x}
+}}}
+
+\def\details[x]{\<html:details>{\x}}
+
+\def\hidden[x]{}
+
+\def\ol-alpha[body]{ % a)
+\<html:style>{\startverb
+.ol-alpha > li::marker { content: counter(list-item, lower-alpha) ") " }
+\stopverb}
+\<html:ol>[class]{ol-alpha}{\body}
+}
+
+\def\ol-Alpha[body]{ % A)
+\<html:style>{\startverb
+.ol-Alpha > li::marker { content: counter(list-item, upper-alpha) ") " }
+\stopverb}
+\<html:ol>[class]{ol-Alpha}{\body}
+}
+
+\def\ol-Alpha-dot[body]{ % A.
+\<html:style>{\startverb
+.ol-Alpha-dot > li::marker { content: counter(list-item, upper-alpha) ". " }
+\stopverb}
+\<html:ol>[class]{ol-Alpha-dot}{\body}
+}
+
+\def\ol-roman[body]{ % (i)
+\<html:style>{\startverb
+.ol-roman > li::marker { content: "(" counter(list-item, lower-roman) ") " }
+\stopverb}
+\<html:ol>[class]{ol-roman}[type]{i}{\body}
+}
+
+\def\ol-Roman[body]{ % (I)
+\<html:style>{\startverb
+.ol-Roman > li::marker { content: "(" counter(list-item, upper-roman) ") " }
+\stopverb}
+\<html:ol>[class]{ol-Roman}[type]{i}{\body}
+}
+
+\def\ol-Roman-dot[body]{ % I.
+\<html:style>{\startverb
+.ol-Roman-dot > li::marker { content: counter(list-item, upper-roman) ". " }
+\stopverb}
+\<html:ol>[class]{ol-Roman-dot}[type]{i}{\body}
+}

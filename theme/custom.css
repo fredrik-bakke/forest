@@ -1,0 +1,52 @@
+/* Bibliography colors and proof layout from agda-synthetic-categories. */
+
+.bibtex .Keyword {
+  color: #35617d;
+  font-weight: 700;
+}
+
+.bibtex .Module {
+  color: #9a7440;
+}
+
+.bibtex .Field {
+  color: #46515b;
+}
+
+.qed,
+section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > header::before {
+  float: right;
+  margin-left: 1em;
+  font-family: 'Latin Modern Math', math;
+  font-size: 1.12em;
+}
+
+section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']):has(> .mainmatter:not(.collapsed)) > header {
+  float: left;
+  margin-right: 0.5em;
+}
+
+/* Show the collapsed marker without inserting a second QED into the DOM. */
+section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']):has(> .mainmatter.collapsed > .qed, > .mainmatter.collapsed > p > .qed) > header::before {
+  content: '□' / '';
+}
+
+/* Let the trailing QED share the last paragraph's line while preserving its start. */
+section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter > p:has(+ .qed) {
+  display: inline;
+}
+
+section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter > p:has(+ .qed)::before {
+  content: '';
+  display: block;
+}
+
+section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter > :is(section, pre, ul, ol, figure, blockquote, center, .katex-display) {
+  clear: left;
+}

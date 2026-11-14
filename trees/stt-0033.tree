@@ -1,7 +1,7 @@
 \date{2024-09-12}
 \author{fredrikbakke}
 \import{common}
-\title{adjunctions between simplicial types}
+\title{Adjunctions between simplicial types}
 
 \p{}
 \transclude{stt-0032}

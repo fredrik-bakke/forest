@@ -2,7 +2,7 @@
 \author{fredrikbakke}
 \taxon{Definition}
 \import{common}
-\title{right adjoint left inverses}
+\title{Right adjoint left inverses}
 
 \p{
  Given a pair of converse maps #{L : X \leftrightarrow Y : R}, we say #{R} is a \concept{right adjoint left inverse} to #{L} if it is a [right adjoint](stt-0033) to #{L} and the unit is a natural isomorphism.

@@ -1,6 +1,6 @@
 \date{2024-07-03}
 \taxon{Definition}
-\title{local type}
+\title{Local type}
 \author{fredrikbakke}
 \import{common}
 \meta{source}{\agda-unimath-source{orthogonal-factorization-systems.local-types}}

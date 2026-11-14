@@ -2,7 +2,7 @@
 \date{2024-05-29}
 \author{fredrikbakke}
 \import{common}
-\title{based hom-space condition for Segal types}
+\title{Based hom-space condition for Segal types}
 
 \p{
   Given a type #{A} the type family

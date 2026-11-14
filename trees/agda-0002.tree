@@ -1,7 +1,7 @@
 \taxon{Formalization}
 \author{fredrikbakke}
 \date{2024-04-17}
-\title{quasicoherent idempotents split}
+\title{Splitting of idempotents}
 \meta{external}{https://unimath.github.io/agda-unimath/foundation.split-idempotent-maps.html}
 \meta{status}{partially finished}
 

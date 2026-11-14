@@ -1,7 +1,7 @@
 \date{2024-07-27}
 \taxon{Axiom}
 \author{fredrikbakke}
-\title{simplices separate}
+\title{Simplices separate}
 \import{common}
 
 \p{A simplicial and crisp map #{f :_{\flat} A \to B} is an [[hott-000U]] if and only if the restriction to simplices

@@ -1,6 +1,6 @@
 \date{2024-08-12}
 \taxon{Theorem}
-\title{the Regensburg extension of the fundamental theorem of identity types}
+\title{The Regensburg extension of the fundamental theorem of identity types}
 \author{fredrikbakke}
 \import{common}
 \meta{source}{[agda-unimath/foundation.regensburg-extension-fundamental-theorem-of-identity-types](https://unimath.github.io/agda-unimath/foundation.regensburg-extension-fundamental-theorem-of-identity-types.html)}

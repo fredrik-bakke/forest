@@ -1,7 +1,7 @@
 \taxon{Formalization}
 \author{fredrikbakke}
 \date{2023-10-20}
-\title{preunivalent categories}
+\title{Preunivalent categories}
 \meta{external}{https://unimath.github.io/agda-unimath/category-theory.preunivalent-categories.html}
 \meta{status}{in progress}
 \import{common}

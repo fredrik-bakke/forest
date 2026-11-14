@@ -1,7 +1,7 @@
 \date{2024-07-26}
 \parent{fb-0044}
 \author{fredrikbakke}
-\title{detecting simplicial continuity}
+\title{Detecting simplicial continuity}
 \meta{source}{[[myers-riley-2023]]}
 \import{common}
 

@@ -2,7 +2,7 @@
 \author{fredrikbakke}
 \taxon{Definition}
 \import{common}
-\title{transposing adjunctions}
+\title{Transposing adjunctions}
 
 \p{Given a pair of maps of simplicial types #{L : X \to Y} and #{R : Y \to X}, we say #{L} is a \concept{left adjoint} to #{R}, and that #{R} is a \concept{right adjoint} to #{L} if we have a binary family of [equivalences](hott-000U)
 ##{\pi-type{x:X,y : Y}{(\hom_Y(L(x),y) \simeq \hom_X(x,R(y)))}.}}

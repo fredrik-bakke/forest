@@ -9,9 +9,8 @@
   ?X -: {\rel/has-author ?X @{fredrikbakke}}
         {\rel/has-taxon ?X '{Lecture note}}
 }
-% \transclude{stt-0011}
-\transclude{stt-0020}
-% \transclude{fb-0010}
-% \transclude{fb-0036}
-% \transclude{fb-004N}
+\query\datalog{
+  ?X -: {\rel/has-author ?X @{fredrikbakke}}
+        {\rel/has-taxon ?X '{Note}}
+}
 }

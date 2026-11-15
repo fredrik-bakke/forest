@@ -13,8 +13,8 @@
 
 \p{Extension types along certain subtype inclusions appear as primitive constructs in [[riehl-shulman-2017]] and cubical type theory.}
 
-\note{
-  The extension type \nondep-extension{Y}{A}{\delta}{f} is the [[hott-0006]] of #{\delta} along #{!_A}.
+\remark{
+The extension type \nondep-extension{Y}{A}{\delta}{f} is the [[hott-0006]] of #{\delta} along #{!_A}.
 }
 
 \lemma{If #{A} is #{L}-local then so is every extension type of #{A}.}

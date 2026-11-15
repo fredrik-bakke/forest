@@ -39,7 +39,6 @@
 \def\observation[body]{\anon-subtree{Observation}{\body}}
 \def\remark[body]{\anon-subtree{Remark}{\body}}
 \def\comment[body]{\anon-subtree{Comment}{\body}}
-\def\note[body]{\anon-subtree{Note}{\body}}
 \def\definition[body]{\anon-subtree{Definition}{\body}}
 \def\lemma[body]{\anon-subtree{Lemma}{\body}}
 \def\proposition[body]{\anon-subtree{Proposition}{\body}}

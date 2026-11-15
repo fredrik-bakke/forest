@@ -2,6 +2,7 @@
 \author{fredrikbakke}
 \import{common}
 \title{2-Segal types}
+\taxon{Note}
 
 \p{We consider the notion of a 2-Segal space after [Dyckerhoff-Kapranov](dyckerhoff-kapranov-2019) (and others) in [simplicial type theory](riehl-shulman-2017) using a characterization given in [[feller-2023]].}
 

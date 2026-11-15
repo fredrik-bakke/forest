@@ -16,7 +16,10 @@ related to my work. The web page is written using [Jon Sterling](jonsterling)'s
 [public GitHub repository](https://github.com/fredrik-bakke/forest).
 }
 
-\p{You can search the forest by pressing \code{Ctrl}+\code{K}.}
+\p{
+The trees below are "collapsed" and can be "expanded" by clicking on them. You can
+also search the forest by pressing \code{Ctrl}+\code{K}.
+}
 
 \p{
 \scope{

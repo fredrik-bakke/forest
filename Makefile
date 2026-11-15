@@ -5,6 +5,24 @@ XSLTPROC ?= xsltproc
 FOREST_CONFIG ?= forest.toml
 WATCH_PATHS ?= trees theme assets Makefile $(FOREST_CONFIG)
 
+INLINE_STYLES_FILTER = \
+	BEGIN { \
+		sub read_css { \
+			my ($$path) = @_; \
+			open my $$file, "<", $$path or die "Cannot read $$path: $$!"; \
+			local $$/; return <$$file>; \
+		} \
+		our $$site_css = read_css("theme/style.css"); \
+		my $$custom_css = read_css("theme/custom.css"); \
+		$$site_css =~ s{\@import url\("custom\.css"\);}{$$custom_css}; \
+	} \
+	s{<link\s+rel="stylesheet"\s+href="([^"]*/|)style\.css">}{ \
+		my $$base = $$1; \
+		my $$css = $$site_css; \
+		$$css =~ s{url\((["\x27]?)(fonts/[^)"\x27]+)\1\)}{url($$1$$base$$2$$1)}g; \
+		"<style>\n$$css</style>"; \
+	}ge;
+
 BIBLIOGRAPHY_FILTER = \
 	s{<pre>\s*\@[^<]*</pre>}{ \
 		my $$block = $$&; \
@@ -28,12 +46,12 @@ help:
 
 build: build-forest
 
-# Transform only Forester's plain bibliography blocks, preserving the surrounding HTML.
+# Highlight bibliography blocks, preserving the surrounding HTML.
 build-forest:
 	@"$(FORESTER)" build "$(FOREST_CONFIG)"
 	@set -e; export XSLTPROC="$(XSLTPROC)"; \
 	while IFS= read -r -d '' page; do \
-		if ! perl -MIPC::Open2 -0777 -pe '$(BIBLIOGRAPHY_FILTER)' "$$page" > "$$page.tmp"; then \
+		if ! perl -MIPC::Open2 -0777 -pe '$(INLINE_STYLES_FILTER) $(BIBLIOGRAPHY_FILTER)' "$$page" > "$$page.tmp"; then \
 			rm -f "$$page.tmp"; \
 			exit 1; \
 		fi; \

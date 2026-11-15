@@ -2,7 +2,7 @@
 \taxon{Axiom}
 \author{fredrikbakke}
 \title{Detecting simplicial continuity}
-\meta{source}{[[myers-riley-2023]]}
+\meta{source}{[[MR23]]}
 \import{common}
 
 \p{The type family #{\Delta^{(\blank)} : \bN \to \Type} [detects continuity](fb-0046) for #{\skeleton_0 \dashv \coskeleton_0}.}

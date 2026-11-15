@@ -2,16 +2,16 @@
 \parent{fb-0044}
 \author{fredrikbakke}
 \title{Separating simplices}
-\meta{source}{[[gratzer-weinberger-buchholtz-2024]]}
+\meta{source}{[[GWB24]]}
 \import{common}
 
-\p{In [[gratzer-weinberger-buchholtz-2024]], their proposed Axiom 8 is a specialization of the principle of [[fb-0046]] through [the characterization of crisp equivalences](fb-0048), postulating the following axiom:}
+\p{In [[GWB24]], their proposed Axiom 8 is a specialization of the principle of [[fb-0046]] through [the characterization of crisp equivalences](fb-0048), postulating the following axiom:}
 
 \transclude{fb-004B}
 
-\p{Of course, replacing the family of simplices with the family of cubes makes sense since they consider simplicial types only as a localization of cubical types and so in their setting #{\flat} should rather be interpreted as the cubical 0-skeleton coreflection. However, under the assumption that [[fb-004B]] in addition to synthetic quasicoherence (called \em{Duality} in [[gratzer-weinberger-buchholtz-2024]]), the directed interval \directed-interval is simplicial, and so #{\flat} should agree with #{\skeleton_0} as we saw it before.}
+\p{Of course, replacing the family of simplices with the family of cubes makes sense since they consider simplicial types only as a localization of cubical types and so in their setting #{\flat} should rather be interpreted as the cubical 0-skeleton coreflection. However, under the assumption that [[fb-004B]] in addition to synthetic quasicoherence (called \em{Duality} in [[GWB24]]), the directed interval \directed-interval is simplicial, and so #{\flat} should agree with #{\skeleton_0} as we saw it before.}
 
-\p{By Lemma 4.2.2 of [[myers-riley-2023]], we have retracts #{\Delta^n \hookrightarrow \simpliciallify((\directed-interval)^n)}, where \simpliciallify is the simplicial localization operator, and hence for simplicial and crisp maps #{f} we have retracts of maps
+\p{By Lemma 4.2.2 of [[MR23]], we have retracts #{\Delta^n \hookrightarrow \simpliciallify((\directed-interval)^n)}, where \simpliciallify is the simplicial localization operator, and hence for simplicial and crisp maps #{f} we have retracts of maps
 \tikzcd{
   \flat(\Delta^n \to A) \arrow[d] \arrow[r, hook] & \flat({(\directed-interval)^n} \to A) \arrow[d] \arrow[r] & \flat(\Delta^n \to A) \arrow[d] \\
   \flat(\Delta^n \to B) \arrow[r, hook] & \flat({(\directed-interval)^n} \to B) \arrow[r] & \flat(\Delta^n \to B)\mathrlap{,}}

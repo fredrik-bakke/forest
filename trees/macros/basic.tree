@@ -3,6 +3,13 @@
 \contributor{samueltoth}
 \tag{macro}
 
+% From https://github.com/samtoth/agda-synthetic-categories/issues/95.
+\def\author[person]{\author{\person}\meta{local-author}{}}
+\def\author/literal[person]{\author/literal{\person}\meta{local-author}{}}
+\def\contributor[person]{\contributor{\person}\meta{local-contributor}{}}
+\def\contributor/literal[person]{\contributor/literal{\person}\meta{local-contributor}{}}
+\def\date[value]{\date{\value}\meta{local-date}{}}
+
 
 \def\nsp[p]{\mathrlap{\text{\p}}}
 

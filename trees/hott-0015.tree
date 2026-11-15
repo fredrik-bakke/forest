@@ -11,7 +11,7 @@
   We call such types \concept{extension types of #{A}}.
 }
 
-\p{Extension types along certain subtype inclusions appear as primitive constructs in [[riehl-shulman-2017]] and cubical type theory.}
+\p{Extension types along certain subtype inclusions appear as primitive constructs in [[RS17]] and cubical type theory.}
 
 \remark{
 The extension type \nondep-extension{Y}{A}{\delta}{f} is the [[hott-0006]] of #{\delta} along #{!_A}.

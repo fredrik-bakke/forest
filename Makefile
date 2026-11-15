@@ -33,6 +33,22 @@ BIBLIOGRAPHY_FILTER = \
 		$$result =~ s/\n\z//; $$result; \
 	}gse;
 
+METADATA_FILTER = \
+	my $$xml = $$ARGV; $$xml =~ s{\.html\z}{.xml}; \
+	if (-f $$xml) { \
+		my $$xml_uri = Cwd::abs_path($$xml); \
+		$$xml_uri =~ s{([^A-Za-z0-9/._~-])}{sprintf "%%%02X", ord $$1}ge; \
+		my @headers = m{(<header>.*?</header>)}sg; \
+		my $$pid = open2(my $$out, my $$in, $$ENV{XSLTPROC}, "--nonet", "--novalid", \
+			"--stringparam", "tree-xml", "file://$$xml_uri", "theme/local-metadata.xsl", "-"); \
+		print {$$in} "<headers>", @headers, "</headers>"; close $$in or die "Cannot send headers to XSLT: $$!"; \
+		my $$result = do { local $$/; <$$out> }; close $$out; \
+		waitpid($$pid, 0); die "Metadata XSLT failed for $$ARGV\n" if $$?; \
+		my @updated = $$result =~ m{(<header>.*?</header>)}sg; \
+		die "Metadata header count changed for $$ARGV\n" unless @headers == @updated; \
+		s{<header>.*?</header>}{shift @updated}gse; \
+	}
+
 .PHONY: help build build-forest watch watch-forest clean clean-forester
 
 help:
@@ -46,12 +62,13 @@ help:
 
 build: build-forest
 
-# Highlight bibliography blocks, preserving the surrounding HTML.
+# Apply static theme enhancements, preserving the surrounding HTML.
 build-forest:
+	@"$(FORESTER)" build --emit-xml --no-theme "$(FOREST_CONFIG)"
 	@"$(FORESTER)" build "$(FOREST_CONFIG)"
 	@set -e; export XSLTPROC="$(XSLTPROC)"; \
 	while IFS= read -r -d '' page; do \
-		if ! perl -MIPC::Open2 -0777 -pe '$(INLINE_STYLES_FILTER) $(BIBLIOGRAPHY_FILTER)' "$$page" > "$$page.tmp"; then \
+		if ! perl -MCwd -MIPC::Open2 -0777 -pe '$(INLINE_STYLES_FILTER) $(METADATA_FILTER) $(BIBLIOGRAPHY_FILTER)' "$$page" > "$$page.tmp"; then \
 			rm -f "$$page.tmp"; \
 			exit 1; \
 		fi; \

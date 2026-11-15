@@ -1,0 +1,20 @@
+\title{Simplicial HoTT}
+\taxon{Reference}
+\meta{external}{https://rzk-lang.github.io/sHoTT/}
+
+\subtree{
+\taxon{Abstract}
+\p{
+This is a formalization library for simplicial Homotopy Type Theory (sHoTT) with the
+aim of proving results in synthetic #{\infty}-category theory.
+}
+}
+
+\meta{bibtex}{\startverb
+@software{rzk-shott,
+license = {Unlicensed},
+title = {{Simplicial HoTT}},
+url = {https://rzk-lang.github.io/sHoTT/}
+}
+\stopverb
+}

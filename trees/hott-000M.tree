@@ -2,7 +2,7 @@
 \taxon{Theorem}
 \author{fredrikbakke}
 \import{common}
-\meta{source}{[[christensen-2024]]}
+\meta{source}{[[Chr24]]}
 
 \p{
   That every [[hott-000I]] is [accessible](hott-000L) is independent of the axiom of choice and law of excluded middle.

@@ -2,7 +2,7 @@
 \parent{fb-0044}
 \author{fredrikbakke}
 \title{Detecting simplicial continuity}
-\meta{source}{[[myers-riley-2023]]}
+\meta{source}{[[MR23]]}
 \import{common}
 
 \p{First, let us consider the general situation of detecting continuity. We assume we're working in a spatial/local type theory with modalities #{\flat \dashv \sharp} where #{\sharp} is a reflection and #{\flat} a coreflection. In the simplicial case #{\flat} will be #{\skeleton_0} and #{\sharp} will be #{\coskeleton_0}.}
@@ -10,13 +10,13 @@
 \transclude{fb-0045}
 \transclude{fb-0046}
 
-\p{The following is Theorem 3.1.6 of [[myers-riley-2023]]:}
+\p{The following is Theorem 3.1.6 of [[MR23]]:}
 \transclude{fb-0048}
 
-\p{Indeed, they argue semantically in Remark 3.1.4 of [[myers-riley-2023]] that any family #{G_i} that generates a local topos \topos{E} under colimits will detect continuity for the focus given by the terminal map of toposes #{\Gamma : \topos{E} \to \Space}.}
+\p{Indeed, they argue semantically in Remark 3.1.4 of [[MR23]] that any family #{G_i} that generates a local topos \topos{E} under colimits will detect continuity for the focus given by the terminal map of toposes #{\Gamma : \topos{E} \to \Space}.}
 
 
-\p{In [[myers-riley-2023]] they propose the following axiom for simplicial type theory:}
+\p{In [[MR23]] they propose the following axiom for simplicial type theory:}
 
 \transclude{fb-0049}
 

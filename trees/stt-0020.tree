@@ -6,9 +6,9 @@
 
 \p{
 We consider the notion of a 2-Segal space after
-[Dyckerhoff-Kapranov](dyckerhoff-kapranov-2019) (and others) in
-[simplicial type theory](riehl-shulman-2017) using a characterization given in
-[[feller-2023]].
+[Dyckerhoff-Kapranov](DK19) (and others) in
+[simplicial type theory](RS17) using a characterization given in
+[[Fel23]].
 }
 
 \definition{
@@ -66,7 +66,7 @@ A type #{A} is 2-Segal if and only if its left- and right-based hom-spaces
 are [Segal](stt-000F) for all #{a : A}.
 }
 
-\p{This appears as Theorem 6.3.2 in [[dyckerhoff-kapranov-2019]].}
+\p{This appears as Theorem 6.3.2 in [[DK19]].}
 
 \proof{
 \p{
@@ -87,7 +87,7 @@ in #{A}, where #{\alpha} corresponds to an extension of the span
 #{{\Lambda^2_0 \subseteq \Delta^2}} and likewise #{\beta} corresponds to an extension
 of the span #{y \overset{g}{\leftarrow} a \overset{h}{\rightarrow} z}. This
 correspondence can be written out more explicitly via, for instance, a similar
-argument to [what is made for Proposition 8.13](stt-000S) of [[riehl-shulman-2017]].
+argument to [what is made for Proposition 8.13](stt-000S) of [[RS17]].
 Under this correspondence, a composite of #{\alpha} before #{\beta} corresponds to an
 extension of the above diagram along the inclusion
 #{\Lambda^3_{0,2}\subseteq \Delta^3}, so, evidently, asking that the left-based

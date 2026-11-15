@@ -2,7 +2,7 @@
 \taxon{Axiom}
 \author{fredrikbakke}
 \title{Cubes separate}
-\meta{source}{Axiom 8 in [[gratzer-weinberger-buchholtz-2024]]}
+\meta{source}{Axiom 8 in [[GWB24]]}
 \import{common}
 
 \p{A map #{f :_{\flat} A \to B} is an [[hott-000U]] if and only if the map

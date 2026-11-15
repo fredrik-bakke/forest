@@ -4,8 +4,8 @@
 
 \put\transclude/numbered{false}
 \put\transclude/metadata{false}
-\put\transclude/expanded{true}
-\put\transclude/toc{true}
+\put\transclude/expanded{false}
+\put\transclude/toc{false}
 
 \p{Here is a list of select formalizations by me.}
 

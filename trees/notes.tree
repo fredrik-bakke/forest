@@ -4,7 +4,9 @@
 \scope{
 \put\transclude/numbered{false}
 \put\transclude/metadata{false}
-\put\transclude/expanded{true}
+\put\transclude/expanded{false}
+\put\transclude/toc{false}
+
 \query\datalog{
   ?X -: {\rel/has-author ?X @{fredrikbakke}}
         {\rel/has-taxon ?X '{Lecture note}}

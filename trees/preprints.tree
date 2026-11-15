@@ -4,7 +4,8 @@
 \scope{
 \put\transclude/numbered{false}
 \put\transclude/metadata{false}
-\put\transclude/expanded{true}
+\put\transclude/expanded{false}
+\put\transclude/toc{false}
 
 \transclude{BSWY26}
 }

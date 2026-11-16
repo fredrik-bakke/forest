@@ -6,6 +6,7 @@
 \author{fredrikbakke}
 \author/literal{others}
 \meta{external}{https://unimath.github.io/agda-unimath/}
+\import{markup}
 
 \p{
 The agda-unimath library is a community formalization project for univalent
@@ -24,7 +25,7 @@ any topic in mathematics.
 \<html:figure>[class]{agda-unimath-dependency-graph}{
   % The nested image is a static fallback when the upstream SVG is unavailable.
   \<html:object>[data]{https://unimath.github.io/agda-unimath/website/images/agda_dependency_graph.svg}[type]{image/svg+xml}[aria-label]{A dependency graph of the agda-unimath library, color coded by namespace}{
-    \<html:img>[src]{\route-asset{assets/agda-unimath-dependency-graph.svg}}[alt]{A dependency graph of the agda-unimath library, color coded by namespace}[loading]{lazy}[decoding]{async}{}
+    \<html:img>[src]{\asset-url{assets/agda-unimath-dependency-graph.svg}}[alt]{A dependency graph of the agda-unimath library, color coded by namespace}[loading]{lazy}[decoding]{async}{}
   }
   \<html:figcaption>{
     A dependency graph of the agda-unimath library, color coded by namespace.

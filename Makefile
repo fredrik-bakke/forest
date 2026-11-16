@@ -27,7 +27,7 @@ build-forest:
 	while IFS= read -r -d '' asset; do \
 		mkdir -p "output/forest/$$(dirname "$$asset")"; \
 		cp "$$asset" "output/forest/$$asset"; \
-	done < <(find assets -type f -name '*.pdf' -print0)
+	done < <(find assets -type f ! -path '*/.*' -print0)
 
 watch: watch-forest
 

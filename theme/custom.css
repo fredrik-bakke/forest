@@ -1,5 +1,13 @@
 /* Bibliography colors and proof layout from agda-synthetic-categories. */
 
+.homepage-portrait {
+  display: block;
+  width: 20rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
+
 .bibtex .Keyword {
   color: #35617d;
   font-weight: 700;

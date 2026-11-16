@@ -1,6 +1,8 @@
 \title{Fredrik Bakke}
 \author{fredrikbakke}
 \meta{author}{false}
+\xmlns:html{http://www.w3.org/1999/xhtml}
+\<html:img>[class]{homepage-portrait}[src]{\route-asset{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{1408}[height]{1876}{}
 
 \p{
 I am a PhD student at the [[ntnu]], doing work in higher category theory and

@@ -5,7 +5,7 @@
 \tag{refereed}
 \meta{doi}{10.21136/HS.2023.04}
 \meta{arxiv}{2105.01724}
-\meta{venue}{[[higher-structures]]}
+\meta{venue}{[[higher-structures]] 7(1)}
 \taxon{Reference}
 \date{2023-05-21}
 
@@ -13,24 +13,25 @@
 \taxon{Abstract}
 \p{
 We study cocartesian fibrations in the setting of the synthetic #{(∞,1)}-category
-theory developed in simplicial type theory introduced by Riehl and Shulman. Our
-development culminates in a Yoneda Lemma for cocartesian fibrations.
+theory developed in simplicial type theory introduced by [Riehl](emilyriehl) and
+[Shulman](michaelshulman). Our development culminates in a Yoneda Lemma for
+cocartesian fibrations.
 }
 }
 
 \meta{bibtex}{
 \startverb
 @article{BW23,
-  title = {Synthetic Fibered $(∞,1)$-Category Theory},
-  author = {Weinberger, Jonathan and Buchholtz, Ulrik},
-  date = {2023-05-21},
-  journal = {Higher Structures},
-  volume = {7},
-  pages = {74--165},
-  doi = {10.21136/HS.2023.04},
-  eprint = {2105.01724},
-  archivePrefix={arXiv},
-  primaryClass={math.CT},
+  title         = {Synthetic Fibered $(∞,1)$-Category Theory},
+  author        = {Weinberger, Jonathan and Buchholtz, Ulrik},
+  date          = {2023-05-21},
+  journal       = {Higher Structures},
+  volume        = {7},
+  pages         = {74--165},
+  doi           = {10.21136/HS.2023.04},
+  eprint        = {2105.01724},
+  archivePrefix = {arXiv},
+  primaryClass  = {math.CT},
 }
 \stopverb
 }

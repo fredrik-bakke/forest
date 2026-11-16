@@ -1,5 +1,6 @@
 \title{Homotopy Type Theory: Univalent Foundations of Mathematics}
 \taxon{Reference}
+\meta{doi}{10.48550/arXiv.1308.0729}
 \date{2013}
 \author/literal{The Univalent Foundations Program}
 \meta{external}{https://homotopytypetheory.org/book}
@@ -7,11 +8,13 @@
 \meta{bibtex}{
 \startverb
 @Book{UF13,
-  author    = {The {Univalent Foundations Program}},
-  title     = {Homotopy Type Theory: Univalent Foundations of Mathematics},
-  publisher = {\url{https://homotopytypetheory.org/book}},
-  address   = {Institute for Advanced Study},
-  year      = 2013,
-  shorthand = {{UF13}}
+  archivePrefix = {arXiv},
+  eprint        = {1308.0729},
+  author        = {The {Univalent Foundations Program}},
+  title         = {Homotopy Type Theory: Univalent Foundations of Mathematics},
+  publisher     = {\url{https://homotopytypetheory.org/book}},
+  address       = {Institute for Advanced Study},
+  year          = 2013,
+  shorthand     = {{UF13}}
 }
 \stopverb}

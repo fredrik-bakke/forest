@@ -3,6 +3,7 @@
 \meta{venue}{[[popl]] 2025; [[pacmpl]] 9(POPL)}
 \meta{doi}{10.1145/3704866}
 \taxon{Reference}
+\date{2025-01-09}
 
 \subtree{
 \taxon{Abstract}
@@ -32,7 +33,8 @@ theory of programming languages.
   number  = {POPL},
   pages   = {864--892},
   issn    = {2475-1421},
-  doi     = {10.1145/3704866}
+  doi     = {10.1145/3704866},
+  date    = {2025-01-09},
 }
 \stopverb
 }

@@ -1,5 +1,6 @@
 \title{Internal Universes in Models of Homotopy Type Theory}
 \taxon{Reference}
+\date{2018-07-04}
 \author{daniellicata}
 \author{ianorton}
 \author{andrewpitts}
@@ -35,7 +36,8 @@ type theory within what we call crisp type theory.
   year      = {2018},
   volume    = {108},
   editor    = {Kirchner, H\'{e}l\`{e}ne},
-  doi       = {10.4230/LIPIcs.FSCD.2018.22}
+  doi       = {10.4230/LIPIcs.FSCD.2018.22},
+  date      = {2018-07-04},
 }
 \stopverb
 }

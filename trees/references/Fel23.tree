@@ -1,7 +1,7 @@
 \title{Quasi-2-Segal sets}
 \author{matthewfeller}
 \taxon{Reference}
-\date{2023}
+\date{2023-06-04}
 \meta{venue}{[[tunis]] 5(2)}
 \meta{doi}{10.2140/tunis.2023.5.327}
 
@@ -17,6 +17,7 @@
   pages   = {327--367},
   issn    = {2576-7658,2576-7666},
   doi     = {10.2140/tunis.2023.5.327},
+  date    = {2023-06-04},
 }
 \stopverb
 }

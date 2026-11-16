@@ -1,5 +1,5 @@
 \title{The Yoneda Embedding in Simplicial Type Theory}
-\date{2025-01-22}
+\date{2025-06-23}
 \author{danielgratzer}
 \author{jonathanweinberger}
 \author{ulrikbuchholtz}
@@ -41,8 +41,7 @@ results in #{\infty}-category theory at a fraction of the complexity.
   eprinttype  = {arXiv},
   eprintclass = {cs},
   doi         = {10.1109/LICS65433.2025.00017},
-  url         = {http://arxiv.org/abs/2501.13229},
-  urldate     = {2025-01-24},
+  date        = {2025-06-23},
   keywords    = {Computer Science - Logic in Computer Science,Mathematics - Algebraic Topology,Mathematics - Category Theory},
 }
 \stopverb

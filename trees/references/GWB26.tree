@@ -1,11 +1,10 @@
 \title{The #{∞}-Category of #{∞}-Categories in Simplicial Type Theory}
-\date{2026-02-02}
+\date{2026-07-09}
 \author{danielgratzer}
 \author{jonathanweinberger}
 \author{ulrikbuchholtz}
 \meta{venue}{[[lics]] 2026}
 \meta{doi}{10.4230/LIPIcs.LICS.2026.52}
-\meta{external}{https://arxiv.org/abs/2602.02218}
 \taxon{Reference}
 
 \subtree{
@@ -39,7 +38,8 @@ principle, the structure homomorphism principle.
   publisher     = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
   doi           = {10.4230/LIPIcs.LICS.2026.52},
   eprint        = {2602.02218},
-  archivePrefix = {arXiv}
+  archivePrefix = {arXiv},
+  date          = {2026-07-09},
 }
 \stopverb
 }

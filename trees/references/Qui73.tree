@@ -1,5 +1,6 @@
 \title{Higher Algebraic K-theory: I}
 \taxon{Reference}
+\date{1973}
 \author{danquillen}
 \meta{venue}{[[lnm]], volume 341}
 \meta{doi}{10.1007/BFb0067053}
@@ -7,6 +8,9 @@
 \meta{bibtex}{
 \startverb
 @inproceedings{Qui73,
+  volume    = {341},
+  series    = {Lecture Notes in Mathematics},
+  doi       = {10.1007/BFb0067053},
   title     = {Higher Algebraic K-Theory: {{I}}},
   booktitle = {Higher K-Theories},
   author    = {Quillen, Daniel},

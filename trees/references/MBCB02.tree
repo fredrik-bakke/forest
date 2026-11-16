@@ -16,10 +16,11 @@ Nous travaillons dans le contexte de la théorie des catégories enrichies. L’
 régularité sur un préfaisceau revient à être canoniquement une colimite de
 préfaisceaux représentables et la semi-catégorie elle-même est régulière quand son
 foncteur #{\operatorname{Hom}} vérifie cette condition. Nous montrons la relation
-avec le lemme de Yoneda et obtenons un exemple de ce que F.W. Lawvere appelle
-"l’unité des opposés". Nous concluons avec un théorème de Morita pour les
-semi-catégories régulières. Nous donnons différents exemples provenant de la théorie
-des matrices, des opérateurs de Hilbert–Schmidt et des #{\Omega}-ensembles.
+avec le lemme de Yoneda et obtenons un exemple de ce que
+[F.W. Lawvere](williamlawvere) appelle "l’unité des opposés". Nous concluons avec un
+théorème de Morita pour les semi-catégories régulières. Nous donnons différents
+exemples provenant de la théorie des matrices, des opérateurs de Hilbert–Schmidt et
+des #{\Omega}-ensembles.
 }
 }
 

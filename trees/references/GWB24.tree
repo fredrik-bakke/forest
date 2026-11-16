@@ -4,6 +4,7 @@
 \author{ulrikbuchholtz}
 \tag{stt}
 \taxon{Reference}
+\date{2026-01-15}
 \meta{doi}{10.48550/arXiv.2407.09146}
 
 \subtree{
@@ -36,7 +37,7 @@ complete examples of the proposed directed structure identity principle.
   eprint        = {2407.09146},
   archivePrefix = {arXiv},
   primaryClass  = {cs.LO},
-  url           = {https://arxiv.org/abs/2407.09146},
+  date          = {2026-01-15},
 }
 \stopverb
 }

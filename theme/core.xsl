@@ -57,9 +57,10 @@
     </code>
   </xsl:template>
 
-  <xsl:template match="f:pre">
-    <pre>
-      <xsl:apply-templates />
+  <xsl:template match="html:pre | f:pre">
+    <pre xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="@*" />
+      <xsl:call-template name="preformatted-content" />
     </pre>
   </xsl:template>
 

@@ -150,3 +150,37 @@ section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxo
     margin: 0 -18rem 1rem 0;
   }
 }
+
+/* Profile icons from agda-synthetic-categories; see attribution in the SVGs. */
+.profile-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3em;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.profile-link::before {
+  content: '';
+  align-self: center;
+  flex: 0 0 0.8em;
+  width: 0.8em;
+  height: 0.8em;
+  background: center / contain no-repeat;
+}
+
+.profile-link.github::before {
+  background-image: url('github.svg');
+}
+
+.profile-link.mastodon::before {
+  background-image: url('mastodon.svg');
+}
+
+.profile-link.orcid {
+  text-decoration: none;
+}
+
+.profile-link.orcid::before {
+  background-image: url('orcid.svg');
+}

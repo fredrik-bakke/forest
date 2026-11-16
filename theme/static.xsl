@@ -17,6 +17,9 @@
   </xsl:template>
 
   <xsl:template match="pre[not(*)][starts-with(normalize-space(.), '@')]">
+    <xsl:variable name="text">
+      <xsl:call-template name="preformatted-content" />
+    </xsl:variable>
     <xsl:copy>
       <xsl:apply-templates select="@*[name() != 'class']" />
       <xsl:attribute name="class">
@@ -24,7 +27,7 @@
       </xsl:attribute>
       <xsl:comment>This is a guard for intentional leading blank lines.</xsl:comment>
       <xsl:call-template name="highlight-bibtex">
-        <xsl:with-param name="text" select="string(.)" />
+        <xsl:with-param name="text" select="string($text)" />
       </xsl:call-template>
     </xsl:copy>
   </xsl:template>

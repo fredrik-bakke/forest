@@ -19,7 +19,7 @@ INLINE_STYLES_FILTER = \
 	s{<link\s+rel="stylesheet"\s+href="([^"]*/|)style\.css">}{ \
 		my $$base = $$1; \
 		my $$css = $$site_css; \
-		$$css =~ s{url\((["\x27]?)(fonts/[^)"\x27]+)\1\)}{url($$1$$base$$2$$1)}g; \
+		$$css =~ s{url\((["\x27]?)(fonts/[^)"\x27]+|(?:github|mastodon|orcid)\.svg)\1\)}{url($$1$$base$$2$$1)}g; \
 		"<style>\n$$css</style>"; \
 	}ge;
 
@@ -32,6 +32,9 @@ BIBLIOGRAPHY_FILTER = \
 		waitpid($$pid, 0); die "Bibliography XSLT failed\n" if $$?; \
 		$$result =~ s/\n\z//; $$result; \
 	}gse;
+
+PREFORMATTED_FILTER = \
+	s{(<pre\b[^>]*>)\n}{$$1<!--This is a guard for intentional leading blank lines.-->}g;
 
 METADATA_FILTER = \
 	my $$xml = $$ARGV; $$xml =~ s{\.html\z}{.xml}; \
@@ -68,7 +71,7 @@ build-forest:
 	@"$(FORESTER)" build "$(FOREST_CONFIG)"
 	@set -e; export XSLTPROC="$(XSLTPROC)"; \
 	while IFS= read -r -d '' page; do \
-		if ! perl -MCwd -MIPC::Open2 -0777 -pe '$(INLINE_STYLES_FILTER) $(METADATA_FILTER) $(BIBLIOGRAPHY_FILTER)' "$$page" > "$$page.tmp"; then \
+		if ! perl -MCwd -MIPC::Open2 -0777 -pe '$(INLINE_STYLES_FILTER) $(METADATA_FILTER) $(BIBLIOGRAPHY_FILTER) $(PREFORMATTED_FILTER)' "$$page" > "$$page.tmp"; then \
 			rm -f "$$page.tmp"; \
 			exit 1; \
 		fi; \

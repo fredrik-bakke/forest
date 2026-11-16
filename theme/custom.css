@@ -8,7 +8,23 @@
   margin: 0 auto 1.5rem;
 }
 
-.project-logo {
+.agda-unimath-dependency-graph {
+  margin: 1.5rem 0;
+}
+
+.agda-unimath-dependency-graph img,
+.agda-unimath-dependency-graph object {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.agda-unimath-dependency-graph object {
+  aspect-ratio: 1275 / 1200;
+}
+
+.agda-synthetic-categories-project-logo {
   display: block;
   max-width: 100%;
   height: auto;
@@ -16,12 +32,12 @@
 }
 
 /* Keep the floated logo within its own project description. */
-.mainmatter:has(> .project-logo):not(.collapsed) {
+.mainmatter:has(> .agda-synthetic-categories-project-logo):not(.collapsed) {
   display: flow-root;
 }
 
 @media (min-width: 600px) {
-  .project-logo {
+  .agda-synthetic-categories-project-logo {
     float: right;
     max-width: 40%;
     margin: 0 0 1rem 1.5rem;
@@ -42,40 +58,78 @@
 }
 
 .qed,
-section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > header::before {
+section:is(
+    [data-taxon='Proof'],
+    [data-taxon='Proof of equivalence'],
+    [data-taxon='Heuristic argument']
+  )
+  > header::before {
   float: right;
   margin-left: 1em;
   font-family: 'Latin Modern Math', math;
   font-size: 1.12em;
 }
 
-section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter::after {
+section:is(
+    [data-taxon='Proof'],
+    [data-taxon='Proof of equivalence'],
+    [data-taxon='Heuristic argument']
+  )
+  > .mainmatter::after {
   content: '';
   display: block;
   clear: both;
 }
 
-section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']):has(> .mainmatter:not(.collapsed)) > header {
+section:is(
+    [data-taxon='Proof'],
+    [data-taxon='Proof of equivalence'],
+    [data-taxon='Heuristic argument']
+  ):has(> .mainmatter:not(.collapsed))
+  > header {
   float: left;
   margin-right: 0.5em;
 }
 
 /* Show the collapsed marker without inserting a second QED into the DOM. */
-section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']):has(> .mainmatter.collapsed > .qed, > .mainmatter.collapsed > p > .qed) > header::before {
+section:is(
+    [data-taxon='Proof'],
+    [data-taxon='Proof of equivalence'],
+    [data-taxon='Heuristic argument']
+  ):has(> .mainmatter.collapsed > .qed, > .mainmatter.collapsed > p > .qed)
+  > header::before {
   content: '□' / '';
 }
 
 /* Let the trailing QED share the last paragraph's line while preserving its start. */
-section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter > p:has(+ .qed) {
+section:is(
+    [data-taxon='Proof'],
+    [data-taxon='Proof of equivalence'],
+    [data-taxon='Heuristic argument']
+  )
+  > .mainmatter
+  > p:has(+ .qed) {
   display: inline;
 }
 
-section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter > p:has(+ .qed)::before {
+section:is(
+    [data-taxon='Proof'],
+    [data-taxon='Proof of equivalence'],
+    [data-taxon='Heuristic argument']
+  )
+  > .mainmatter
+  > p:has(+ .qed)::before {
   content: '';
   display: block;
 }
 
-section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) > .mainmatter > :is(section, pre, ul, ol, figure, blockquote, center, .katex-display) {
+section:is(
+    [data-taxon='Proof'],
+    [data-taxon='Proof of equivalence'],
+    [data-taxon='Heuristic argument']
+  )
+  > .mainmatter
+  > :is(section, pre, ul, ol, figure, blockquote, center, .katex-display) {
   clear: left;
 }
 
@@ -98,10 +152,10 @@ section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxo
 
 .margin-note {
   display: block;
-  margin-block: .75rem;
-  padding-left: .75rem;
+  margin-block: 0.75rem;
+  padding-left: 0.75rem;
   color: #555;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-style: italic;
   line-height: 1.45;
   overflow-wrap: anywhere;
@@ -111,7 +165,7 @@ section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxo
   html body {
     margin: 1rem auto;
     max-width: 90ex;
-    padding-inline: .75rem;
+    padding-inline: 0.75rem;
   }
 }
 
@@ -166,7 +220,13 @@ section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxo
   }
 
   /* Keep floated proof headings below notes from preceding sections. */
-  #grid-wrapper > article section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxon='Heuristic argument']) {
+  #grid-wrapper
+    > article
+    section:is(
+      [data-taxon='Proof'],
+      [data-taxon='Proof of equivalence'],
+      [data-taxon='Heuristic argument']
+    ) {
     clear: right;
   }
 

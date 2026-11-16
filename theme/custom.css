@@ -9,7 +9,7 @@
 }
 
 .homepage-sections > section {
-  margin-block-start: 1rem;
+  margin-block-start: 0.5rem;
 }
 
 /* Show explicitly chosen transclusion labels, including those on references. */

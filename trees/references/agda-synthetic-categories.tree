@@ -3,7 +3,7 @@
 \meta{external}{https://samtoth.github.io/agda-synthetic-categories/}
 
 \xmlns:html{http://www.w3.org/1999/xhtml}
-\<html:img>[class]{agda-synthetic-categories-project-logo}[src]{\route-asset{assets/agda-simplex.svg}}[alt]{The Agda-simplex logo}[width]{307}{}
+\<html:img>[class]{agda-synthetic-categories-project-logo}[src]{\route-asset{assets/agda-simplex.svg}}[alt]{The Agda-simplex logo}[width]{276}{}
 
 \p{
 An Agda development focussed on the synthetic theory of #{∞}-categories using

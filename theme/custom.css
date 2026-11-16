@@ -35,7 +35,7 @@
   /* Share a grid between the heading, description, and logo. */
   section:has(> .mainmatter:not(.collapsed) > .agda-synthetic-categories-project-logo) {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) min(40%, 307px);
+    grid-template-columns: minmax(0, 1fr) min(36%, 276px);
     column-gap: 1.5rem;
     align-items: start;
   }

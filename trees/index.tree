@@ -20,17 +20,16 @@ and a maintainer of [[agda-unimath]].
 }
 
 \p{
-This is my personal website where I share notes and exposition related to my work.
-The web page is written using [Jon Sterling](jonsterling)'s
-[Forester](https://www.forester-notes.org/005P/). The forest is hosted in a
+Below you can find notes I've written for this web site, as well as pointers to my
+other works. This page is written using [Jon Sterling](jonsterling)'s
+[Forester](https://www.forester-notes.org/005P/), and it is hosted on a
 [public GitHub repository](https://github.com/fredrik-bakke/forest).
 }
 
 \p{
-Below you can find my personalia, the notes I've written for this forest, as well
-as pointers to my other works. The "trees" are collapsed and may be clicked to reveal
-their contents. You can also search the forest by clicking the search button above or
-by pressing \code{Ctrl}+\code{K}.
+The "trees" below are collapsed and may be clicked to reveal their contents. You can
+also search the forest by clicking the search button above or by pressing
+\code{Ctrl}+\code{K}.
 }
 
 \scope{

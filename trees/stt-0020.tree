@@ -53,11 +53,7 @@ inclusions #{\Lambda^3_{0,2} \subseteq \Delta^3} and
 }
 
 \warning{
-There is a mistake in the following proof, which was noticed by
-[[theofanischatzidiamantis]]. We invite the reader to try and identify and reflect
-on how to fix this mistake. For a resolution to this issue you can see the
-formalization that resulted from the discussion with Theo:
-[agda-synthetic-categories/PR\startverb#\stopverb335](https://github.com/samtoth/agda-synthetic-categories/pull/335).
+
 }
 
 \theorem{
@@ -69,6 +65,13 @@ are [Segal](stt-000F) for all #{a : A}.
 \p{This appears as Theorem 6.3.2 in [[DK19]].}
 
 \proof{
+\marginnote{
+There is a mistake in this proof which was noticed by
+[[theofanischatzidiamantis]]. We invite the reader to try and identify and reflect
+on how to fix this mistake. For a resolution see the formalization that resulted from
+the discussion with Theo:
+[agda-synthetic-categories/PR\startverb#\stopverb335](https://github.com/samtoth/agda-synthetic-categories/pull/335).
+}
 \p{
 Let us unfold what it means for the left-based hom-spaces
 #{\sigma-type{x:A}\hom_A{(a,x)}} to be Segal.

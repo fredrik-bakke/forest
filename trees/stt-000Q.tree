@@ -10,14 +10,17 @@
   In other words, the inner horn inclusion is anodyne at the left and right end-point inclusions of the directed interval.
 }
 
+
+\proof{
 \marginnote{
 Thanks to [[samueltoth]] pointing out an error in a previous proof.
 }
-\proof{
-  We have a retract of maps
-  \tikzcd{
-    \Lambda^2_1\arrow[d, hook] \arrow[r, equals] & {\Delta^1 \times \{0\}} \bigcup {\{1\} \times \Delta^1} \arrow[d, hook] \arrow[r, equals] &  \Lambda^2_1 \arrow[d, hook] \\
-    \Delta^2 \arrow[r, "{(x\geq y)\mapsto(x, y)}"] & \Delta^1  \times \Delta^1  \arrow[r, "{(x, y) \mapsto (x \geq x \land y)}"] & \Delta^2
-  }
-  so the result follows by [pushout-product and retract stability of left orthogonal maps](hott-0005).
+\p{
+We have a retract of maps
+\tikzcd{
+  \Lambda^2_1\arrow[d, hook] \arrow[r, equals] & {\Delta^1 \times \{0\}} \bigcup {\{1\} \times \Delta^1} \arrow[d, hook] \arrow[r, equals] &  \Lambda^2_1 \arrow[d, hook] \\
+  \Delta^2 \arrow[r, "{(x\geq y)\mapsto(x, y)}"] & \Delta^1  \times \Delta^1  \arrow[r, "{(x, y) \mapsto (x \geq x \land y)}"] & \Delta^2
+}
+so the result follows by [pushout-product and retract stability of left orthogonal maps](hott-0005).
+}
 }

@@ -200,7 +200,7 @@ section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxo
 }
 
 /* Keep search visible on the homepage */
-#home-link.hidden {
+nav#home-link.hidden {
   display: flex;
 }
 

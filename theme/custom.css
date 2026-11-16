@@ -49,6 +49,11 @@
     grid-column: 1;
   }
 
+  .mainmatter:has(> .agda-synthetic-categories-project-logo) > pre.bibtex {
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+
   .agda-synthetic-categories-project-logo {
     grid-column: 2;
     grid-row: 1 / span 2;

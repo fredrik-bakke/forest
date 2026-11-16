@@ -31,16 +31,29 @@
   margin: 0 auto 1rem;
 }
 
-/* Keep the floated logo within its own project description. */
-.mainmatter:has(> .agda-synthetic-categories-project-logo):not(.collapsed) {
-  display: flow-root;
-}
-
 @media (min-width: 600px) {
+  /* Share a grid between the heading, description, and logo. */
+  section:has(> .mainmatter:not(.collapsed) > .agda-synthetic-categories-project-logo) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) min(40%, 307px);
+    column-gap: 1.5rem;
+    align-items: start;
+  }
+
+  .mainmatter:has(> .agda-synthetic-categories-project-logo):not(.collapsed) {
+    display: contents;
+  }
+
+  section:has(> .mainmatter > .agda-synthetic-categories-project-logo) > header,
+  .mainmatter:has(> .agda-synthetic-categories-project-logo) > :not(.agda-synthetic-categories-project-logo) {
+    grid-column: 1;
+  }
+
   .agda-synthetic-categories-project-logo {
-    float: right;
-    max-width: 40%;
-    margin: 0 0 1rem 1.5rem;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    max-width: 100%;
+    margin: 0;
   }
 }
 

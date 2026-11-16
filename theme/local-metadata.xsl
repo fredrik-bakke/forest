@@ -104,6 +104,7 @@
       <xsl:if test="not(li/a[@class='doi'])">
         <xsl:apply-templates select="$frontmatter/f:meta[@name='arxiv']" />
       </xsl:if>
+      <xsl:apply-templates select="$frontmatter/f:meta[@name='email']" />
       <xsl:apply-templates select="$frontmatter/f:meta[@name='github']" />
       <xsl:apply-templates select="$frontmatter/f:meta[@name='mastodon']" />
     </xsl:copy>

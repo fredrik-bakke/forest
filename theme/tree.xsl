@@ -245,6 +245,7 @@
           <xsl:apply-templates select="f:meta[@name='doi']" />
           <xsl:apply-templates select="f:meta[@name='arxiv']" />
           <xsl:apply-templates select="f:meta[@name='orcid']" />
+          <xsl:apply-templates select="f:meta[@name='email']" />
           <xsl:apply-templates select="f:meta[@name='github']" />
           <xsl:apply-templates select="f:meta[@name='mastodon']" />
           <xsl:apply-templates select="f:meta[@name='external']" />

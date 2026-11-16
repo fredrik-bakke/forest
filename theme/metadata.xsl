@@ -222,6 +222,14 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="f:meta[@name='email']">
+    <li class="meta-item">
+      <a class="email link external" href="{concat('mailto:', normalize-space(.))}">
+        <xsl:value-of select="normalize-space(.)" />
+      </a>
+    </li>
+  </xsl:template>
+
   <xsl:template match="f:meta[@name='external']">
     <li class="meta-item">
       <a class="link external" href="{.}">

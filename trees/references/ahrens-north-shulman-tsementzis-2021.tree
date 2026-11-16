@@ -8,7 +8,22 @@
 \date{2021-02-11}
 \meta{venue}{[[mscs]]}
 
-\meta{bibtex}\verb<<<|
+\subtree{
+\taxon{Abstract}
+
+\p{
+The Univalence Principle is the statement that equivalent mathematical structures are
+indistinguishable. We prove a general version of this principle that applies to all
+set-based, categorical, and higher-categorical structures defined in a non-algebraic
+and space-based style, as well as models of higher-order theories such as topological
+spaces. In particular, we formulate a general definition of indiscernibility for
+objects of any such structure, and a corresponding univalence condition that
+generalizes Rezk's completeness condition for Segal spaces and ensures that all equivalences of structures are levelwise equivalences. Our work builds on Makkai's First-Order Logic with Dependent Sorts, but is expressed in Voevodsky's Univalent Foundations (UF), extending previous work on the Structure Identity Principle and univalent categories in UF. This enables indistinguishability to be expressed simply as identification, and yields a formal theory that is interpretable in classical homotopy theory, but also in other higher topos models. It follows that Univalent Foundations is a fully equivalence-invariant foundation for higher-categorical mathematics, as intended by Voevodsky.
+}
+}
+
+\meta{bibtex}{
+\startverb
 @book{ahrens-north-shulman-tsementzis-2021
   title = {The {{Univalence Principle}}},
   author = {Ahrens, Benedikt and North, Paige Randall and Shulman, Michael and Tsementzis, Dimitris},
@@ -18,8 +33,6 @@
   eprint = {2102.06275},
   eprinttype = {arXiv},
   eprintclass = {cs, math},
-}<<<
-
-\p{
- The Univalence Principle is the statement that equivalent mathematical structures are indistinguishable. We prove a general version of this principle that applies to all set-based, categorical, and higher-categorical structures defined in a non-algebraic and space-based style, as well as models of higher-order theories such as topological spaces. In particular, we formulate a general definition of indiscernibility for objects of any such structure, and a corresponding univalence condition that generalizes Rezk's completeness condition for Segal spaces and ensures that all equivalences of structures are levelwise equivalences. Our work builds on Makkai's First-Order Logic with Dependent Sorts, but is expressed in Voevodsky's Univalent Foundations (UF), extending previous work on the Structure Identity Principle and univalent categories in UF. This enables indistinguishability to be expressed simply as identification, and yields a formal theory that is interpretable in classical homotopy theory, but also in other higher topos models. It follows that Univalent Foundations is a fully equivalence-invariant foundation for higher-categorical mathematics, as intended by Voevodsky.
+}
+\stopverb
 }

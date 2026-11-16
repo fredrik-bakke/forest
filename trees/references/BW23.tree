@@ -9,8 +9,18 @@
 \taxon{Reference}
 \date{2023-05-21}
 
-\meta{bibtex}\verb<<<|
-@article{buchholtz-weinberger-2023,
+\subtree{
+\taxon{Abstract}
+\p{
+We study cocartesian fibrations in the setting of the synthetic #{(∞,1)}-category
+theory developed in simplicial type theory introduced by Riehl and Shulman. Our
+development culminates in a Yoneda Lemma for cocartesian fibrations.
+}
+}
+
+\meta{bibtex}{
+\startverb
+@article{BW23,
   title = {Synthetic Fibered $(∞,1)$-Category Theory},
   author = {Weinberger, Jonathan and Buchholtz, Ulrik},
   date = {2023-05-21},
@@ -21,6 +31,6 @@
   eprint = {2105.01724},
   archivePrefix={arXiv},
   primaryClass={math.CT},
-}<<<
-
-\p{We study cocartesian fibrations in the setting of the synthetic #{(∞,1)}-category theory developed in simplicial type theory introduced by Riehl and Shulman. Our development culminates in a Yoneda Lemma for cocartesian fibrations.}
+}
+\stopverb
+}

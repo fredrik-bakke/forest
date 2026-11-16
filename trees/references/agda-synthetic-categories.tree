@@ -1,7 +1,11 @@
 \title{agda-synthetic-categories}
 \taxon{Project}
-
 \meta{external}{https://samtoth.github.io/agda-synthetic-categories/}
+
+\p{
+An Agda development focussed on the synthetic theory of #{∞}-categories using
+simplicial type theory.
+}
 
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \<html:img>[src]{\route-asset{assets/agda-simplex.svg}}[alt]{The Agda-simplex logo}[width]{307}[style]{\startverb max-width: 100%; height: auto;\stopverb}{}

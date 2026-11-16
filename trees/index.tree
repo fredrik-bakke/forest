@@ -12,13 +12,12 @@ and a maintainer of [[agda-unimath]].
 }
 
 \p{
-This is my personal site where I share notes as well as miscellaneous exposition
-related to my work. The web page is written using [Jon Sterling](jonsterling)'s
+This is my personal website where I share notes and exposition related to my work.
+The web page is written using [Jon Sterling](jonsterling)'s
 [Forester](https://www.forester-notes.org/005P/). The forest is hosted in a
 [public GitHub repository](https://github.com/fredrik-bakke/forest).
 }
 
-\p{
 \p{
 Below you can find my personalia, the notes I've written for this forest, as well
 as pointers to my other works. The "trees" are collapsed and may be clicked to reveal
@@ -26,12 +25,11 @@ their contents. You can also search the forest by clicking the search button abo
 by pressing \code{Ctrl}+\code{K}.
 }
 
-
-}
-
 \scope{
+\put\transclude/numbered{false}
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
+\put\transclude/toc{false}
 \transclude{fredrikbakke}
 }
 
@@ -44,6 +42,7 @@ by pressing \code{Ctrl}+\code{K}.
 \transclude{preprints}
 \transclude{theses}
 \transclude{talks}
+\transclude{projects}
 
 \scope{
 \put\transclude/expanded{false}

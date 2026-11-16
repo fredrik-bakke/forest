@@ -19,14 +19,14 @@ related to my work. The web page is written using [Jon Sterling](jonsterling)'s
 }
 
 \p{
-The trees below are "collapsed" and can be "expanded" by clicking on them. You can
-also search the forest using the search button above or by pressing
-\code{Ctrl}+\code{K}.
-}
-
 \p{
 Below you can find my personalia, the notes I've written for this forest, as well
-as pointers to my other works.
+as pointers to my other works. The "trees" are collapsed and may be clicked to reveal
+their contents. You can also search the forest by clicking the search button above or
+by pressing \code{Ctrl}+\code{K}.
+}
+
+
 }
 
 \scope{

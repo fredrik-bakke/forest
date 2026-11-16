@@ -22,6 +22,11 @@ also search the forest using the search button above or by pressing
 \code{Ctrl}+\code{K}.
 }
 
+\p{
+Below you can find my personalia, the notes I've written for this forest, as well
+as pointers to my other works.
+}
+
 \transclude{fredrikbakke}
 
 \p{
@@ -29,10 +34,11 @@ also search the forest using the search button above or by pressing
 \put\transclude/metadata{false}
 \put\transclude/expanded{true}
 
+\transclude{notes}
+
 \transclude{preprints}
 \transclude{theses}
 \transclude{talks}
-\transclude{notes}
 
 \scope{
 \put\transclude/expanded{false}

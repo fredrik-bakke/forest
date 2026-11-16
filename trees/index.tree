@@ -1,7 +1,14 @@
 \title{Fredrik Bakke}
 \author{fredrikbakke}
 \meta{author}{false}
+\meta{institution}{[[ntnu]], Department of Mathematical Sciences}
+\meta{position}{PhD candidate}
+\meta{github}{fredrik-bakke}
+\meta{mastodon}{FredrikBakke@mathstodon.xyz}
+\meta{orcid}{0000-0002-0774-6783}
+
 \xmlns:html{http://www.w3.org/1999/xhtml}
+
 \<html:img>[class]{homepage-portrait}[src]{\route-asset{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{1408}[height]{1876}{}
 
 \p{
@@ -23,14 +30,6 @@ Below you can find my personalia, the notes I've written for this forest, as wel
 as pointers to my other works. The "trees" are collapsed and may be clicked to reveal
 their contents. You can also search the forest by clicking the search button above or
 by pressing \code{Ctrl}+\code{K}.
-}
-
-\scope{
-\put\transclude/numbered{false}
-\put\transclude/metadata{true}
-\put\transclude/expanded{false}
-\put\transclude/toc{false}
-\transclude{fredrikbakke}
 }
 
 \scope{

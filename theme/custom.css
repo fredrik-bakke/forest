@@ -8,6 +8,10 @@
   margin: 0 auto 1.5rem;
 }
 
+.homepage-sections > section > .mainmatter {
+  margin-block-start: 1rem;
+}
+
 /* Show explicitly chosen transclusion labels, including those on references. */
 [data-transclude-taxon] > section[data-taxon] > header > h1 > .taxon {
   display: inline;

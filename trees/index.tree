@@ -17,7 +17,7 @@ I am a PhD candidate at the [[ntnu]], doing work in higher category theory and
 univalent type theory, supervised by [[runehaugseng]] and co-supervised by
 [[ulrikbuchholtz]]. I am a collaborator on the [[agda-synthetic-categories]] project
 and a maintainer of [[agda-unimath]]. Starting in December 2026, I will be a research
-assitant under [[emilyriehl]] at [[jhu]], where I will continue my work on
+assistant under [[emilyriehl]] at [[jhu]], where I will continue my work on
 [[agda-synthetic-categories]].
 }
 
@@ -38,6 +38,7 @@ You can also search the forest by clicking the search button above or by pressin
 \put\transclude/metadata{false}
 \put\transclude/expanded{true}
 
+\<html:div>[class]{homepage-sections}{
 \transclude{notes}
 
 \transclude{preprints}
@@ -49,4 +50,5 @@ You can also search the forest by clicking the search button above or by pressin
 % \put\transclude/expanded{false}
 % \transclude{formalizations}
 % }
+}
 }

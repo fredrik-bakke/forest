@@ -22,8 +22,8 @@ and a maintainer of [[agda-unimath]]. Starting in December 2026, I will be a res
 assistant under [[emilyriehl]] at [[jhu]], where I will continue my work on
 [[agda-synthetic-categories]].
 }
-\marginnote{Thanks to [[zhixuanyang]] for sharing this forester layout with me.}
 \p{
+\marginnote{Thanks to [[zhixuanyang]] for sharing this forester layout with me.}
 This page is written using [Jon Sterling](jonsterling)'s
 [Forester](https://www.forester-notes.org/005P/), and it is hosted in a
 [public GitHub repository](https://github.com/fredrik-bakke/forest).

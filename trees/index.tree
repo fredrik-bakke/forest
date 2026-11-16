@@ -44,8 +44,8 @@ by pressing \code{Ctrl}+\code{K}.
 \transclude{talks}
 \transclude{projects}
 
-\scope{
-\put\transclude/expanded{false}
-\transclude{formalizations}
-}
+% \scope{
+% \put\transclude/expanded{false}
+% \transclude{formalizations}
+% }
 }

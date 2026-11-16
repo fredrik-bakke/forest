@@ -1,27 +1,18 @@
 \title{Talks}
 \author{fredrikbakke}
 
+\xmlns:html{http://www.w3.org/1999/xhtml}
+
 \scope{
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
 \put\transclude/toc{false}
 
-\def\rel/listed-talk{listed-talk}
-
-\execute\datalog{
-  \rel/listed-talk ?X -: {\rel/has-taxon ?X '{Invited talk}}
-}
-
-\execute\datalog{
-  \rel/listed-talk ?X -: {\rel/has-taxon ?X '{Contributed talk}}
-}
-\execute\datalog{
-  \rel/listed-talk ?X -: {\rel/has-taxon ?X '{Talk}}
-}
-
+\<html:div>[class]{hide-taxons}{
 \query\datalog{
   ?X -: {\rel/has-author ?X @{fredrikbakke}}
-        {\rel/listed-talk ?X}
+        {\rel/has-taxon ?X '{Talk}}
+}
 }
 }

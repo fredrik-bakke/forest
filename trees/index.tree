@@ -9,6 +9,7 @@
 \meta{orcid}{0000-0002-0774-6783}
 % \meta{external}{https://www.ntnu.edu/employees/fredrik.bakke}
 
+\import{markup}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 
 \<html:img>[class]{homepage-portrait}[src]{\route-asset{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{1408}[height]{1876}{}

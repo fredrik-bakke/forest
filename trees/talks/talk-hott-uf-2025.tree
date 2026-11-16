@@ -1,14 +1,14 @@
-\title{The Cantor–Schröder–Bernstein Theorem in ∞-topoi}
-\taxon{Contributed talk}
+\title{The Cantor–Schröder–Bernstein Theorem in #{∞}-topoi}
+\taxon{Talk}
 \author{fredrikbakke}
 \import{common}
 \date{2025-04-15}
-\meta{venue}{[HoTT/UF 2025](https://hott-uf.github.io/2025/), Genoa, Italy}
+\meta{venue}{[HoTT/UF 2025](https://hott-uf.github.io/2025/), Genoa, Italy; Contributed talk}
 \meta{source}{\abstract-link{assets/talks/hott-uf-2025-abstract.pdf}}
 \meta{slides}{\asset-url{assets/talks/hott-uf-2025-slides.pdf}}
 \meta{video}{https://youtu.be/y3tqzgjGXvc}
 
 \abstract{
 We present work-in-progress generalizations of the Cantor–Schröder–Bernstein theorem
-that applies in non-boolean ∞-topoi.
+that applies in non-boolean #{∞}-topoi.
 }

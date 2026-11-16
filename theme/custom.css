@@ -12,6 +12,10 @@
   margin-block-start: 0.5rem;
 }
 
+.hide-taxons > section > header > h1 > .taxon {
+  display: none;
+}
+
 /* Show explicitly chosen transclusion labels, including those on references. */
 [data-transclude-taxon] > section[data-taxon] > header > h1 > .taxon {
   display: inline;

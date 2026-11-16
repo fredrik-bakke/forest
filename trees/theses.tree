@@ -3,7 +3,6 @@
 \import{markup}
 
 \scope{
-\put\transclude/numbered{false}
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
 \put\transclude/toc{false}

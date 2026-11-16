@@ -91,12 +91,19 @@
           <xsl:when test="self::li[address[@class='author']] and $frontmatter/f:meta[@name='local-author' or @name='local-contributor']">
             <xsl:apply-templates select="$frontmatter/f:authors" />
           </xsl:when>
+          <xsl:when test="self::li[a[@class='doi']]">
+            <xsl:apply-templates select="." mode="html" />
+            <xsl:apply-templates select="$frontmatter/f:meta[@name='arxiv']" />
+          </xsl:when>
           <xsl:when test="self::li[a[@class='orcid']]">
             <xsl:apply-templates select="$frontmatter/f:meta[@name='orcid']" />
           </xsl:when>
           <xsl:otherwise><xsl:apply-templates select="." mode="html" /></xsl:otherwise>
         </xsl:choose>
       </xsl:for-each>
+      <xsl:if test="not(li/a[@class='doi'])">
+        <xsl:apply-templates select="$frontmatter/f:meta[@name='arxiv']" />
+      </xsl:if>
       <xsl:apply-templates select="$frontmatter/f:meta[@name='github']" />
       <xsl:apply-templates select="$frontmatter/f:meta[@name='mastodon']" />
     </xsl:copy>

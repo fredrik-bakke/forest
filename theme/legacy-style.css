@@ -381,6 +381,7 @@ nav#toc li {
 
 .slug,
 .doi,
+.arxiv,
 .orcid {
   color: gray;
   font-weight: 200;

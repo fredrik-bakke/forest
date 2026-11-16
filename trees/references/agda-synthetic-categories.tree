@@ -9,3 +9,15 @@
 An Agda development focussed on the synthetic theory of #{∞}-categories using
 simplicial type theory.
 }
+
+\meta{bibtex}{
+\startverb
+@software{agda-synthetic-categories,
+  title    = {{Agda Synthetic Categories}},
+  author   = {Toth, Samuel and Bakke, Fredrik and {contributors}},
+  url      = {https://samtoth.github.io/agda-synthetic-categories/},
+  abstract = {An Agda development focussed on the synthetic theory of
+              $\infty$-categories using simplicial type theory.},
+}
+\stopverb
+}

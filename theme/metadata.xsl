@@ -124,6 +124,14 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="f:meta[@name='arxiv']">
+    <li class="meta-item">
+      <a class="arxiv link" href="{concat('https://arxiv.org/abs/', normalize-space(.))}">
+        <xsl:value-of select="concat('arXiv:', normalize-space(.))" />
+      </a>
+    </li>
+  </xsl:template>
+
   <!-- Profile metadata and icons from agda-synthetic-categories (babde2382). -->
   <xsl:template match="f:meta[@name='github']">
     <li class="meta-item">

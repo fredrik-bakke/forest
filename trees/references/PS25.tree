@@ -21,14 +21,14 @@ map classifier by strengthening the Segal condition.
 \meta{bibtex}{
 \startverb
 @inproceedings{PS25,
-  author    = {Pugh, Leoni and Sterling, Jonathan},
   title     = {When is the partial map classifier a Sierpiński cone?},
-  booktitle = {2025 40th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)},
+  author    = {Pugh, Leoni and Sterling, Jonathan},
+  date      = {2025-06-23},
   year      = {2025},
+  booktitle = {2025 40th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)},
   volume    = {},
   number    = {},
   pages     = {718-731},
   doi       = {10.1109/LICS65433.2025.00060},
-  date      = {2025-06-23},
 }
 \stopverb}

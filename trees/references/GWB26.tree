@@ -30,6 +30,7 @@ principle, the structure homomorphism principle.
 @inproceedings{GWB26,
   title         = {The $\infty$-Category of $\infty$-Categories in Simplicial Type Theory},
   author        = {Gratzer, Daniel and Weinberger, Jonathan and Buchholtz, Ulrik},
+  date          = {2026-07-09},
   year          = {2026},
   booktitle     = {41st Annual Symposium on Logic in Computer Science (LICS 2026)},
   series        = {Leibniz International Proceedings in Informatics (LIPIcs)},
@@ -39,7 +40,6 @@ principle, the structure homomorphism principle.
   doi           = {10.4230/LIPIcs.LICS.2026.52},
   eprint        = {2602.02218},
   archivePrefix = {arXiv},
-  date          = {2026-07-09},
 }
 \stopverb
 }

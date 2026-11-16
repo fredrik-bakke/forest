@@ -35,13 +35,13 @@ assistant Coq together with the library [HoTT/Coq].
 \meta{bibtex}{
 \startverb
 @phdthesis{Qui16,
-  author = {Quirin, Kevin},
   title  = {Lawvere–Tierney sheafification in Homotopy Type Theory},
-  url    = {https://kevinquirin.github.io/thesis/main.pdf},
+  author = {Quirin, Kevin},
   year   = {2016},
   month  = dec,
   number = {2016EMNA0298},
-  school = {École des Mines de Nantes}
+  school = {École des Mines de Nantes},
+  url    = {https://kevinquirin.github.io/thesis/main.pdf},
 }
 \stopverb
 }

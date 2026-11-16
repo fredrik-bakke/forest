@@ -27,18 +27,18 @@ des #{\Omega}-ensembles.
 \meta{bibtex}{
 \startverb
 @article{MbCB02,
-  author    = {Moens, M.-A. and Berni-Canani, U. and Borceux, F.},
   title     = {On regular presheaves and regular semi-categories},
+  author    = {Moens, M.-A. and Berni-Canani, U. and Borceux, F.},
+  year      = {2002},
   journal   = {Cahiers de Topologie et G\'eom\'etrie Diff\'erentielle Cat\'egoriques},
-  pages     = {163--190},
-  publisher = {Dunod \'editeur, publi\'e avec le concours du CNRS},
   volume    = {43},
   number    = {3},
-  year      = {2002},
+  pages     = {163--190},
+  publisher = {Dunod \'editeur, publi\'e avec le concours du CNRS},
   mrnumber  = {1928230},
   zbl       = {1038.18006},
+  url       = {http://www.numdam.org/item/CTGDC_2002__43_3_163_0/},
   language  = {en},
-  url       = {http://www.numdam.org/item/CTGDC_2002__43_3_163_0/}
 }
 \stopverb
 }

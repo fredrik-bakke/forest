@@ -40,15 +40,15 @@ foundation for higher-categorical mathematics, as intended by
   date        = {2025-01-14},
   year        = {2025},
   month       = {jan},
+  series      = {Memoirs of the American Mathematical Society},
+  volume      = {305},
+  number      = {1541},
+  publisher   = {American Mathematical Society},
+  isbn        = {978-1-4704-7269-6},
+  doi         = {10.1090/memo/1541},
   eprint      = {2102.06275},
   eprinttype  = {arXiv},
   eprintclass = {cs, math},
-  isbn        = {978-1-4704-7269-6},
-  publisher   = {American Mathematical Society},
-  number      = {1541},
-  volume      = {305},
-  series      = {Memoirs of the American Mathematical Society},
-  doi         = {10.1090/memo/1541},
 }
 \stopverb
 }

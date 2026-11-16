@@ -27,14 +27,14 @@ spaces, and also to the stack completion of a prestack.
 \startverb
 @article{AKS15,
   title     = {Univalent categories and the Rezk completion},
-  volume    = {25},
-  doi       = {10.1017/S0960129514000486},
-  number    = {5},
-  journal   = {Mathematical Structures in Computer Science},
-  publisher = {Cambridge University Press},
   author    = {Ahrens, Benedikt and Kapulkin, Krzysztof and Shulman, Michael},
   year      = {2015},
-  pages     = {1010–1039}
+  journal   = {Mathematical Structures in Computer Science},
+  volume    = {25},
+  number    = {5},
+  pages     = {1010–1039},
+  publisher = {Cambridge University Press},
+  doi       = {10.1017/S0960129514000486},
 }
 \stopverb
 }

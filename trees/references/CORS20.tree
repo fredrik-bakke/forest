@@ -31,16 +31,16 @@ abelian. We also include a partial converse to the main theorem.
 \meta{bibtex}{
 \startverb
 @article{CORS20,
+  title     = {Localization in Homotopy Type Theory},
   author    = {Christensen, J. Daniel and Opie, Morgan and Rijke, Egbert and Scoccola, Luis},
-  publisher = {Institute of Mathematics CAS},
   year      = {2020},
   month     = feb,
-  doi       = {10.21136/HS.2020.01},
-  issue     = {1},
   journal   = {Higher Structures},
-  pages     = {1--32},
-  title     = {Localization in Homotopy Type Theory},
   volume    = {4},
+  issue     = {1},
+  pages     = {1--32},
+  publisher = {Institute of Mathematics CAS},
+  doi       = {10.21136/HS.2020.01},
 }
 \stopverb
 }

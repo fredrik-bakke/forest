@@ -8,13 +8,13 @@
 \meta{bibtex}{
 \startverb
 @Book{UF13,
-  archivePrefix = {arXiv},
-  eprint        = {1308.0729},
-  author        = {The {Univalent Foundations Program}},
   title         = {Homotopy Type Theory: Univalent Foundations of Mathematics},
+  author        = {The {Univalent Foundations Program}},
+  year          = 2013,
   publisher     = {\url{https://homotopytypetheory.org/book}},
   address       = {Institute for Advanced Study},
-  year          = 2013,
-  shorthand     = {{UF13}}
+  eprint        = {1308.0729},
+  archivePrefix = {arXiv},
+  shorthand     = {{UF13}},
 }
 \stopverb}

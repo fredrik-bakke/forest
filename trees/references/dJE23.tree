@@ -39,15 +39,15 @@ all subsets and our definition that asks for suprema of all small families.
 \startverb
 @article{dJE23,
   title     = {On Small Types in Univalent Foundations},
-  volume    = {Volume 19, Issue 2},
-  ISSN      = {1860-5974},
-  DOI       = {10.46298/lmcs-19(2:8)2023},
-  journal   = {Logical Methods in Computer Science},
-  publisher = {Centre pour la Communication Scientifique Directe (CCSD)},
   author    = {de Jong, Tom and Escardó, Martín Hötzel},
+  date      = {2023-05-04},
   year      = {2023},
   month     = may,
-  date       = {2023-05-04},
+  journal   = {Logical Methods in Computer Science},
+  volume    = {Volume 19, Issue 2},
+  publisher = {Centre pour la Communication Scientifique Directe (CCSD)},
+  ISSN      = {1860-5974},
+  DOI       = {10.46298/lmcs-19(2:8)2023},
 }
 \stopverb
 }

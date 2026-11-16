@@ -16,7 +16,7 @@ INLINE_STYLES_FILTER = \
 		my $$custom_css = read_css("theme/custom.css"); \
 		$$site_css =~ s{\@import url\("custom\.css"\);}{$$custom_css}; \
 	} \
-	s{<link\s+rel="stylesheet"\s+href="([^"]*/|)style\.css">}{ \
+	s{<link\s+rel="stylesheet"\s+href="([^"]*/|)style\.css"\s*/?>}{ \
 		my $$base = $$1; \
 		my $$css = $$site_css; \
 		$$css =~ s{url\((["\x27]?)(fonts/[^)"\x27]+|(?:github|mastodon|orcid)\.svg)\1\)}{url($$1$$base$$2$$1)}g; \
@@ -32,6 +32,9 @@ BIBLIOGRAPHY_FILTER = \
 		waitpid($$pid, 0); die "Bibliography XSLT failed\n" if $$?; \
 		$$result =~ s/\n\z//; $$result; \
 	}gse;
+
+SEARCH_BUTTON_FILTER = \
+	s{(<div\s+class="logo">.*?)(</div>)}{$$1<button id="search-button" type="button" title="Search" aria-label="Search" aria-haspopup="dialog" onclick="document.dispatchEvent(new KeyboardEvent(&quot;keydown&quot;, {key: &quot;k&quot;, ctrlKey: true, bubbles: true}))"><svg width="24" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="/forest/search.svg\#icon"></use></svg></button>$$2}gs;
 
 PREFORMATTED_FILTER = \
 	s{(<pre\b[^>]*>)\n}{$$1<!--This is a guard for intentional leading blank lines.-->}g;
@@ -71,7 +74,7 @@ build-forest:
 	@"$(FORESTER)" build "$(FOREST_CONFIG)"
 	@set -e; export XSLTPROC="$(XSLTPROC)"; \
 	while IFS= read -r -d '' page; do \
-		if ! perl -MCwd -MIPC::Open2 -0777 -pe '$(INLINE_STYLES_FILTER) $(METADATA_FILTER) $(BIBLIOGRAPHY_FILTER) $(PREFORMATTED_FILTER)' "$$page" > "$$page.tmp"; then \
+		if ! perl -MCwd -MIPC::Open2 -0777 -pe '$(INLINE_STYLES_FILTER) $(METADATA_FILTER) $(BIBLIOGRAPHY_FILTER) $(PREFORMATTED_FILTER) $(SEARCH_BUTTON_FILTER)' "$$page" > "$$page.tmp"; then \
 			rm -f "$$page.tmp"; \
 			exit 1; \
 		fi; \

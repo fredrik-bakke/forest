@@ -184,3 +184,26 @@ section:is([data-taxon='Proof'], [data-taxon='Proof of equivalence'], [data-taxo
 .profile-link.orcid::before {
   background-image: url('orcid.svg');
 }
+
+/* Search button */
+#search-button {
+  cursor: pointer;
+  background: none;
+  margin-left: 1rem;
+  border-radius: 2px;
+  border: none;
+  padding: 7px;
+}
+
+#search-button:hover {
+  background: rgba(70, 110, 135, 0.035);
+}
+
+/* Keep search visible on the homepage */
+#home-link.hidden {
+  display: flex;
+}
+
+#home-link.hidden .logo > a {
+  display: none;
+}

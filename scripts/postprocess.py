@@ -30,7 +30,7 @@ def inline_styles(html, css):
     def replace(match):
         base = match[1]
         rebased = re.sub(
-            r"url\(([\"']?)(fonts/[^)\"']+|(?:github|mastodon|orcid)\.svg)\1\)",
+            r"url\(([\"']?)(fonts/[^)\"']+|(?:email|github|mastodon|orcid)\.svg)\1\)",
             lambda url: f"url({url[1]}{base}{url[2]}{url[1]})",
             css,
         )

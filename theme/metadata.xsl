@@ -224,7 +224,7 @@
 
   <xsl:template match="f:meta[@name='email']">
     <li class="meta-item">
-      <a class="email link external" href="{concat('mailto:', normalize-space(.))}">
+      <a class="email profile-link link external" href="{concat('mailto:', normalize-space(.))}" aria-label="{concat('Email: ', normalize-space(.))}">
         <xsl:value-of select="normalize-space(.)" />
       </a>
     </li>

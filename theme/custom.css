@@ -291,6 +291,10 @@ section:is(
   background: center / contain no-repeat;
 }
 
+.profile-link.email::before {
+  background-image: url('email.svg');
+}
+
 .profile-link.github::before {
   background-image: url('github.svg');
 }

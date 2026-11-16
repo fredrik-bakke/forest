@@ -12,7 +12,10 @@
 \import{markup}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 
-\<html:img>[class]{homepage-portrait}[src]{\asset-url{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{1408}[height]{1876}{}
+\<html:picture>{
+  \<html:source>[srcset]{\asset-url{assets/handsome-boy.jxl}}[type]{image/jxl}{}
+  \<html:img>[class]{homepage-portrait}[src]{\asset-url{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{1408}[height]{1876}{}
+}
 
 \p{
 I am a PhD candidate at the [[ntnu]], doing work in higher category theory and

@@ -7,12 +7,11 @@
 \put\transclude/expanded{false}
 \put\transclude/toc{false}
 
-
-\query\datalog{
-  ?X -: {\rel/has-author ?X @{fredrikbakke}}
-        {\rel/has-taxon ?X '{Invited talk}}
-}
 \def\rel/listed-talk{listed-talk}
+
+\execute\datalog{
+  \rel/listed-talk ?X -: {\rel/has-taxon ?X '{Invited talk}}
+}
 
 \execute\datalog{
   \rel/listed-talk ?X -: {\rel/has-taxon ?X '{Contributed talk}}

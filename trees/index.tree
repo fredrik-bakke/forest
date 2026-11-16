@@ -27,9 +27,12 @@ Below you can find my personalia, the notes I've written for this forest, as wel
 as pointers to my other works.
 }
 
+\scope{
+\put\transclude/metadata{true}
+\put\transclude/expanded{false}
 \transclude{fredrikbakke}
+}
 
-\p{
 \scope{
 \put\transclude/metadata{false}
 \put\transclude/expanded{true}
@@ -43,6 +46,5 @@ as pointers to my other works.
 \scope{
 \put\transclude/expanded{false}
 \transclude{formalizations}
-}
 }
 }

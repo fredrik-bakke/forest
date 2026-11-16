@@ -6,6 +6,7 @@
 \date{2015}
 \meta{venue}{[[mscs]] 25(5)}
 \meta{doi}{10.1017/S0960129514000486}
+\meta{arxiv}{1303.0584}
 
 \subtree{
 \taxon{Abstract}
@@ -26,15 +27,18 @@ spaces, and also to the stack completion of a prestack.
 \meta{bibtex}{
 \startverb
 @article{AKS15,
-  title     = {Univalent categories and the Rezk completion},
-  author    = {Ahrens, Benedikt and Kapulkin, Krzysztof and Shulman, Michael},
-  year      = {2015},
-  journal   = {Mathematical Structures in Computer Science},
-  volume    = {25},
-  number    = {5},
-  pages     = {1010–1039},
-  publisher = {Cambridge University Press},
-  doi       = {10.1017/S0960129514000486},
+  title         = {Univalent categories and the Rezk completion},
+  author        = {Ahrens, Benedikt and Kapulkin, Krzysztof and Shulman, Michael},
+  year          = {2015},
+  journal       = {Mathematical Structures in Computer Science},
+  volume        = {25},
+  number        = {5},
+  pages         = {1010–1039},
+  publisher     = {Cambridge University Press},
+  doi           = {10.1017/S0960129514000486},
+  eprint        = {1303.0584},
+  archivePrefix = {arXiv},
+  primaryClass  = {math.CT},
 }
 \stopverb
 }

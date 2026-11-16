@@ -13,7 +13,7 @@
 \<html:img>[class]{homepage-portrait}[src]{\route-asset{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{1408}[height]{1876}{}
 
 \p{
-I am a PhD student at the [[ntnu]], doing work in higher category theory and
+I am a PhD candidate at the [[ntnu]], doing work in higher category theory and
 univalent type theory, supervised by [[runehaugseng]] and co-supervised by
 [[ulrikbuchholtz]]. I am a collaborator on the [[agda-synthetic-categories]] project
 and a maintainer of [[agda-unimath]].

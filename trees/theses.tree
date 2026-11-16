@@ -1,5 +1,6 @@
 \title{Theses}
 \author{fredrikbakke}
+\import{markup}
 
 \scope{
 \put\transclude/numbered{false}
@@ -7,5 +8,5 @@
 \put\transclude/expanded{false}
 \put\transclude/toc{false}
 
-\transclude{Bak22}
+\transclude-as{Master's thesis}{Bak22}
 }

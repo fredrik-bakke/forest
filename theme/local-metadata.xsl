@@ -21,7 +21,15 @@
   <xsl:template match="f:tree" mode="headers">
     <xsl:if test="not(@hidden-when-empty = 'true' and not(f:mainmatter/*) and not(normalize-space(f:mainmatter)))">
       <xsl:if test="not(@show-heading = 'false')">
-        <xsl:copy-of select="f:frontmatter" />
+        <f:frontmatter>
+          <xsl:copy-of select="f:frontmatter/@*" />
+          <xsl:if test="parent::*/@data-transclude-taxon">
+            <xsl:attribute name="display-taxon">
+              <xsl:value-of select="parent::*/@data-transclude-taxon" />
+            </xsl:attribute>
+          </xsl:if>
+          <xsl:copy-of select="f:frontmatter/node()" />
+        </f:frontmatter>
       </xsl:if>
       <xsl:apply-templates select="f:mainmatter" mode="headers" />
       <xsl:if test="not(@root = 'true')">
@@ -43,6 +51,28 @@
 
   <xsl:template match="@* | node()" mode="html">
     <xsl:copy><xsl:apply-templates select="@* | node()" mode="html" /></xsl:copy>
+  </xsl:template>
+
+  <!-- A local heading label leaves the source taxon and metadata intact. -->
+  <xsl:template match="header/h1/span[@class='taxon']" mode="html">
+    <xsl:variable name="index" select="count(../../preceding-sibling::header) + 1" />
+    <xsl:variable name="taxon" select="$frontmatters[$index]/@display-taxon" />
+    <xsl:copy>
+      <xsl:apply-templates select="@*" mode="html" />
+      <xsl:choose>
+        <xsl:when test="$taxon">
+          <xsl:value-of select="$taxon" />
+          <xsl:choose>
+            <xsl:when test="span[@class='section-number']">
+              <xsl:text> </xsl:text>
+              <xsl:apply-templates select="span[@class='section-number']" mode="html" />
+            </xsl:when>
+            <xsl:otherwise><xsl:text>. </xsl:text></xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <xsl:otherwise><xsl:apply-templates mode="html" /></xsl:otherwise>
+      </xsl:choose>
+    </xsl:copy>
   </xsl:template>
 
   <xsl:template match="header/div[@class='metadata']/ul" mode="html">

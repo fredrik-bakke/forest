@@ -12,6 +12,9 @@
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \def\mark[body]{\<html:mark>{\body}}
 
+% Override only the displayed heading taxon; retain the full transclusion.
+\def\transclude-as[tax][tree]{\<html:div>[data-transclude-taxon]{\tax}{\transclude{\tree}}}
+
 % Stable asset URLs
 \def\asset-url[path]{\let\use-stable-url[hashed-url]{/forest/\path}\use-stable-url{\route-asset{\path}}}
 \def\asset-link[path][label]{\<html:a>[class]{link external}[href]{\asset-url{\path}}{\label}}

@@ -3,7 +3,7 @@
 \contributor{samueltoth}
 \tag{macro}
 
-% Includes macros from agda-synthetic-categories by Samuel Toth and Fredrik Bakke.
+% Includes macros from agda-synthetic-categories by Samuel Toth and me.
 % https://github.com/samtoth/agda-synthetic-categories/tree/main/trees/macros
 
 \def\Id{#{\textrm{Id}}}

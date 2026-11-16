@@ -74,6 +74,11 @@ build-forest:
 		fi; \
 		mv "$$page.tmp" "$$page"; \
 	done < <(find output -type f -name '*.html' -print0)
+	@set -e; \
+	while IFS= read -r -d '' asset; do \
+		mkdir -p "output/forest/$$(dirname "$$asset")"; \
+		cp "$$asset" "output/forest/$$asset"; \
+	done < <(find assets -type f -name '*.pdf' -print0)
 
 watch: watch-forest
 

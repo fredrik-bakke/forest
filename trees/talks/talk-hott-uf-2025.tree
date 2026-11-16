@@ -4,8 +4,8 @@
 \import{common}
 \date{2025-04-15}
 \meta{venue}{[HoTT/UF 2025](https://hott-uf.github.io/2025/), Genoa, Italy}
-\meta{source}{\<html:a>[href]{\route-asset{assets/talks/hott-uf-2025-abstract.pdf}}{Abstract}}
-\meta{slides}{\route-asset{assets/talks/hott-uf-2025-slides.pdf}}
+\meta{source}{\abstract-link{assets/talks/hott-uf-2025-abstract.pdf}}
+\meta{slides}{\asset-url{assets/talks/hott-uf-2025-slides.pdf}}
 \meta{video}{https://youtu.be/y3tqzgjGXvc}
 
 \abstract{

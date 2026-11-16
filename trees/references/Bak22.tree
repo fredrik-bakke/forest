@@ -4,8 +4,8 @@
 \date{2021-12}
 \meta{venue}{[[ntnu]], Master's thesis}
 \meta{external}{https://hdl.handle.net/11250/2995704}
-\xmlns:html{http://www.w3.org/1999/xhtml}
-\meta{source}{\<html:a>[href]{\route-asset{assets/references/Bak22.pdf}}{PDF}}
+\import{markup}
+\meta{source}{\pdf-link{assets/references/Bak22.pdf}}
 
 \subtree{
 \taxon{Abstract}

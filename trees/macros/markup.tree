@@ -3,7 +3,7 @@
 \contributor{samueltoth}
 \tag{macro}
 
-% Includes macros from agda-synthetic-categories by Samuel Toth and Fredrik Bakke.
+% Includes macros from agda-synthetic-categories by Samuel Toth and me.
 % https://github.com/samtoth/agda-synthetic-categories/tree/main/trees/macros
 
 \export{latex-preamble}
@@ -11,6 +11,12 @@
 % ===== Formatting primitives
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \def\mark[body]{\<html:mark>{\body}}
+
+% Stable asset URLs
+\def\asset-url[path]{\let\use-stable-url[hashed-url]{/forest/\path}\use-stable-url{\route-asset{\path}}}
+\def\asset-link[path][label]{\<html:a>[class]{link external}[href]{\asset-url{\path}}{\label}}
+\def\pdf-link[path]{\asset-link{\path}{PDF}}
+\def\abstract-link[path]{\asset-link{\path}{Abstract}}
 
 % Margin-note macro from Zhixuan Yang's forest: https://yangzhixuan.github.io/
 \def\marginnote[text]{\<html:span>[class]{margin-note}[role]{note}{\text}}

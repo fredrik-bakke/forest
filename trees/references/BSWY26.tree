@@ -7,8 +7,8 @@
 \meta{doi}{10.48550/arXiv.2605.00773}
 \date{2026-05-01}
 
-\xmlns:html{http://www.w3.org/1999/xhtml}
-\meta{source}{\<html:a>[href]{\route-asset{assets/references/BSWY26.pdf}}{PDF}}
+\import{markup}
+\meta{source}{\pdf-link{assets/references/BSWY26.pdf}}
 
 \subtree{
 \taxon{Abstract}

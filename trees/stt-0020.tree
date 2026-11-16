@@ -52,10 +52,6 @@ inclusions #{\Lambda^3_{0,2} \subseteq \Delta^3} and
 #{\Lambda^3_{1,3} \subseteq \Delta^3}.
 }
 
-\warning{
-
-}
-
 \theorem{
 A type #{A} is 2-Segal if and only if its left- and right-based hom-spaces
 ##{\sigma-type{x:A}\hom_A{(a,x)} \quad\text{and}\quad\sigma-type{x:A}\hom_A{(x,a)}}

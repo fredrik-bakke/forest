@@ -8,6 +8,11 @@
   margin: 0 auto 1.5rem;
 }
 
+/* Show explicitly chosen transclusion labels, including those on references. */
+[data-transclude-taxon] > section[data-taxon] > header > h1 > .taxon {
+  display: inline;
+}
+
 .agda-unimath-dependency-graph {
   margin: 1.5rem 0;
 }

@@ -72,6 +72,9 @@ def highlight_bibliography(html, xsltproc):
         html,
     )
 
+def normalize_line_breaks(html):
+    # Forester emits <br></br>, and HTML interprets </br> as another line break.
+    return re.sub(r"</br\s*>", "", html, flags=re.IGNORECASE)
 
 def normalize_preformatted(html):
     # Match ASC's Firefox fix. The comment protects intentional extra blank lines
@@ -129,6 +132,7 @@ def main():
         html = inline_styles(html, css)
         html = render_metadata(html, page, args.xsltproc)
         html = highlight_bibliography(html, args.xsltproc)
+        html = normalize_line_breaks(html)
         html = normalize_preformatted(html)
         html = add_search_button(html, button)
         write_page(page, html)

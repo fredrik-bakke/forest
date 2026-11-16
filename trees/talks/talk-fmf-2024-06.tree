@@ -1,0 +1,13 @@
+\title{The Yoneda lemma and complete Segal spaces in Homotopy Type Theory}
+\taxon{Talk}
+\author{fredrikbakke}
+\import{common}
+\date{2024-06-06}
+\meta{venue}{FMF, [[uljubljana]]}
+\meta{source}{[Abstract](https://www.fmf.uni-lj.si/en/news/event/1569/fredrik-bakke-egbert-rijke/)}
+
+\abstract{
+We'll wrap up the story from [last time](talk-fmf-2024-05) by proving the Yoneda
+lemma for Segal types and seeing how it generalizes identity induction, then we'll
+discuss univalence.
+}

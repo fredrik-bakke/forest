@@ -1,0 +1,21 @@
+\title{Some results in constructive cardinal theory}
+\taxon{Invited talk}
+\author{fredrikbakke}
+\import{common}
+\date{2026-08-12}
+\meta{venue}{Geometry and Topology Seminar, [Western University](uwo)}
+\meta{source}{[Calendar](https://mathcal.sci.uwo.ca/V3/search.php)}
+\meta{slides}{\route-asset{assets/talks/western-2026-slides.pdf}}
+
+\abstract{
+\p{
+While the basic study of cardinals are undeniably important in mathematics, they are
+surprisingly ill-behaved in the constructive setting, where they are currently poorly
+understood. In this seminar, I will present a series of novel constructive results on
+cardinals, including a constructivization of the Cantor-Schröder-Bernstein theorem, a
+predicative proof of the uncountability of the (MacNeille) reals, and, if time
+permits, a constructivization of König’s theorem. Along the way, I will highlight
+aspects and challenges in the study of constructive cardinals, as well as some ways
+to tackle them.
+}
+}

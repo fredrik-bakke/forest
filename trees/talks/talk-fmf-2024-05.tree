@@ -1,0 +1,19 @@
+\title{Segal spaces in Homotopy Type Theory}
+\taxon{Talk}
+\author{fredrikbakke}
+\import{common}
+\date{2024-05-16}
+\meta{venue}{FMF, [[uljubljana]]}
+\meta{source}{[Abstract](https://www.fmf.uni-lj.si/en/news/event/1534/fredrik-bakke-segal-spaces-in-homotopy-type-theory/), [Lecture notes](fb-0004)}
+
+\abstract{
+\p{
+Homotopy Type Theory is a language for doing homotopy invariant mathematics. As such
+one would expect it to be a good setting for doing #{∞}-category theory. Indeed, by
+extending the type theory with a directed interval object we get a type theory where
+every type is automatically equipped with simplicial structure and every construction
+preserves this structure in the appropriate sense. In this setting we can define and
+work with #{∞}-categories synthetically. We will have a look at some of the basic
+aspects of category theory in this setting.
+}
+}

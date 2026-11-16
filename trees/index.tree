@@ -28,6 +28,7 @@ also search the forest by pressing \code{Ctrl}+\code{K}.
 
 \transclude{preprints}
 \transclude{theses}
+\transclude{talks}
 \transclude{notes}
 
 \scope{

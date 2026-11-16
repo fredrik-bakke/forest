@@ -1,0 +1,12 @@
+\title{Synthetic categories in Agda}
+\taxon{Contributed talk}
+\author{fredrikbakke}
+\date{2026-08-21}
+\meta{venue}{[Teaching Higher Category Theory with Computers](https://icerm.brown.edu/program/topical_workshop/tw-26-thc), ICERM, Brown University}
+\meta{source}{[Abstract](https://icerm.brown.edu/program/topical_workshop/tw-26-thc#schedule-item-11896)}
+\meta{slides}{\route-asset{assets/talks/icerm-2026-slides.pdf}}
+
+\p{
+An introduction to formalising higher category theory in simplicial type theory
+with Agda, using [[agda-synthetic-categories]].
+}

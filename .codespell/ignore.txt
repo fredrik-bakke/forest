@@ -22,5 +22,6 @@ refl
 singl
 snd
 sym
+theses
 uiver
 whitelist

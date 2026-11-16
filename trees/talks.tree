@@ -1,0 +1,28 @@
+\title{Talks}
+\author{fredrikbakke}
+
+\scope{
+\put\transclude/numbered{false}
+\put\transclude/metadata{true}
+\put\transclude/expanded{false}
+\put\transclude/toc{false}
+
+
+\query\datalog{
+  ?X -: {\rel/has-author ?X @{fredrikbakke}}
+        {\rel/has-taxon ?X '{Invited talk}}
+}
+\def\rel/listed-talk{listed-talk}
+
+\execute\datalog{
+  \rel/listed-talk ?X -: {\rel/has-taxon ?X '{Contributed talk}}
+}
+\execute\datalog{
+  \rel/listed-talk ?X -: {\rel/has-taxon ?X '{Talk}}
+}
+
+\query\datalog{
+  ?X -: {\rel/has-author ?X @{fredrikbakke}}
+        {\rel/listed-talk ?X}
+}
+}

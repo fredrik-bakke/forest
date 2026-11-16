@@ -8,6 +8,26 @@
   margin: 0 auto 1.5rem;
 }
 
+.project-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+/* Keep the floated logo within its own project description. */
+.mainmatter:has(> .project-logo):not(.collapsed) {
+  display: flow-root;
+}
+
+@media (min-width: 600px) {
+  .project-logo {
+    float: right;
+    max-width: 40%;
+    margin: 0 0 1rem 1.5rem;
+  }
+}
+
 .bibtex .Keyword {
   color: #35617d;
   font-weight: 700;

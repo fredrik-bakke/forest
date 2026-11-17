@@ -72,9 +72,11 @@ def highlight_bibliography(html, xsltproc):
         html,
     )
 
+
 def normalize_line_breaks(html):
     # Forester emits <br></br>, and HTML interprets </br> as another line break.
     return re.sub(r"</br\s*>", "", html, flags=re.IGNORECASE)
+
 
 def normalize_preformatted(html):
     # Match ASC's Firefox fix. The comment protects intentional extra blank lines
@@ -92,6 +94,19 @@ def add_search_button(html, button):
         lambda logo: logo[1] + button + logo[2],
         html,
         flags=re.DOTALL,
+    )
+
+
+def add_counter(html, snippet):
+    if not re.search(r"<body\b", html, flags=re.IGNORECASE):
+        return html
+    existing = r"<script\b[^>]*\bdata-goatcounter\s*=[^>]*>.*?</script\s*>"
+    if re.search(existing, html, flags=re.IGNORECASE | re.DOTALL):
+        return re.sub(
+            existing, lambda _: snippet, html, flags=re.IGNORECASE | re.DOTALL
+        )
+    return re.sub(
+        r"</head\s*>", snippet + "\n</head>", html, count=1, flags=re.IGNORECASE
     )
 
 
@@ -127,6 +142,7 @@ def main():
         )
     )
     button = (THEME / "search-button.html").read_text(encoding="utf-8").rstrip("\n")
+    counter = (THEME / "counter.html").read_text(encoding="utf-8").rstrip("\n")
     for page in sorted(args.output.rglob("*.html")):
         html = page.read_text(encoding="utf-8")
         html = inline_styles(html, css)
@@ -135,6 +151,7 @@ def main():
         html = normalize_line_breaks(html)
         html = normalize_preformatted(html)
         html = add_search_button(html, button)
+        html = add_counter(html, counter)
         write_page(page, html)
 
 

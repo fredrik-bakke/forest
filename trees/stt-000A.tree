@@ -16,8 +16,6 @@
     The standard 2-simplex
     ##{\Delta^2\defeq \left\{(t,s) : \directed-interval\times\directed-interval \mid s \leq t \right\}.}
     This shape should be understood as the filled lower triangle of the directed square #{\directed-interval\times\directed-interval}.
-
-    The standard 2-simplex has the universal property of the directed cocone under \directed-interval. In fact, inductively, ##{\Delta^{n+1}\simeq \directed-cocone\Delta^n.}
   }
   \li{
     The boundary of the standard 2-simplex

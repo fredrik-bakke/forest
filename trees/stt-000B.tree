@@ -17,7 +17,7 @@
 }
 
 \remark{
-  As pointed out by Alex, we could broaden the semantics of the type theory by omitting the totality axiom and rather \em{define} simplicial types as those which view the directed relation to be total. I.e., those that are orthogonal to the cogap map
-
+  As pointed out by [Alex](alexsimpson), we could broaden the semantics of the type theory by omitting the totality axiom and rather \em{define} simplicial types as those which view the directed relation to be total. I.e., those that are null at the propositions #{(i \le j) \lor (j \le i)},
+  or, more broadly those that are orthogonal to the cogap map
   ##{\Delta^2\amalg_{\Delta^1}\Delta^2 \to \Delta^1\times\Delta^1\mathrlap{.}}
 }

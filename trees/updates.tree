@@ -1,0 +1,29 @@
+\title{Updates}
+\author{fredrikbakke}
+
+\scope{
+\put\transclude/numbered{false}
+\put\transclude/metadata{true}
+\put\transclude/expanded{true}
+\put\transclude/toc{false}
+
+\subtree{
+\title{[[matematisk-ordliste]] on [[termportalen]]}
+\date{2026-09-03}
+
+\p{
+I was featured in an [announcement](https://termportalen.w.uib.no/2026/09/03/ny-termbase-matematisk-ordliste/) about the integration of
+[[matematisk-ordliste]] on [[termportalen]].
+}
+}
+
+\subtree{
+\title{[[BSWY26]] is on ArXiV}
+\date{2026-05-01}
+
+\p{
+My first preprint, joint with [[jonsterling]], [[markwilliams]] and [[lingyuanye]]
+has been uploaded to the ArXiV.
+}
+}
+}

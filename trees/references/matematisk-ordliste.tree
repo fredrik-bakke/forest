@@ -1,0 +1,32 @@
+\title{Matematisk ordliste}
+\taxon{Reference}
+\meta{email}{ordliste@matematikkradet.no}
+\meta{external}{https://ordliste.matematikkradet.no/}
+\meta{source}{https://github.com/matematisk-ordliste/matematisk-ordliste}
+
+\p{
+The Norwegian mathematical dictionary is a collection of mathematical terms in
+Norwegian Bokmål, Norwegian Nynorsk and English. The dictionary is intended as a tool
+to facilitate Norwegian communication in mathematics for students and researchers.
+The goal is to cover terms that students encounter in mathematical studies at
+university colleges and universities. We also encourage active researchers to propose
+translations of terms in their own mathematical fields.
+}
+\p{
+The dictionary was originally developed as a collaboration between the [[ntnu]], the
+University of Oslo and the University of Agder, and the project was supported by The
+Language Council of Norway. Currently, the Norwegian Mathematics Council is
+responsible for the overall maintenance and development of the dictionary.
+}
+\p{
+The termbase is under continuous development, and we encourage all users to propose
+changes or new translations. At the projects website you will find information about
+how to submit feedback, as well as a list of all contributors and a description of
+our choice of linguistic conventions. It is also possible to send an e-mail to
+[ordliste@matematikkradet.no](mailto:ordliste@matematikkradet.no).
+}
+\p{
+The dictionary is available at
+[ordliste.matematikkradet.no](https://ordliste.matematikkradet.no/) and on
+[[termportalen]].
+}

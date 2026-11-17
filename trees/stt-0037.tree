@@ -18,7 +18,7 @@
   \li{Transposing adjunctions and one-sided inverses compose.}
   \li{Transposing adjunctions and one-sided inverses are closed under retracts of maps.}
   \li{
-    Given the homotopy #{H : R \o L \o j \sim j} we have a cone defining the unique gap map #{L'}
+    Given the homotopy #{H \colon R \o L \o j \sim j} we have a cone defining the unique gap map #{L'}
     \tikzcd{
       B' \arrow[ddr,equals, bend right] \arrow[drr, "L\o j", bend left] \arrow[dr, dashed, "L'"] \\
       & A' \arrow[d, "R'"'] \arrow[r, "j'"] & A \arrow[d, "R"]\\

@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  Given three maps #{f : A \to A'}, #{g : B \to B'}, and #{h : C \to C'}, there is a natural equivalence of maps
+  Given three maps #{f \colon A \to A'}, #{g \colon B \to B'}, and #{h \colon C \to C'}, there is a natural equivalence of maps
   ##{\left(f \pushout-product g\right)\pullback-power h \simeq f \pullback-power \left(g\pullback-power h\right)\mathrlap{.}}
 
   \tikzcd{

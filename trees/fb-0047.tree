@@ -13,11 +13,11 @@
 \p{The following is Theorem 3.1.6 of [[MR23]]:}
 \transclude{fb-0048}
 
-\p{Indeed, they argue semantically in Remark 3.1.4 of [[MR23]] that any family #{G_i} that generates a local topos \topos{E} under colimits will detect continuity for the focus given by the terminal map of toposes #{\Gamma : \topos{E} \to \Space}.}
+\p{Indeed, they argue semantically in Remark 3.1.4 of [[MR23]] that any family #{G_i} that generates a local topos \topos{E} under colimits will detect continuity for the focus given by the terminal map of toposes #{\Gamma \colon \topos{E} \to \Space}.}
 
 
 \p{In [[MR23]] they propose the following axiom for simplicial type theory:}
 
 \transclude{fb-0049}
 
-\p{Unfolding what this axiom means in the context of [the previous theorem](fb-0048), a crisp map #{{f :_{\skeleton_0} X \to Y}} is an [[hott-000U]] if #{f_n : X_n \to Y_n} is an equivalence for all #{n :_{\skeleton_0} \bN}, where ##{X_n \defeq \skeleton_0(\Delta^n \to X)\mathrlap{.}}}
+\p{Unfolding what this axiom means in the context of [the previous theorem](fb-0048), a crisp map #{{f \colon-flat X \to Y}} is an [[hott-000U]] if #{f_n \colon X_n \to Y_n} is an equivalence for all #{n :^\flat \bN}, where ##{X_n \defeq \skeleton_0(\Delta^n \to X)\mathrlap{.}}}

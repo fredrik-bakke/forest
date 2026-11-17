@@ -6,7 +6,7 @@
 \import{common}
 
 \p{
-  Given two crisp maps #{f :_\flat A \to B} and #{g :_\flat X \to Y}, we say #{g} is
+  Given two crisp maps #{f \colon-flat A \to B} and #{g \colon-flat X \to Y}, we say #{g} is
   \concept{#{\flat}-orthogonal} to #{f}, written #{f \orthogonal_\flat g}, if any of the following equivalent conditions hold
 
   \ol{
@@ -22,7 +22,7 @@
     }
 
     \li{
-      The #{\flat}-[pullback-power](hott-0006) ##{f\pullback-power_\flat g : \flat(B \to X) \to \flat(B \to Y)\times_{\flat(A \to Y)}\flat(A \to X)} is an [[hott-000U]].
+      The #{\flat}-[pullback-power](hott-0006) ##{f\pullback-power_\flat g \colon \flat(B \to X) \to \flat(B \to Y)\times_{\flat(A \to Y)}\flat(A \to X)} is an [[hott-000U]].
     }
 
     \li{
@@ -39,9 +39,9 @@
 
     \li{
       The dependent precomposition map
-      ##{\flat(\blank\o f) : \flat\left((y : B) \to \fiber{g}{h(y)}\right)\to\flat\left((x : A)\to \fiber{g}{h(f(x))} \right)}
+      ##{\flat(\blank\o f) \colon \flat\left((y : B) \to \fiber{g}{h(y)}\right)\to\flat\left((x : A)\to \fiber{g}{h(f(x))} \right)}
 
-      is an [[hott-000U]] for all #{h :_\flat B \to Y}.
+      is an [[hott-000U]] for all #{h \colon-flat B \to Y}.
     }
   }
 

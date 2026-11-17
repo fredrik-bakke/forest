@@ -15,7 +15,7 @@
   }
 
   In particular, we obtain the \em{Segal composition operation}
-  ##{\blank\o\blank : \hom_A(y,z) \to \hom_A(x,y) \to \hom_A(x,z)}
+  ##{\blank\o\blank \colon \hom_A(y,z) \to \hom_A(x,y) \to \hom_A(x,z)}
   by restricting along the diagonal of this lifting.
 }
 

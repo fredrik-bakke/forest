@@ -6,5 +6,5 @@
 \import{common}
 
 \p{
-  A crisp type family #{G :_\flat I \to \Type} on a #{\flat}-modal and inhabited type #{I} is said to \concept{detect continuity} for #{\flat \dashv \sharp} if for every crisp map #{f :_\flat X \to Y}, #{f} is #{\sharp}-modal if and only if #{f} is [#{\flat}-orthogonal](fb-0045) to the counits #{{\varepsilon_{G_i} : \flat G_i \to G_i}} for every #{i :_\flat I}.
+  A crisp type family #{G \colon-flat I \to \Type} on a #{\flat}-modal and inhabited type #{I} is said to \concept{detect continuity} for #{\flat \dashv \sharp} if for every crisp map #{f \colon-flat X \to Y}, #{f} is #{\sharp}-modal if and only if #{f} is [#{\flat}-orthogonal](fb-0045) to the counits #{{\varepsilon_{G_i} \colon \flat G_i \to G_i}} for every #{i :^\flat I}.
 }

@@ -9,10 +9,10 @@
     \li{The type #{A} is simplicially discrete.}
     \li{The type #{A} is #{\directed-interval}-orthogonal.}
     \li{
-      The type #{A} is orthogonal to the left end-point inclusion #{\point 0 : \unit-type \hookrightarrow \directed-interval}.
+      The type #{A} is orthogonal to the left end-point inclusion #{\point 0 \colon \unit-type \hookrightarrow \directed-interval}.
     }
     \li{
-      The type #{A} is orthogonal to the right end-point inclusion #{\point 1 : \unit-type \hookrightarrow \directed-interval}.
+      The type #{A} is orthogonal to the right end-point inclusion #{\point 1 \colon \unit-type \hookrightarrow \directed-interval}.
     }
   }
 }

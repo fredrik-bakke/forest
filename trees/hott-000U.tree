@@ -5,13 +5,13 @@
 \import{common}
 
 \p{
-  A map #{{f : X \to Y}} is an \concept{equivalence} if any of the following logically equivalent propositional conditions hold:
+  A map #{{f \colon X \to Y}} is an \concept{equivalence} if any of the following logically equivalent propositional conditions hold:
   \ul{
     \li{\strong{Biinvertibility:} #{f} has a section and a retraction. I.e., the following type is inhabited
-    ##{\begin{aligned}\operatorname{\texttt{is-biinvertible}} f \defeq &\left(\sigma-type{g : Y \to X}{(f \o g \sim \id)}\right)\times\\ &\left(\sigma-type{g' : Y \to X}{(g' \o f\sim \id)}\right)\mathrlap{.}
+    ##{\begin{aligned}\operatorname{\texttt{is-biinvertible}} f \defeq &\left(\sigma-type{g \colon Y \to X}{(f \o g \sim \id)}\right)\times\\ &\left(\sigma-type{g' \colon Y \to X}{(g' \o f\sim \id)}\right)\mathrlap{.}
     \end{aligned}}}
 
-    \li{\strong{Coherent invertibility:} There is a map #{g : Y \to X} that is both a section and retraction to #{f} with witnessing homotopies #{S} and #{R} respectively, such that these witnesses satisfy either of the following higher coherences
+    \li{\strong{Coherent invertibility:} There is a map #{g \colon Y \to X} that is both a section and retraction to #{f} with witnessing homotopies #{S} and #{R} respectively, such that these witnesses satisfy either of the following higher coherences
     ##{Sf \sim fR \quad\text{or}\quad gS \sim Rg\mathrlap{.}}}
 
     \li{\strong{Contractible map:} #{f} has contractible fibers.}

@@ -5,7 +5,7 @@
 
 
 \p{
-  Given a map #{f : A \to B} and elements #{x\ y: A}, we have an \concept{action on directed edges} of type
+  Given a map #{f \colon A \to B} and elements #{x\ y: A}, we have an \concept{action on directed edges} of type
   ##{\hom_A(x, y) \to \hom_B(f(x), f(y))\mathrlap{.}}
   The map is given by postcomposition on the underlying arrow, and #{f}'s action on identifications on the endpoints.
 }

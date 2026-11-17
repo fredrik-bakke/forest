@@ -42,8 +42,8 @@
 
     \li{
       The dependent precomposition map
-      ##{\blank\o f : \left((y : B) \to \fiber{g}{h(y)}\right)\to\left((x : A)\to \fiber{g}{h(f(x))} \right)}
-      is an equivalence for all #{h : B \to Y}.
+      ##{\blank\o f \colon \left((y : B) \to \fiber{g}{h(y)}\right)\to\left((x : A)\to \fiber{g}{h(f(x))} \right)}
+      is an equivalence for all #{h \colon B \to Y}.
     }
   }
 }

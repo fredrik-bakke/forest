@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  More generally, we say a \em{map} #{f : B \to A} is \concept{inner} if it is orthogonal to the inner 2-horn inclusion, and a type family #{B : A \to \universe{U}} is inner if its total space projection is.
+  More generally, we say a \em{map} #{f \colon B \to A} is \concept{inner} if it is orthogonal to the inner 2-horn inclusion, and a type family #{B \colon A \to \universe{U}} is inner if its total space projection is.
 }
 
 \p{

@@ -5,6 +5,6 @@
 \meta{source}{Axiom 8 in [[GWB24]]}
 \import{common}
 
-\p{A map #{f :_{\flat} A \to B} is an [[hott-000U]] if and only if the map
-##{\flat(f \o \blank) : \flat((\directed-interval)^n \to A) \to \flat((\directed-interval)^n \to B)}
-is an equivalence for all #{n :_{\flat} \bN}, where \directed-interval is the directed interval.}
+\p{A map #{f \colon-flat A \to B} is an [[hott-000U]] if and only if the map
+##{\flat(f \o \blank) \colon \flat((\directed-interval)^n \to A) \to \flat((\directed-interval)^n \to B)}
+is an equivalence for all #{n :^{\flat} \bN}, where \directed-interval is the directed interval.}

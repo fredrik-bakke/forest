@@ -4,6 +4,6 @@
 \meta{source}{Theorem 3.1.6 of [[MR23]]}
 \import{common}
 
-\p{Suppose the crisp type family #{{G :_\flat I \to \Type}} [detects continuity](fb-0046) for #{{\flat \dashv \sharp}} and assume given a crisp map #{{f :_\flat X \to Y}}. Then #{f} is an [[hott-000U]] if (and only if) #{{\flat f : \flat X \to \flat Y}} is an equivalence and for all #{{i :_\flat I}}, the map
-##{\flat(f \o \blank) : \flat(G_i \to X) \to \flat(G_i \to Y)}
+\p{Suppose the crisp type family #{{G \colon-flat I \to \Type}} [detects continuity](fb-0046) for #{{\flat \dashv \sharp}} and assume given a crisp map #{{f \colon-flat X \to Y}}. Then #{f} is an [[hott-000U]] if (and only if) #{{\flat f \colon \flat X \to \flat Y}} is an equivalence and for all #{{i :^\flat I}}, the map
+##{\flat(f \o \blank) \colon \flat(G_i \to X) \to \flat(G_i \to Y)}
 is an equivalence.}

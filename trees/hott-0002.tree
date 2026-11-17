@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  Given two maps #{f : A \to B} and #{g : X \to Y}, we say #{g} is
+  Given two maps #{f \colon A \to B} and #{g \colon X \to Y}, we say #{g} is
   \concept{orthogonal} to #{f}, written #{f \orthogonal g}, if any of the following equivalent conditions hold
 
   \ol{
@@ -45,8 +45,8 @@
 
     \li{
       The dependent precomposition map
-      ##{\blank\o f : \left((y : B) \to \fiber{g}{h(y)}\right)\to\left((x : A)\to \fiber{g}{h(f(x))} \right)}
-      is an equivalence for all #{h : B \to Y}.
+      ##{\blank\o f \colon \left((y : B) \to \fiber{g}{h(y)}\right)\to\left((x : A)\to \fiber{g}{h(f(x))} \right)}
+      is an equivalence for all #{h \colon B \to Y}.
     }
   }
 

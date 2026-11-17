@@ -5,6 +5,6 @@
 
 \p{
   A type #{A} is \concept{simplicially discrete} if the canonical map
-  ##{\texttt{hom-id} : (x =_A y) \to \hom_A(x,y)}
+  ##{\texttt{hom-id} \colon (x =_A y) \to \hom_A(x,y)}
   is an equivalence for all #{x\ y : A}.
 }

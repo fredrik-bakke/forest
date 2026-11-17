@@ -4,6 +4,6 @@
 \title{Simplices separate}
 \import{common}
 
-\p{A simplicial and crisp map #{f :_{\flat} A \to B} is an [[hott-000U]] if and only if the restriction to simplices
-##{f_n : A_n \to B_n}
-is an equivalence for all #{n :_{\flat} \bN}.}
+\p{A simplicial and crisp map #{f \colon-flat A \to B} is an [[hott-000U]] if and only if the restriction to simplices
+##{f_n \colon A_n \to B_n}
+is an equivalence for all #{n :^{\flat} \bN}.}

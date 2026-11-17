@@ -6,7 +6,7 @@
 
 \p{
   Given a type #{A} the type family
-  ##{\hom(a, \blank) : A \to \universe{U}}
+  ##{\hom(a, \blank) \colon A \to \universe{U}}
   is covariant for all #{a : A} if and only if #{A} is Segal.
 }
 

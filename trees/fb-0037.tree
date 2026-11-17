@@ -5,6 +5,6 @@
 \import{common}
 
 \p{
-A \concept{preunivalent category} is a precategory \category{C} whose comparison maps ##{\operatorname{iso-eq} : (x =_{\category{C}} y) \to (x \cong_{\category{C}} y)}
+A \concept{preunivalent category} is a precategory \category{C} whose comparison maps ##{\operatorname{iso-eq} \colon (x =_{\category{C}} y) \to (x \cong_{\category{C}} y)}
 are embeddings.
 }

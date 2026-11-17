@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  Given a map #{f : A \to B}, the \concept{directed mapping cylinder} is the pushout
+  Given a map #{f \colon A \to B}, the \concept{directed mapping cylinder} is the pushout
 
   \tikzcd{
     A \arrow[r, "f"] \arrow[d, "{({\id} , 1)}"'] \pushout-arrow{dr} & B \arrow[d] \\

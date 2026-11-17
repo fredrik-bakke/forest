@@ -6,7 +6,7 @@
 \meta{source}{\agda-unimath-source{orthogonal-factorization-systems.local-types}}
 
 \p{
-  Given a map #{f : A \to B}, a type #{X} is said to be \concept{#{f}-local} if the precomposition map
-  ##{\blank\o f : (B \to X) \to (A \to X)}
+  Given a map #{f \colon A \to B}, a type #{X} is said to be \concept{#{f}-local} if the precomposition map
+  ##{\blank\o f \colon (B \to X) \to (A \to X)}
   is an [[hott-000U]].
 }

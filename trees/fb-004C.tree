@@ -3,4 +3,4 @@
 \author{fredrikbakke}
 \import{common}
 
-\p{If cubes separate then simplices separate. I.e., if the restrictions to #{n}-cubes of a simplicial and crisp map #{f :_{\flat} A \to B} are equivalences, then the restrictions to #{n}-simplices #{f_n : A_n \to B_n} are also.}
+\p{If cubes separate then simplices separate. I.e., if the restrictions to #{n}-cubes of a simplicial and crisp map #{f \colon-flat A \to B} are equivalences, then the restrictions to #{n}-simplices #{f_n \colon A_n \to B_n} are also.}

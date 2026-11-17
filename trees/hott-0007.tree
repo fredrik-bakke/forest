@@ -4,7 +4,7 @@
 \import{common}
 
 \p{
-  Given two maps #{f : A \to B} and #{g : X \to Y}, the \concept{pushout-product} #{f\pushout-product g} is the cogap map into the cartesian product #{B \times Y} as defined by the product square
+  Given two maps #{f \colon A \to B} and #{g \colon X \to Y}, the \concept{pushout-product} #{f\pushout-product g} is the cogap map into the cartesian product #{B \times Y} as defined by the product square
 
   \tikzcd{
     A \times X

@@ -61,32 +61,30 @@
 % Since the main styling uses 12pt, we change the font to fit
 % Also we give a little more space to avoid clipping
 \def\tikz[~body]{
-  \<html:span>[class]{tikz}{
-    \tex{\latex-preamble/diagrams}{
-      \begin{tikzpicture}\body{}\end{tikzpicture}
-    }
-  }
+\<html:span>[class]{tikz}{
+\tex{\latex-preamble/diagrams}{
+\begin{tikzpicture}\body{}\end{tikzpicture}
+}
+}
 }
 
 \def\tikzcd[~body]{
-  \<html:center>{ % For some reason tikzcd are placed inline with the new theme
-  \<html:span>[class]{tikz tikzcd}{
-    \tex{\latex-preamble/diagrams}{
-      \begin{tikzcd}\body{}\end{tikzcd}
-    }
-  }}
+\<html:span>[class]{tikz tikzcd}{
+\tex{\latex-preamble/diagrams}{
+\begin{tikzcd}\body{}\end{tikzcd}
+}
+}
 }
 
 \def\inference[~hypotheses][~conclusion]{
-  \<html:span>[class]{inference}{
-    \tex{\latex-preamble/inference}{
-      ##{\inferrule{\hypotheses{}}{\conclusion{}}}
-    }
-  }
+\<html:span>[class]{inference}{
+\tex{\latex-preamble/inference}{
+##{\inferrule{\hypotheses{}}{\conclusion{}}}
+}
+}
 }
 
 \def\concept[name]{\strong{\name}}
-
 
 \def\pushout-arrow[direction]{\arrow[\direction, phantom, ""{pushout, very near end}]}
 \def\pullback-arrow[direction]{\arrow[\direction, phantom, ""{pullback, very near end}]}

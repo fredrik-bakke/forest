@@ -91,6 +91,11 @@
   color: #46515b;
 }
 
+.tikzcd {
+  display: block;
+  text-align: center;
+}
+
 .qed,
 section:is(
     [data-taxon='Proof'],

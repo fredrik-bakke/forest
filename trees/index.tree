@@ -44,12 +44,12 @@ You can also search the forest by clicking the search button above or by pressin
 \put\transclude/expanded{true}
 
 \<html:div>[class]{homepage-sections}{
-\transclude{updates}
 \transclude{notes}
 \transclude{preprints}
 \transclude{theses}
 \transclude{talks}
 \transclude{projects}
+\transclude{updates}
 
 % \scope{
 % \put\transclude/expanded{false}

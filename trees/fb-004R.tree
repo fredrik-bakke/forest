@@ -6,7 +6,7 @@
 \author{fredrikbakke}
 
 \p{
-  Given a functor #{R : \Fun(A,B)}, a (diagrammatic) \concept{left adjoint} to #{R} is a functor #{L : \Fun(A,B)} equipped with an element
+  Given a functor #{R : \Fun(A,B)}, a (diagrammatic) \concept{left adjoint} to #{R} is a functor #{L : \Fun(B,A)} equipped with an element
   ##{
     \begin{aligned}
       \operatorname{\texttt{is-diagrammatic-left-adjoint}}(R,L)\defeq \\ \sigma-type{\eta \colon \id \Rightarrow R \o L}

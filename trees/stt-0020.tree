@@ -103,6 +103,5 @@ Dually, the right-based hom-spaces of #{A} are Segal precisely if #{A} is
 \corollary{Segal types are 2-Segal.}
 
 \proof{
-By the [[stt-000S]] the left- and right-based hom-spaces of a Segal type are
-contractible, and contractible types are local with respect to all maps.
+By the [[stt-000S]], the left- and right-based hom-spaces of a Segal type are Segal.
 }

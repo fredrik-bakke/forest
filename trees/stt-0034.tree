@@ -26,7 +26,7 @@
 
       we have a transposing family of equivalences witnessing that #{L' \o L \dashv R \o R'}:
 
-      ##{\hom_Z(L'(L(x)),z) \overset{e'(L(x),z)}{\simeq} \hom_X(L(x),R'(z)) \overset{e(x,R'(z))}{\simeq} \hom_X(x,R(R'(z)))\mathrlap{.}}
+      ##{\hom_Z(L'(L(x)),z) \overset{e'(L(x),z)}{\simeq} \hom_Y(L(x),R'(z)) \overset{e(x,R'(z))}{\simeq} \hom_X(x,R(R'(z)))\mathrlap{.}}
     }
     \li{TODO}
   }

@@ -14,7 +14,7 @@
 
 \<html:picture>{
   \<html:source>[srcset]{\asset-url{assets/handsome-boy.jxl}}[type]{image/jxl}{}
-  \<html:img>[class]{homepage-portrait}[src]{\asset-url{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{1408}[height]{1876}{}
+  \<html:img>[class]{homepage-portrait}[src]{\asset-url{assets/handsome-boy.jpg}}[alt]{Me sitting beside a pond in a Japanese garden}[width]{3072}[height]{4096}{}
 }
 
 \p{

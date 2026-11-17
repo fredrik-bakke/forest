@@ -5,6 +5,7 @@ from pathlib import Path
 import re
 import subprocess
 import tempfile
+from urllib.parse import quote
 
 
 THEME = Path("theme")
@@ -97,16 +98,23 @@ def add_search_button(html, button):
     )
 
 
-def add_counter(html, snippet):
+def add_counter(html, snippet, path):
     if not re.search(r"<body\b", html, flags=re.IGNORECASE):
         return html
-    existing = r"<script\b[^>]*\bdata-goatcounter\s*=[^>]*>.*?</script\s*>"
-    if re.search(existing, html, flags=re.IGNORECASE | re.DOTALL):
-        return re.sub(
-            existing, lambda _: snippet, html, flags=re.IGNORECASE | re.DOTALL
-        )
+    # Match the browser's encoded pathname, then encode it as a query value.
+    snippet = snippet.replace("{{path}}", quote(quote(path), safe=""))
+    existing = (
+        r"<script\b[^>]*\bdata-goatcounter\s*=[^>]*>.*?</script\s*>\s*"
+        r"(?:<noscript\b[^>]*\bdata-goatcounter-pixel\b[^>]*>.*?</noscript\s*>\s*)?"
+    )
+    html = re.sub(existing, "", html, flags=re.IGNORECASE | re.DOTALL)
+    # A noscript image belongs in the body, not in the head.
     return re.sub(
-        r"</head\s*>", snippet + "\n</head>", html, count=1, flags=re.IGNORECASE
+        r"</body\s*>",
+        lambda _: snippet + "\n</body>",
+        html,
+        count=1,
+        flags=re.IGNORECASE,
     )
 
 
@@ -151,7 +159,8 @@ def main():
         html = normalize_line_breaks(html)
         html = normalize_preformatted(html)
         html = add_search_button(html, button)
-        html = add_counter(html, counter)
+        path = "/" + page.relative_to(args.output).as_posix().removesuffix("index.html")
+        html = add_counter(html, counter, path)
         write_page(page, html)
 
 

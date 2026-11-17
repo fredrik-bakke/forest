@@ -24,3 +24,4 @@ latex/trees
 public
 server
 *.lock
+__pycache__

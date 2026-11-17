@@ -11,3 +11,8 @@
 \transclude{agda-unimath}
 % \transclude{matematisk-ordliste}
 }
+
+\p{
+[My GitHub page](https://github.com/Fredrik-Bakke) also hosts many other personal
+projects.
+}

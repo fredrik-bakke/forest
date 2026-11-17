@@ -98,13 +98,8 @@
 \body{}
 }}
 
-\def\todo[x]{
-\scope{
-\put\transclude/toc{false}
-\subtree{
-\taxon{Todo}
-\<html:p>[style]{color: red;}{\x}
-}}}
+
+\def\red[x]{\<html:p>[style]{color: red;}{\x}}
 
 \def\details[x]{\<html:details>{\x}}
 

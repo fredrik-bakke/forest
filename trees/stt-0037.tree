@@ -8,22 +8,22 @@
   \ol{
     \li{Equivalences are one-sided inverse transposing adjunctions.}
     \li{One-sided inverse transposing adjunctions compose.}
-    \li{One-sided inverse transposing adjunctions are closed under retracts of maps.}
-    \li{One-sided inverse transposing adjunctions are closed under base change.}
+    % \li{One-sided inverse transposing adjunctions are closed under retracts of maps.}
+    \li{One-sided inverse transposing adjunctions are closed under base change along maps #{j} such that the transposition map #{\hom_A(L(j(x)),a)\to \hom_B(j(x),R(a))} is an equivalence.}
   }
 }
 
 \proof{\ol{
   \li{Follows by the corresponding [closure property of transposing adjunctions](stt-0034).}
   \li{Transposing adjunctions and one-sided inverses compose.}
-  \li{Transposing adjunctions and one-sided inverses are closed under retracts of maps.}
-  \li{
-    Given the homotopy #{H \colon R \o L \o j \sim j} we have a cone defining the unique gap map #{L'}
-    \tikzcd{
-      B' \arrow[ddr,equals, bend right] \arrow[drr, "L\o j", bend left] \arrow[dr, dashed, "L'"] \\
-      & A' \arrow[d, "R'"'] \arrow[r, "j'"] & A \arrow[d, "R"]\\
-      & B' \arrow[r, "j"] & B \pullback-arrow{ul}
-    }
-    such that #{R' \o L' \sim \id} as desired. Now we need to verify #{L'} is left adjoint to #{R'}:
-    ##{\hom(L'(x),y) = \hom(L(j(x)),y) \simeq \hom(j(x), R(y))}
+  % \li{Transposing adjunctions and one-sided inverses are closed under retracts of maps.}
+  \li{\red{TODO}
+    % Given the homotopy #{H \colon R \o L \o j \sim j} we have a cone defining the unique gap map #{L'}
+    % \tikzcd{
+    %   B' \arrow[ddr,equals, bend right] \arrow[drr, "L\o j", bend left] \arrow[dr, dashed, "L'"] \\
+    %   & A' \arrow[d, "R'"'] \arrow[r, "j'"] & A \arrow[d, "R"]\\
+    %   & B' \arrow[r, "j"] & B \pullback-arrow{ul}
+    % }
+    % such that #{R' \o L' \sim \id} as desired. Now we need to verify #{L'} is left adjoint to #{R'}:
+    % ##{\hom(L'(x),y) = \hom(L(j(x)),y) \simeq \hom(j(x), R(y))}
   }}}

@@ -15,7 +15,7 @@
 
   (See agda-unimath formalization)
   \ol{
-    \li{TODO}
+    \li{\red{TODO}}
     \li{
 
       Given two composable transposing adjunctions #{e : L \dashv R} and #{e' : L' \dashv R'},

@@ -8,7 +8,6 @@
   \ol{
     \li{Equivalences are transposing adjunctions.}
     \li{Transposing adjunctions compose.}
-    \li{Transposing adjunctions are closed under retracts of maps.}
   }
 }
 
@@ -28,6 +27,5 @@
 
       ##{\hom_Z(L'(L(x)),z) \overset{e'(L(x),z)}{\simeq} \hom_Y(L(x),R'(z)) \overset{e(x,R'(z))}{\simeq} \hom_X(x,R(R'(z)))\mathrlap{.}}
     }
-    \li{TODO}
   }
 }

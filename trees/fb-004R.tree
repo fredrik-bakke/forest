@@ -26,4 +26,5 @@
   \end{aligned}}
 }
 
-\p{We must ask for two a priori unrelated counits or units for reasons of homotopy coherence. The statements above can be shown to be propositions, while the corresponding types with a single unit–counit pair would not be.}
+\p{
+We must ask for two a priori unrelated counits or units for reasons of homotopy coherence. The statements above can be shown to be propositions when #{A} and #{B} are Segal, while the corresponding types with a single unit–counit pair would not be.}

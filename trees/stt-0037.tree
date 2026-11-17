@@ -9,7 +9,7 @@
     \li{Equivalences are one-sided inverse transposing adjunctions.}
     \li{One-sided inverse transposing adjunctions compose.}
     \li{One-sided inverse transposing adjunctions are closed under retracts of maps.}
-    \li{One-sided inverse transposing adjunctions are closed under base change. In fact, one needs only the homotopy #{R \o L \o j \sim j} and not #{R \o L \sim \id}.}
+    \li{One-sided inverse transposing adjunctions are closed under base change.}
   }
 }
 

@@ -32,5 +32,5 @@
     a \arrow[d, "f"']\arrow[r, equals] & a \arrow[d, dotted]\\
     b \arrow[r, "g"'] & c\mathrlap{,}
   }
-  so the result follows from the universal property of #{\Delta^2} as the directed cone over #{\directed-interval}.
+  so the result follows from the universal property of #{\Delta^2} as the directed cone over #{\directed-interval} among Segal types.
 }

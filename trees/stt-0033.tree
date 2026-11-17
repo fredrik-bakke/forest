@@ -6,7 +6,7 @@
 \p{}
 \transclude{stt-0032}
 
-\p{Equivalently [[RS17]], we can ask for the data consisting of units and counits satisfying certain identities:}
+\p{Equivalently, when the underlying types are Segal, we can ask for the data consisting of units and counits satisfying certain identities [[RS17]]:}
 
 \transclude{fb-004R}
 

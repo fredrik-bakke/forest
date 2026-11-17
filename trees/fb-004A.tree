@@ -13,8 +13,8 @@
 
 \p{By Lemma 4.2.2 of [[MR23]], we have retracts #{\Delta^n \hookrightarrow \simpliciallify((\directed-interval)^n)}, where \simpliciallify is the simplicial localization operator, and hence for simplicial and crisp maps #{f} we have retracts of maps
 \tikzcd{
-  \flat(\Delta^n \to A) \arrow[d] \arrow[r, hook] & \flat({(\directed-interval)^n} \to A) \arrow[d] \arrow[r] & \flat(\Delta^n \to A) \arrow[d] \\
-  \flat(\Delta^n \to B) \arrow[r, hook] & \flat({(\directed-interval)^n} \to B) \arrow[r] & \flat(\Delta^n \to B)\mathrlap{,}}
+  \modflat{\Delta^n \to A} \arrow[d] \arrow[r, hook] & \modflat{{(\directed-interval)^n} \to A} \arrow[d] \arrow[r] & \modflat{\Delta^n \to A} \arrow[d] \\
+  \modflat{\Delta^n \to B} \arrow[r, hook] & \modflat{{(\directed-interval)^n} \to B} \arrow[r] & \modflat{\Delta^n \to B}\mathrlap{,}}
   giving us the following characterization:}
 
 \transclude{fb-004C}

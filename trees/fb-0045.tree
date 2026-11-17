@@ -22,24 +22,24 @@
     }
 
     \li{
-      The #{\flat}-[pullback-power](hott-0006) ##{f\pullback-power_\flat g \colon \flat(B \to X) \to \flat(B \to Y)\times_{\flat(A \to Y)}\flat(A \to X)} is an [[hott-000U]].
+      The #{\flat}-[pullback-power](hott-0006) ##{f\pullback-power_\flat g \colon \modflat{B \to X} \to \modflat{B \to Y}\times_{\modflat{A \to Y}}\modflat{A \to X}} is an [[hott-000U]].
     }
 
     \li{
       The flat exponential square
 
       \tikzcd{
-        \flat(B \to X) \arrow[d, "\flat(g \o\blank)"'] \arrow[r, "\flat(\blank\o f)"]
-        & \flat(A \to X)\arrow[d, "\flat(g \o\blank)"]  \\
-        \flat(B \to Y)\arrow[r, "\flat(\blank\o f)"']
-        & \flat(A \to Y)
+        \modflat{B \to X} \arrow[d, "\modflat{g \o\blank}"'] \arrow[r, "\modflat{\blank\o f}"]
+        & \modflat{A \to X}\arrow[d, "\modflat{g \o\blank}"]  \\
+        \modflat{B \to Y}\arrow[r, "\modflat{\blank\o f}"']
+        & \modflat{A \to Y}
       }
       is a pullback.
     }
 
     \li{
       The dependent precomposition map
-      ##{\flat(\blank\o f) \colon \flat\left((y : B) \to \fiber{g}{h(y)}\right)\to\flat\left((x : A)\to \fiber{g}{h(f(x))} \right)}
+      ##{\modflat{\blank\o f} \colon \modflat{(y : B) \to \fiber{g}{h(y)}}\to\modflat{(x : A)\to \fiber{g}{h(f(x))}}}
 
       is an [[hott-000U]] for all #{h \colon-flat B \to Y}.
     }

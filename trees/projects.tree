@@ -1,6 +1,10 @@
 \title{Projects}
 \author{fredrikbakke}
 
+\p{
+In addition to the projects below, [my GitHub page](https://github.com/Fredrik-Bakke)
+also hosts many other personal projects.
+}
 \scope{
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
@@ -10,9 +14,4 @@
 \transclude{agda-synthetic-categories}
 \transclude{agda-unimath}
 % \transclude{matematisk-ordliste}
-}
-
-\p{
-[My GitHub page](https://github.com/Fredrik-Bakke) also hosts many other personal
-projects.
 }

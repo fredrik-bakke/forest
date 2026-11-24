@@ -118,7 +118,7 @@ center {
 
 pre {
   border-radius: var(--radius);
-  background-color: rgba(0, 100, 100, 0.04);
+  background-color: rgba(227, 218, 201, 0.2);
   padding: .5em;
   font-size: 11pt;
   margin-top: 0em;
@@ -132,7 +132,7 @@ pre {
 
 code {
   border-radius: var(--radius);
-  background-color: rgba(0, 100, 100, 0.04);
+  background-color: rgba(227, 218, 201, 0.2);
   padding: 0.2em;
   font-size: 0.9em;
 }
@@ -141,7 +141,6 @@ body {
   font-family: "Inria Sans";
   font-size: 12pt;
   line-height: 1.55;
-  background-color: #E3DAC9;
 }
 
 math {
@@ -150,7 +149,7 @@ math {
 }
 
 mrow:hover {
- background-color: rgba(0, 100, 255, 0.04);
+ background-color: rgba(227, 218, 201, 0.2);
 }
 
 .logo {
@@ -368,7 +367,7 @@ nav#toc li {
 }
 
 .block:hover {
-  background-color: rgba(0, 100, 255, 0.04);
+  background-color: rgba(227, 218, 201, 0.2);
 }
 
 .block.highlighted {
@@ -467,7 +466,7 @@ td.macro-doc {
 }
 
 .enclosing.macro-scope>.enclosing:hover {
-  background-color: rgba(0, 100, 255, 0.1);
+  background-color: rgba(227, 218, 201, 0.4);
 }
 
 [aria-label][role~="tooltip"]::after {
@@ -580,7 +579,7 @@ a.slug:hover,
 a.bullet:hover,
 .edit-button:hover,
 .link:hover {
-  background-color: rgba(0, 100, 255, .1);
+  background-color: rgba(227, 218, 201, .4);
 }
 
 .link {
@@ -700,7 +699,7 @@ a.docs-button {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background-color: rgba(0, 100, 255, 0.04);
+  background-color: rgba(227, 218, 201, 0.2);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;

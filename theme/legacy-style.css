@@ -609,6 +609,11 @@ address {
   display: inline;
 }
 
+.update-entries > section > details > summary > header > .metadata {
+  display: inline;
+}
+
+.update-entries > section > details > summary > header > .metadata li:first-child::before,
 .metadata li::after {
   content: " · ";
 }

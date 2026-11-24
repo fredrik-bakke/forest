@@ -615,6 +615,11 @@ address {
   display: inline;
 }
 
+.update-entries > section > header > .metadata {
+  display: inline;
+}
+
+.update-entries > section > header > .metadata li:first-child::before,
 .metadata li::after {
   content: " · ";
 }

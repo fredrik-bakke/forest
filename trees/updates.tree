@@ -1,13 +1,18 @@
 \title{Updates}
 \author{fredrikbakke}
+\meta{author}{false}
 
-\scope{
+\xmlns:html{http://www.w3.org/1999/xhtml}
+
+\<html:div>[class]{update-entries}{
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
 \put\transclude/expanded{true}
 \put\transclude/toc{false}
 
-\subtree{
+\let\update[~body]{\subtree{\meta{author}{false}\body{}}}
+
+\update{
 \title{Integration of [[matematisk-ordliste]] with [[termportalen]]}
 \date{2026-09-03}
 
@@ -17,7 +22,7 @@ I was featured in [an announcement](https://termportalen.w.uib.no/2026/09/03/ny-
 }
 }
 
-\subtree{
+\update{
 \title{[[BSWY26]] is on the ArXiV!}
 \date{2026-05-01}
 \meta{arxiv}{2605.00773}

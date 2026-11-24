@@ -25,11 +25,8 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out sources
         uses: actions/checkout@v7
@@ -106,6 +103,14 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./output/forest
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy site
         id: deployment
         uses: actions/deploy-pages@v5

@@ -385,7 +385,11 @@ nav#toc li {
   border-color: #aaa;
 }
 
-.slug,
+.slug{
+  color: rgb(180, 180, 180);
+  font-weight: 200;
+}
+
 .doi,
 .arxiv,
 .orcid {

@@ -152,8 +152,10 @@ def main():
     button = (THEME / "search-button.html").read_text(encoding="utf-8").rstrip("\n")
     counter = (THEME / "counter.html").read_text(encoding="utf-8").rstrip("\n")
     for page in sorted(args.output.rglob("*.html")):
-        html = page.read_text(encoding="utf-8")
-        html = inline_styles(html, css)
+        source = page.read_text(encoding="utf-8")
+        html = inline_styles(source, css)
+        if html == source:
+            continue
         html = render_metadata(html, page, args.xsltproc)
         html = highlight_bibliography(html, args.xsltproc)
         html = normalize_line_breaks(html)

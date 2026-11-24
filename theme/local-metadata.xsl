@@ -9,7 +9,7 @@
   <xsl:import href="links.xsl" />
   <xsl:import href="metadata.xsl" />
   <xsl:output method="html" encoding="utf-8" indent="no" omit-xml-declaration="yes" />
-  <xsl:param name="tree-xml" />
+  <xsl:param name="tree-xml" select="/headers/@tree-xml" />
 
   <!-- Forester 6 renders HTML itself. Use its XML metadata to apply ASC's #95
        fix to the corresponding HTML headers without rewriting page bodies. -->

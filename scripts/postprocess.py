@@ -9,12 +9,14 @@ from urllib.parse import quote
 
 
 THEME = Path("theme")
+HEADERS = re.compile(r"<header>.*?</header>", re.DOTALL)
+BIBTEX = re.compile(r"<pre>\s*@[^<]*</pre>")
 
 
-def transform_xml(content, stylesheet, xsltproc, *parameters):
+def transform_xml(xsltproc, stylesheet, files=("-",), content=None):
     """Share the theme's XSL templates with Forester's native HTML renderer."""
     result = subprocess.run(
-        [xsltproc, "--nonet", "--novalid", *parameters, str(THEME / stylesheet), "-"],
+        [xsltproc, "--nonet", "--novalid", str(THEME / stylesheet), *files],
         input=content,
         capture_output=True,
         text=True,
@@ -44,34 +46,48 @@ def inline_styles(html, css):
     )
 
 
-def render_metadata(html, page, xsltproc):
-    xml = page.with_suffix(".xml")
-    if not xml.is_file():
-        return html
-    headers = re.findall(r"<header>.*?</header>", html, flags=re.DOTALL)
-    rendered = transform_xml(
-        "<headers>" + "".join(headers) + "</headers>",
-        "local-metadata.xsl",
-        xsltproc,
-        "--stringparam",
-        "tree-xml",
-        xml.resolve().as_uri(),
-    )
-    updated = re.findall(r"<header>.*?</header>", rendered, flags=re.DOTALL)
-    if len(headers) != len(updated):
-        raise RuntimeError(f"Metadata header count changed for {page}")
-    replacements = iter(updated)
-    return re.sub(
-        r"<header>.*?</header>", lambda _: next(replacements), html, flags=re.DOTALL
-    )
+def render_metadata(pages, xsltproc):
+    """Give xsltproc one document per page so it can reuse the stylesheet."""
+    inputs = {}
+    with tempfile.TemporaryDirectory() as tmp:
+        for page, html in pages.items():
+            xml = page.with_suffix(".xml")
+            if xml.is_file():
+                headers = "".join(HEADERS.findall(html))
+                source = Path(tmp) / f"{len(inputs)}.xml"
+                source.write_text(
+                    f'<headers tree-xml="{xml.resolve().as_uri()}">{headers}</headers>',
+                    encoding="utf-8",
+                )
+                inputs[page] = source
+        if not inputs:
+            return
+        rendered = transform_xml(xsltproc, "local-metadata.xsl", inputs.values())
+    groups = re.findall(r"<headers>(.*?)</headers>|<headers\s*/>", rendered, re.DOTALL)
+    if len(groups) != len(inputs):
+        raise RuntimeError("Missing page in transformed metadata")
+    for page, group in zip(inputs, groups):
+        headers = HEADERS.findall(group)
+        if len(headers) != len(HEADERS.findall(pages[page])):
+            raise RuntimeError(f"Metadata header count changed for {page}")
+        replacements = iter(headers)
+        pages[page] = HEADERS.sub(lambda _: next(replacements), pages[page])
 
 
-def highlight_bibliography(html, xsltproc):
-    return re.sub(
-        r"<pre>\s*@[^<]*</pre>",
-        lambda block: transform_xml(block[0], "static.xsl", xsltproc),
-        html,
+def highlight_bibliographies(pages, xsltproc):
+    blocks = dict.fromkeys(
+        block for html in pages.values() for block in BIBTEX.findall(html)
     )
+    if blocks:
+        rendered = transform_xml(
+            xsltproc, "static.xsl", content="<blocks>" + "".join(blocks) + "</blocks>"
+        )
+        highlighted = re.findall(r"<pre\b[^>]*>.*?</pre>", rendered, re.DOTALL)
+        if len(highlighted) != len(blocks):
+            raise RuntimeError("Bibliography block count changed during highlighting")
+        replacements = dict(zip(blocks, highlighted))
+        for page, html in pages.items():
+            pages[page] = BIBTEX.sub(lambda block: replacements[block[0]], html)
 
 
 def normalize_line_breaks(html):
@@ -151,13 +167,15 @@ def main():
     )
     button = (THEME / "search-button.html").read_text(encoding="utf-8").rstrip("\n")
     counter = (THEME / "counter.html").read_text(encoding="utf-8").rstrip("\n")
+    pages = {}
     for page in sorted(args.output.rglob("*.html")):
         source = page.read_text(encoding="utf-8")
         html = inline_styles(source, css)
-        if html == source:
-            continue
-        html = render_metadata(html, page, args.xsltproc)
-        html = highlight_bibliography(html, args.xsltproc)
+        if html != source:
+            pages[page] = html
+    render_metadata(pages, args.xsltproc)
+    highlight_bibliographies(pages, args.xsltproc)
+    for page, html in pages.items():
         html = normalize_line_breaks(html)
         html = normalize_preformatted(html)
         html = add_search_button(html, button)

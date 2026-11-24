@@ -118,7 +118,7 @@ center {
 
 pre {
   border-radius: var(--radius);
-  background-color: rgba(227, 218, 201, 0.2);
+  background-color: rgba(227, 218, 201, 0.3);
   padding: .5em;
   font-size: 11pt;
   margin-top: 0em;
@@ -132,7 +132,7 @@ pre {
 
 code {
   border-radius: var(--radius);
-  background-color: rgba(227, 218, 201, 0.2);
+  background-color: rgba(227, 218, 201, 0.3);
   padding: 0.2em;
   font-size: 0.9em;
 }
